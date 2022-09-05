@@ -838,7 +838,7 @@ class PlayState extends MusicBeatState
 			gf.visible = false;
 		}
 
-		if (curSong == 'Nyeh Heh Heh' || curSong == 'Bonely One' || curSong == 'Not Enough' || curSong == 'No More Deals || curSong == 'EEEEChrome') {
+		if (curSong == 'Nyeh Heh Heh' || curSong == 'Bonely One' || curSong == 'Not Enough' || curSong == 'No More Deals' || curSong == 'EEEEChrome')
 			gf.visible = false;
 		}
 
