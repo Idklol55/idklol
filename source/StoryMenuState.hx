@@ -465,7 +465,7 @@ class StoryMenuState extends MusicBeatState
     }
     
     public var character:String;
-	public function changeCharacter(?character:String = 'bf', diff:Int = 0){
+    public function changeCharacter(?character:String = 'bf', diff:Int = 0){
         if(character == null) character = '';
         if(character == 'bf' && diff == 1) character = 'chara';
         if(character == this.character) return;
@@ -477,7 +477,7 @@ class StoryMenuState extends MusicBeatState
 				var rawJson = null;
 				
 				var charFile:MenuCharacterFile = cast Json.parse(rawJson);
-				frames = Paths.getSparrowAtlas('menucharacters/chara);
+				frames = Paths.getSparrowAtlas('menucharacters/chara,');
 				animation.addByPrefix('idle', charFile.idle_anim, 24);
 				animation.addByPrefix('confirm', charFile.confirm_anim, 24, false);
 
