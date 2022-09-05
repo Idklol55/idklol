@@ -344,6 +344,8 @@ class StoryMenuState extends MusicBeatState
 		}
 		else
 			newImagePath = image;
+			changeCharacter(character);
+			updateImages();
 
 		if(newImagePath != lastImagePath)
 		{
@@ -440,6 +442,53 @@ class StoryMenuState extends MusicBeatState
 			curDifficulty = newPos;
 		}
 		updateText();
+	}
+
+	function updateImages(){
+        var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]);
+
+        bgSprite.visible = true;
+        var assetName:String = leWeek.weekBackground;
+        if(assetName == null || assetName.length < 1) {
+            bgSprite.visible = false;
+        } else {
+            if (curDifficulty == 1)
+                bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stageCH'));
+            else
+                bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stage'));
+        }
+
+        var weekArray:Array<String> = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]).weekCharacters;
+        for (i in 0...grpWeekCharacters.length) {
+            grpWeekCharacters.members[i].changeCharacter(weekArray[i], curDifficulty);
+        }
+    }
+    
+    public var character:String;
+	public function changeCharacter(?character:String = 'bf', diff:Int = 0){
+        if(character == null) character = '';
+        if(character == 'bf' && diff == 1) character = 'chara';
+        if(character == this.character) return;
+
+        this.character = character;
+		switch(character) {
+			case 'chara':
+				var characterPath:String = 'images/menucharacters/chara.json';
+				var rawJson = null;
+				
+				var charFile:MenuCharacterFile = cast Json.parse(rawJson);
+				frames = Paths.getSparrowAtlas('menucharacters/chara);
+				animation.addByPrefix('idle', charFile.idle_anim, 24);
+				animation.addByPrefix('confirm', charFile.confirm_anim, 24, false);
+
+				if(charFile.scale != 1) {
+					scale.set(charFile.scale, charFile.scale);
+					updateHitbox();
+				}
+				offset.set(charFile.position[0], charFile.position[1]);
+				animation.play('idle');
+			}
+		}
 	}
 
 	function weekIsLocked(weekNum:Int) {

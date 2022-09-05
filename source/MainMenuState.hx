@@ -35,13 +35,12 @@ class MainMenuState extends MusicBeatState
 	var optionShit:Array<String> = [
 		'story_mode',
 		'freeplay',
-		#if MODS_ALLOWED 'mods', #end
-		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
-		#if !switch 'donate', #end
 		'options'
 	];
 
+	var characters:FlxSprite;
+	var splash:FlxSprite;
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
 	var camFollowPos:FlxObject;
@@ -93,6 +92,23 @@ class MainMenuState extends MusicBeatState
 		magenta.color = 0xFFfd719b;
 		add(magenta);
 		// magenta.scrollFactor.set();
+		
+		characters = new FlxSprite();
+		characters.frames = Paths.getSparrowAtlas('menuCharacters');
+		characters.antialiasing = ClientPrefs.globalAntialiasing;
+		characters.setGraphicSize(Std.int(characters.width * 1));
+		characters.animation.addByPrefix('story_mode', 'story_mode', 24);
+		characters.animation.addByPrefix('freeplay', 'freeplay', 24);
+		characters.animation.addByPrefix('credits', 'credits', 24);
+		characters.animation.addByPrefix('options', 'options', 24);
+		add(characters);
+		
+		splash = new FlxSprite(10);
+		splash.frames = Paths.getSparrowAtlas('splash');
+		splash.antialiasing = ClientPrefs.globalAntialiasing;
+		//splash.setGraphicSize(Std.int(splash.width * 1.175));
+		splash.updateHitbox();
+		add(splash);
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
@@ -113,7 +129,8 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
 			menuItem.animation.play('idle');
 			menuItem.ID = i;
-			menuItem.screenCenter(X);
+			//menuItem.screenCenter(X);
+			menuItem.x += 590;
 			menuItems.add(menuItem);
 			var scr:Float = (optionShit.length - 4) * 0.135;
 			if(optionShit.length < 6) scr = 0;
@@ -123,8 +140,12 @@ class MainMenuState extends MusicBeatState
 			menuItem.updateHitbox();
 		}
 
-		FlxG.camera.follow(camFollowPos, null, 1);
+		//FlxG.camera.follow(camFollowPos, null, 1);
 
+		var versionShit:FlxText = new FlxText(12, FlxG.height - 64, 0, "Skeleton Bros v1.0", 12);
+		versionShit.scrollFactor.set();
+		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		add(versionShit);
 		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -153,7 +174,7 @@ class MainMenuState extends MusicBeatState
 
 		#if android
 		addVirtualPad(UP_DOWN, A_B);
-		_virtualpad.y = -44;
+		_virtualpad.y = -46;
 		#end
 
 		super.create();
@@ -228,6 +249,7 @@ class MainMenuState extends MusicBeatState
 						}
 						else
 						{
+							FlxTween.tween(FlxG.camera, {zoom: 2.2}, 2, {ease: FlxEase.expoInOut});
 							FlxFlicker.flicker(spr, 1, 0.06, false, false, function(flick:FlxFlicker)
 							{
 								var daChoice:String = optionShit[curSelected];
@@ -238,12 +260,6 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new StoryMenuState());
 									case 'freeplay':
 										MusicBeatState.switchState(new FreeplayState());
-									#if MODS_ALLOWED
-									case 'mods':
-										MusicBeatState.switchState(new ModsMenuState());
-									#end
-									case 'awards':
-										MusicBeatState.switchState(new AchievementsMenuState());
 									case 'credits':
 										MusicBeatState.switchState(new CreditsState());
 									case 'options':
@@ -267,8 +283,19 @@ class MainMenuState extends MusicBeatState
 
 		menuItems.forEach(function(spr:FlxSprite)
 		{
-			spr.screenCenter(X);
+			//spr.screenCenter(X);
 		});
+	}
+	
+	function tweenCharacter():Void
+		{
+		   FlxTween.tween(characters, {x : 200, alpha: 0}, 0.2, {ease:FlxEase.cubeIn,
+		       onComplete: function(twn:FlxTween)
+		       {
+			 //characters.animation.play(optionShit[curSelected]);
+			 FlxTween.tween(characters, {x : 0, alpha : 1}, 0.2, {ease:FlxEase.cubeOut});
+		      }
+	    });
 	}
 
 	function changeItem(huh:Int = 0)
@@ -280,6 +307,18 @@ class MainMenuState extends MusicBeatState
 		if (curSelected < 0)
 			curSelected = menuItems.length - 1;
 
+		tweenCharacter();
+		switch (curSelected) 
+		{
+			case 0:
+				characters.animation.play('story_mode');
+			case 1:
+				characters.animation.play('freeplay');
+			case 2:
+				characters.animation.play('credits');
+			case 3:
+				characters.animation.play('options');
+		}
 		menuItems.forEach(function(spr:FlxSprite)
 		{
 			spr.animation.play('idle');

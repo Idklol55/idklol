@@ -813,6 +813,10 @@ class PlayState extends MusicBeatState
 			SONG.gfVersion = gfVersion; //Fix for the Chart Editor
 		}
 
+		if (curSong == 'Nyeh Heh Heh' || curSong == 'Bonely One' || curSong == 'Not Enough' || curSong == 'No More Deals' || curSong == 'EEEEChrome')
+			gf.visible = false;
+		}
+
 		gf = new Character(0, 0, gfVersion);
 		startCharacterPos(gf);
 		gf.scrollFactor.set(0.95, 0.95);
@@ -835,10 +839,6 @@ class PlayState extends MusicBeatState
 
 		if(dad.curCharacter.startsWith('gf')) {
 			dad.setPosition(GF_X, GF_Y);
-			gf.visible = false;
-		}
-
-		if (curSong == 'Nyeh Heh Heh' || curSong == 'Bonely One' || curSong == 'Not Enough' || curSong == 'No More Deals' || curSong == 'EEEEChrome')
 			gf.visible = false;
 		}
 
@@ -1164,7 +1164,11 @@ class PlayState extends MusicBeatState
 				case 'senpai' | 'roses' | 'thorns':
 					if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
-
+				if (curDifficulty == 0)
+				case 'Nyeh Heh Heh | Bonely One' | 'Not Enough'':
+					startDialogue(dialogueJson);
+				end
+					
 				default:
 					startCountdown();
 			}
