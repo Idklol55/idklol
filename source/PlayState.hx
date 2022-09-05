@@ -129,6 +129,7 @@ class PlayState extends MusicBeatState
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
 	public static var storyDifficulty:Int = 1;
+	var curDifficulty:Int = 0;
 
 	public var vocals:FlxSound;
 
@@ -1162,13 +1163,12 @@ class PlayState extends MusicBeatState
 							}
 						});
 					});
+				case 'senpai' | 'roses' | 'thorns':
+					if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
+					schoolIntro(doof);
 				if (curDifficulty == 0)
-					case 'Nyeh Heh Heh' | 'Bonely One' | 'Not Enough':
-						startDialogue(dialogueJson);
-				else
-					case 'senpai' | 'roses' | 'thorns':
-						if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
-						schoolIntro(doof);
+				case 'Nyeh Heh Heh' | 'Bonely One' | 'Not Enough':
+					startDialogue(dialogueJson);
 				}
 					
 				default:
