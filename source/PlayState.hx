@@ -813,10 +813,6 @@ class PlayState extends MusicBeatState
 			SONG.gfVersion = gfVersion; //Fix for the Chart Editor
 		}
 
-		if (curSong == 'Nyeh Heh Heh' || curSong == 'Bonely One' || curSong == 'Not Enough' || curSong == 'No More Deals || curSong == 'EEEEChrome')
-		{
-			gf.visible = false;
-		}
 		gf = new Character(0, 0, gfVersion);
 		startCharacterPos(gf);
 		gf.scrollFactor.set(0.95, 0.95);
@@ -839,6 +835,10 @@ class PlayState extends MusicBeatState
 
 		if(dad.curCharacter.startsWith('gf')) {
 			dad.setPosition(GF_X, GF_Y);
+			gf.visible = false;
+		}
+
+		if (curSong == 'Nyeh Heh Heh' || curSong == 'Bonely One' || curSong == 'Not Enough' || curSong == 'No More Deals || curSong == 'EEEEChrome') {
 			gf.visible = false;
 		}
 
@@ -4773,14 +4773,14 @@ class PlayState extends MusicBeatState
 
         //------
         triggerEventNote("Change Character", "bf", newBF);
-        //------
+       //------
 
-		var spaceBar:FlxSprite = new FlxSprite();
-		spaceBar.frames = Paths.getSparrowAtlas('spacebar');
-		spaceBar.animation.addByPrefix('push', "spacebar", 24);
-		spaceBar.scrollFactor.set();
-		spaceBar.screenCenter(X);
-		add(spaceBar);
+       var spaceBar:FlxSprite = new FlxSprite();
+       spaceBar.frames = Paths.getSparrowAtlas('spacebar');
+       spaceBar.animation.addByPrefix('push', "spacebar", 24);
+       spaceBar.scrollFactor.set();
+       spaceBar.screenCenter(X);
+       add(spaceBar);
 
         for (i in playerStrums)
         {
