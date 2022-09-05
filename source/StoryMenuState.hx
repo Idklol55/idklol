@@ -477,7 +477,7 @@ class StoryMenuState extends MusicBeatState
 				var rawJson = null;
 				
 				var charFile:MenuCharacterFile = cast Json.parse(rawJson);
-				frames = Paths.getSparrowAtlas('menucharacters/chara,');
+				frames = Paths.getSparrowAtlas('menucharacters/chara');
 				animation.addByPrefix('idle', charFile.idle_anim, 24);
 				animation.addByPrefix('confirm', charFile.confirm_anim, 24, false);
 
