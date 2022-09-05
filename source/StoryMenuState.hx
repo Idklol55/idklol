@@ -489,7 +489,6 @@ class StoryMenuState extends MusicBeatState
 				animation.play('idle');
 			}
 		}
-	}
 
 	function weekIsLocked(weekNum:Int) {
 		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[weekNum]);
