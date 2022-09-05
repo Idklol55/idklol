@@ -471,7 +471,6 @@ class StoryMenuState extends MusicBeatState
         if(character == this.character) return;
 
         this.character = character;
-		}
 	}
 
 	function weekIsLocked(weekNum:Int) {
