@@ -591,34 +591,65 @@ class TitleState extends MusicBeatState
 			switch (sickBeats)
 			{
 				case 1:
-					createCoolText(['Skeleton Bros By'], 15);
+					#if PSYCH_WATERMARKS
+					createCoolText(['Psych Engine by'], 15);
+					#else
+					createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
+					#end
+				// credTextShit.visible = true;
 				case 3:
-					addMoreText('Jloor', 15);
-					addMoreText('and', 15);
-					addMoreText('Skeleton Bros Team', 15);
+					#if PSYCH_WATERMARKS
+					addMoreText('Shadow Mario', 15);
+					addMoreText('RiverOaken', 15);
+					addMoreText('bb-panzu', 15);
+					#else
+					addMoreText('present');
+					#end
+				// credTextShit.text += '\npresent...';
+				// credTextShit.addText();
 				case 4:
 					deleteCoolText();
+				// credTextShit.visible = false;
+				// credTextShit.text = 'In association \nwith';
+				// credTextShit.screenCenter();
 				case 5:
-					createCoolText(['Mod Inspired', 'with'], -40);
-					createCoolText(['From', 'with'], -40);
+					#if PSYCH_WATERMARKS
+					createCoolText(['Not associated', 'with'], -40);
+					#else
+					createCoolText(['In association', 'with'], -40);
+					#end
 				case 7:
-					addMoreText('undertale!', -40);
-					undertale.visible = true;
+					addMoreText('newgrounds', -40);
+					ngSpr.visible = true;
+				// credTextShit.text += '\nNewgrounds';
 				case 8:
 					deleteCoolText();
-					undertale.visible = false;
+					ngSpr.visible = false;
+				// credTextShit.visible = false;
+
+				// credTextShit.text = 'Shoutouts Tom Fulp';
+				// credTextShit.screenCenter();
 				case 9:
 					createCoolText([curWacky[0]]);
+				// credTextShit.visible = true;
 				case 11:
 					addMoreText(curWacky[1]);
+				// credTextShit.text += '\nlmao';
 				case 12:
 					deleteCoolText();
+				// credTextShit.visible = false;
+				// credTextShit.text = "Friday";
+				// credTextShit.screenCenter();
 				case 13:
-					addMoreText("Friday Night Funkin'");
+					addMoreText('Friday');
+				// credTextShit.visible = true;
 				case 14:
-					addMoreText('Skeleton Bros!');
-
+					addMoreText('Night');
+				// credTextShit.text += '\nNight';
 				case 15:
+					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';					
+
+				case 16:
 					skipIntro();
 			}
 		}
