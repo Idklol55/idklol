@@ -377,9 +377,9 @@ class PlayState extends MusicBeatState
 				case 'Nyeh Heh Heh':
 					curStage = 'stagepaps';
 				case 'Bonely One' | 'Not Enough':
-					curStage = 'stagesans':
+					curStage = 'stagesans';
 				case 'No More Deals':
-					curStage = 'stagechara':
+					curStage = 'stagechara';
 				case 'EEEEChrome':
 					curStage = 'lost';
 				default:
