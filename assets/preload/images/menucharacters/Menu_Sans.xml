@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Menu_Sans.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="SKELETON BROS0000" x="0" y="0" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0001" x="0" y="0" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0002" x="686" y="0" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0003" x="686" y="0" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0004" x="1372" y="0" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0005" x="1372" y="0" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0006" x="2058" y="0" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0007" x="2058" y="0" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0008" x="2744" y="0" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0009" x="2744" y="0" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0010" x="0" y="450" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0011" x="0" y="450" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0012" x="686" y="450" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0013" x="686" y="450" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0014" x="1372" y="450" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0015" x="1372" y="450" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0016" x="2058" y="450" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0017" x="2058" y="450" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0018" x="2744" y="450" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0019" x="2744" y="450" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0020" x="0" y="900" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0021" x="0" y="900" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0022" x="686" y="900" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0023" x="686" y="900" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0024" x="686" y="900" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0025" x="1372" y="900" width="686" height="450"/>
+	<SubTexture name="SKELETON BROS0026" x="1372" y="900" width="686" height="450"/>
+</TextureAtlas>

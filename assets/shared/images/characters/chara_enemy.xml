@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="chara enemy.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Chara Down0000" x="0" y="0" width="560" height="601" frameX="0" frameY="-87" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0001" x="0" y="0" width="560" height="601" frameX="0" frameY="-87" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0002" x="560" y="0" width="545" height="610" frameX="-6" frameY="-78" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0003" x="560" y="0" width="545" height="610" frameX="-6" frameY="-78" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0004" x="1105" y="0" width="490" height="688" frameX="-50" frameY="0" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0005" x="1595" y="0" width="469" height="688" frameX="-50" frameY="0" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0006" x="2064" y="0" width="478" height="683" frameX="-41" frameY="-5" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0007" x="2542" y="0" width="444" height="683" frameX="-41" frameY="-5" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0008" x="2986" y="0" width="444" height="683" frameX="-41" frameY="-5" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0009" x="2986" y="0" width="444" height="683" frameX="-41" frameY="-5" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0010" x="3430" y="0" width="444" height="683" frameX="-41" frameY="-5" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0011" x="3430" y="0" width="444" height="683" frameX="-41" frameY="-5" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0012" x="3874" y="0" width="444" height="683" frameX="-41" frameY="-5" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0013" x="3874" y="0" width="444" height="683" frameX="-41" frameY="-5" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0014" x="3874" y="0" width="444" height="683" frameX="-41" frameY="-5" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0015" x="3874" y="0" width="444" height="683" frameX="-41" frameY="-5" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0016" x="3874" y="0" width="444" height="683" frameX="-41" frameY="-5" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0017" x="3874" y="0" width="444" height="683" frameX="-41" frameY="-5" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0018" x="3874" y="0" width="444" height="683" frameX="-41" frameY="-5" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Down0019" x="3874" y="0" width="444" height="683" frameX="-41" frameY="-5" frameWidth="560" frameHeight="688"/>
+	<SubTexture name="Chara Left0000" x="4318" y="0" width="502" height="549" frameX="-29" frameY="0" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0001" x="4318" y="0" width="502" height="549" frameX="-29" frameY="0" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0002" x="4820" y="0" width="512" height="543" frameX="-16" frameY="-6" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0003" x="4820" y="0" width="512" height="543" frameX="-16" frameY="-6" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0004" x="5332" y="0" width="519" height="538" frameX="-8" frameY="-11" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0005" x="5332" y="0" width="519" height="538" frameX="-8" frameY="-11" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0006" x="5851" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0007" x="5851" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0008" x="6376" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0009" x="6376" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0010" x="6901" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0011" x="6901" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0012" x="7426" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0013" x="7426" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0014" x="7426" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0015" x="7426" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0016" x="7426" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0017" x="7426" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0018" x="7426" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0019" x="7426" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0020" x="7426" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0021" x="7426" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Left0022" x="7426" y="0" width="525" height="531" frameX="0" frameY="-18" frameWidth="531" frameHeight="549"/>
+	<SubTexture name="Chara Rigth0000" x="0" y="688" width="395" height="598" frameX="-11" frameY="-3" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0001" x="0" y="688" width="395" height="598" frameX="-11" frameY="-3" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0002" x="395" y="688" width="407" height="594" frameX="-7" frameY="-7" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0003" x="395" y="688" width="407" height="594" frameX="-7" frameY="-7" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0004" x="802" y="688" width="416" height="593" frameX="-7" frameY="-8" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0005" x="802" y="688" width="416" height="593" frameX="-7" frameY="-8" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0006" x="1218" y="688" width="407" height="592" frameX="0" frameY="-9" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0007" x="1218" y="688" width="407" height="592" frameX="0" frameY="-9" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0008" x="1625" y="688" width="355" height="601" frameX="-20" frameY="0" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0009" x="1625" y="688" width="355" height="601" frameX="-20" frameY="0" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0010" x="1980" y="688" width="367" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0011" x="1980" y="688" width="367" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0012" x="2347" y="688" width="370" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0013" x="2347" y="688" width="370" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0014" x="2717" y="688" width="373" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0015" x="2717" y="688" width="373" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0016" x="3090" y="688" width="371" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0017" x="3090" y="688" width="371" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0018" x="3461" y="688" width="371" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0019" x="3461" y="688" width="371" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0020" x="3461" y="688" width="371" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0021" x="3461" y="688" width="371" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0022" x="3461" y="688" width="371" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0023" x="3461" y="688" width="371" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0024" x="3461" y="688" width="371" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0025" x="3461" y="688" width="371" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0026" x="3461" y="688" width="371" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0027" x="3461" y="688" width="371" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Rigth0028" x="3461" y="688" width="371" height="599" frameX="-18" frameY="-2" frameWidth="423" frameHeight="601"/>
+	<SubTexture name="Chara Up0000" x="3832" y="688" width="339" height="653" frameX="-9" frameY="-21" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0001" x="3832" y="688" width="339" height="653" frameX="-9" frameY="-21" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0002" x="4171" y="688" width="341" height="660" frameX="-7" frameY="-14" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0003" x="4171" y="688" width="341" height="660" frameX="-7" frameY="-14" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0004" x="4512" y="688" width="350" height="674"/>
+	<SubTexture name="Chara Up0005" x="4512" y="688" width="350" height="674"/>
+	<SubTexture name="Chara Up0006" x="4862" y="688" width="347" height="672" frameX="-3" frameY="-2" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0007" x="4862" y="688" width="347" height="672" frameX="-3" frameY="-2" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0008" x="5209" y="688" width="347" height="672" frameX="-3" frameY="-2" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0009" x="5209" y="688" width="347" height="672" frameX="-3" frameY="-2" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0010" x="5556" y="688" width="347" height="672" frameX="-3" frameY="-2" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0011" x="5556" y="688" width="347" height="672" frameX="-3" frameY="-2" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0012" x="5903" y="688" width="347" height="672" frameX="-3" frameY="-2" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0013" x="5903" y="688" width="347" height="672" frameX="-3" frameY="-2" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0014" x="6250" y="688" width="347" height="672" frameX="-3" frameY="-2" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0015" x="6250" y="688" width="347" height="672" frameX="-3" frameY="-2" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0016" x="6250" y="688" width="347" height="672" frameX="-3" frameY="-2" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0017" x="6250" y="688" width="347" height="672" frameX="-3" frameY="-2" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0018" x="6250" y="688" width="347" height="672" frameX="-3" frameY="-2" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara Up0019" x="6250" y="688" width="347" height="672" frameX="-3" frameY="-2" frameWidth="350" frameHeight="674"/>
+	<SubTexture name="Chara idle0000" x="6597" y="688" width="409" height="616" frameX="0" frameY="-8" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0001" x="6597" y="688" width="409" height="616" frameX="0" frameY="-8" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0002" x="7006" y="688" width="412" height="619" frameX="-1" frameY="-5" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0003" x="7006" y="688" width="412" height="619" frameX="-1" frameY="-5" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0004" x="7418" y="688" width="413" height="622" frameX="-2" frameY="-2" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0005" x="7418" y="688" width="413" height="622" frameX="-2" frameY="-2" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0006" x="0" y="1362" width="406" height="624" frameX="-9" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0007" x="0" y="1362" width="406" height="624" frameX="-9" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0008" x="406" y="1362" width="403" height="624" frameX="-12" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0009" x="406" y="1362" width="403" height="624" frameX="-12" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0010" x="809" y="1362" width="405" height="624" frameX="-10" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0011" x="809" y="1362" width="405" height="624" frameX="-10" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0012" x="1214" y="1362" width="407" height="624" frameX="-8" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0013" x="1214" y="1362" width="407" height="624" frameX="-8" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0014" x="1621" y="1362" width="406" height="624" frameX="-9" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0015" x="1621" y="1362" width="406" height="624" frameX="-9" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0016" x="1621" y="1362" width="406" height="624" frameX="-9" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0017" x="1621" y="1362" width="406" height="624" frameX="-9" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0018" x="1621" y="1362" width="406" height="624" frameX="-9" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0019" x="1621" y="1362" width="406" height="624" frameX="-9" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0020" x="1621" y="1362" width="406" height="624" frameX="-9" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0021" x="1621" y="1362" width="406" height="624" frameX="-9" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0022" x="1621" y="1362" width="406" height="624" frameX="-9" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="Chara idle0023" x="1621" y="1362" width="406" height="624" frameX="-9" frameY="0" frameWidth="415" frameHeight="624"/>
+	<SubTexture name="KILL CHARA0000" x="2027" y="1362" width="471" height="677" frameX="-99" frameY="0" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0001" x="2498" y="1362" width="567" height="634" frameX="-99" frameY="-43" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0002" x="3065" y="1362" width="535" height="567" frameX="-99" frameY="-110" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0003" x="3600" y="1362" width="471" height="591" frameX="-99" frameY="-86" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0004" x="2027" y="1362" width="471" height="677" frameX="-99" frameY="0" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0005" x="2498" y="1362" width="567" height="634" frameX="-99" frameY="-43" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0006" x="3065" y="1362" width="535" height="567" frameX="-99" frameY="-110" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0007" x="3600" y="1362" width="471" height="591" frameX="-99" frameY="-86" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0008" x="2027" y="1362" width="471" height="677" frameX="-99" frameY="0" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0009" x="2498" y="1362" width="567" height="634" frameX="-99" frameY="-43" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0010" x="3065" y="1362" width="535" height="567" frameX="-99" frameY="-110" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0011" x="3600" y="1362" width="471" height="591" frameX="-99" frameY="-86" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0012" x="2027" y="1362" width="471" height="677" frameX="-99" frameY="0" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0013" x="2498" y="1362" width="567" height="634" frameX="-99" frameY="-43" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0014" x="3065" y="1362" width="535" height="567" frameX="-99" frameY="-110" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0015" x="3600" y="1362" width="471" height="591" frameX="-99" frameY="-86" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0016" x="2027" y="1362" width="471" height="677" frameX="-99" frameY="0" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0017" x="2498" y="1362" width="567" height="634" frameX="-99" frameY="-43" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0018" x="3065" y="1362" width="535" height="567" frameX="-99" frameY="-110" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0019" x="3600" y="1362" width="471" height="591" frameX="-99" frameY="-86" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0020" x="2027" y="1362" width="471" height="677" frameX="-99" frameY="0" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0021" x="2498" y="1362" width="567" height="634" frameX="-99" frameY="-43" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0022" x="3065" y="1362" width="535" height="567" frameX="-99" frameY="-110" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0023" x="4071" y="1362" width="574" height="560" frameX="-161" frameY="-127" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0024" x="4645" y="1362" width="509" height="546" frameX="-163" frameY="-132" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0025" x="5154" y="1362" width="562" height="623" frameX="-79" frameY="-18" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0026" x="5716" y="1362" width="454" height="615" frameX="-167" frameY="-20" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0027" x="6170" y="1362" width="749" height="645" frameX="-16" frameY="-21" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0028" x="6919" y="1362" width="528" height="627" frameX="0" frameY="-28" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0029" x="7447" y="1362" width="597" height="651" frameX="-25" frameY="-31" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0030" x="0" y="2039" width="595" height="520" frameX="-21" frameY="-148" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0031" x="595" y="2039" width="362" height="602" frameX="-201" frameY="-79" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0032" x="957" y="2039" width="352" height="480" frameX="-204" frameY="-189" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0033" x="4071" y="1362" width="574" height="560" frameX="-161" frameY="-127" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0034" x="4645" y="1362" width="509" height="546" frameX="-163" frameY="-132" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0035" x="5154" y="1362" width="562" height="623" frameX="-79" frameY="-18" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0036" x="5716" y="1362" width="454" height="615" frameX="-167" frameY="-20" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0037" x="6170" y="1362" width="749" height="645" frameX="-16" frameY="-21" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0038" x="6919" y="1362" width="528" height="627" frameX="0" frameY="-28" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0039" x="7447" y="1362" width="597" height="651" frameX="-25" frameY="-31" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0040" x="0" y="2039" width="595" height="520" frameX="-21" frameY="-148" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0041" x="595" y="2039" width="362" height="602" frameX="-201" frameY="-79" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0042" x="957" y="2039" width="352" height="480" frameX="-204" frameY="-189" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0043" x="4071" y="1362" width="574" height="560" frameX="-161" frameY="-127" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0044" x="4645" y="1362" width="509" height="546" frameX="-163" frameY="-132" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0045" x="5154" y="1362" width="562" height="623" frameX="-79" frameY="-18" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0046" x="5716" y="1362" width="454" height="615" frameX="-167" frameY="-20" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0047" x="6170" y="1362" width="749" height="645" frameX="-16" frameY="-21" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0048" x="6919" y="1362" width="528" height="627" frameX="0" frameY="-28" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0049" x="7447" y="1362" width="597" height="651" frameX="-25" frameY="-31" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0050" x="0" y="2039" width="595" height="520" frameX="-21" frameY="-148" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0051" x="595" y="2039" width="362" height="602" frameX="-201" frameY="-79" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0052" x="1309" y="2039" width="411" height="539" frameX="-220" frameY="-134" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0053" x="1720" y="2039" width="412" height="552" frameX="-220" frameY="-121" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0054" x="1720" y="2039" width="412" height="552" frameX="-220" frameY="-121" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0055" x="2132" y="2039" width="425" height="621" frameX="-180" frameY="-54" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0056" x="2557" y="2039" width="425" height="621" frameX="-180" frameY="-54" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0057" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0058" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0059" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0060" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0061" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0062" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0063" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0064" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0065" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0066" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0067" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0068" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0069" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0070" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0071" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0072" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0073" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0074" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0075" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0076" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0077" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0078" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0079" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0080" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0081" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0082" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0083" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0084" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0085" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0086" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0087" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0088" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0089" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0090" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0091" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0092" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0093" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0094" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0095" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0096" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0097" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0098" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0099" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0100" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0101" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0102" x="3402" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="KILL CHARA0103" x="2982" y="2039" width="420" height="620" frameX="-183" frameY="-55" frameWidth="765" frameHeight="687"/>
+	<SubTexture name="U Down0000" x="3822" y="2039" width="410" height="602" frameX="-16" frameY="-10" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0001" x="3822" y="2039" width="410" height="602" frameX="-16" frameY="-10" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0002" x="4232" y="2039" width="405" height="597" frameX="-21" frameY="-16" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0003" x="4232" y="2039" width="405" height="597" frameX="-21" frameY="-16" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0004" x="4637" y="2039" width="415" height="605" frameX="-11" frameY="-7" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0005" x="4637" y="2039" width="415" height="605" frameX="-11" frameY="-7" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0006" x="5052" y="2039" width="428" height="612" frameX="0" frameY="0" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0007" x="5052" y="2039" width="428" height="612" frameX="0" frameY="0" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0008" x="5480" y="2039" width="426" height="608" frameX="-3" frameY="-4" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0009" x="5480" y="2039" width="426" height="608" frameX="-3" frameY="-4" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0010" x="5480" y="2039" width="426" height="608" frameX="-3" frameY="-4" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0011" x="5480" y="2039" width="426" height="608" frameX="-3" frameY="-4" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0012" x="5480" y="2039" width="426" height="608" frameX="-3" frameY="-4" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0013" x="5480" y="2039" width="426" height="608" frameX="-3" frameY="-4" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0014" x="5480" y="2039" width="426" height="608" frameX="-3" frameY="-4" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0015" x="5480" y="2039" width="426" height="608" frameX="-3" frameY="-4" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Down0016" x="5480" y="2039" width="426" height="608" frameX="-3" frameY="-4" frameWidth="429" frameHeight="613"/>
+	<SubTexture name="U Idle0000" x="5906" y="2039" width="422" height="616" frameX="0" frameY="-8" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0001" x="5906" y="2039" width="422" height="616" frameX="0" frameY="-8" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0002" x="6328" y="2039" width="425" height="619" frameX="-1" frameY="-5" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0003" x="6328" y="2039" width="425" height="619" frameX="-1" frameY="-5" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0004" x="6753" y="2039" width="425" height="622" frameX="-2" frameY="-2" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0005" x="6753" y="2039" width="425" height="622" frameX="-2" frameY="-2" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0006" x="7178" y="2039" width="415" height="624" frameX="-9" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0007" x="7178" y="2039" width="415" height="624" frameX="-9" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0008" x="7593" y="2039" width="408" height="624" frameX="-12" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0009" x="7593" y="2039" width="408" height="624" frameX="-12" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0010" x="0" y="2663" width="412" height="624" frameX="-10" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0011" x="0" y="2663" width="412" height="624" frameX="-10" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0012" x="412" y="2663" width="415" height="624" frameX="-8" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0013" x="412" y="2663" width="415" height="624" frameX="-8" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0014" x="827" y="2663" width="414" height="624" frameX="-9" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0015" x="827" y="2663" width="414" height="624" frameX="-9" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0016" x="827" y="2663" width="414" height="624" frameX="-9" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0017" x="827" y="2663" width="414" height="624" frameX="-9" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0018" x="827" y="2663" width="414" height="624" frameX="-9" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0019" x="827" y="2663" width="414" height="624" frameX="-9" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0020" x="827" y="2663" width="414" height="624" frameX="-9" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0021" x="827" y="2663" width="414" height="624" frameX="-9" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0022" x="827" y="2663" width="414" height="624" frameX="-9" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Idle0023" x="827" y="2663" width="414" height="624" frameX="-9" frameY="0" frameWidth="427" frameHeight="624"/>
+	<SubTexture name="U Left0000" x="1241" y="2663" width="436" height="618" frameX="-8" frameY="-9" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0001" x="1241" y="2663" width="436" height="618" frameX="-8" frameY="-9" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0002" x="1677" y="2663" width="437" height="610" frameX="0" frameY="-17" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0003" x="1677" y="2663" width="437" height="610" frameX="0" frameY="-17" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0004" x="2114" y="2663" width="433" height="614" frameX="-21" frameY="-13" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0005" x="2114" y="2663" width="433" height="614" frameX="-21" frameY="-13" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0006" x="2547" y="2663" width="380" height="625" frameX="-69" frameY="-2" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0007" x="2547" y="2663" width="380" height="625" frameX="-69" frameY="-2" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0008" x="2927" y="2663" width="426" height="624" frameX="-43" frameY="-3" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0009" x="2927" y="2663" width="426" height="624" frameX="-43" frameY="-3" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0010" x="3353" y="2663" width="446" height="626" frameX="-24" frameY="-1" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0011" x="3353" y="2663" width="446" height="626" frameX="-24" frameY="-1" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0012" x="3799" y="2663" width="437" height="627" frameX="-33" frameY="0" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0013" x="3799" y="2663" width="437" height="627" frameX="-33" frameY="0" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0014" x="4236" y="2663" width="440" height="627" frameX="-30" frameY="0" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0015" x="4236" y="2663" width="440" height="627" frameX="-30" frameY="0" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0016" x="4236" y="2663" width="440" height="627" frameX="-30" frameY="0" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0017" x="4236" y="2663" width="440" height="627" frameX="-30" frameY="0" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0018" x="4236" y="2663" width="440" height="627" frameX="-30" frameY="0" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0019" x="4236" y="2663" width="440" height="627" frameX="-30" frameY="0" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0020" x="4236" y="2663" width="440" height="627" frameX="-30" frameY="0" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0021" x="4236" y="2663" width="440" height="627" frameX="-30" frameY="0" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0022" x="4236" y="2663" width="440" height="627" frameX="-30" frameY="0" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Left0023" x="4236" y="2663" width="440" height="627" frameX="-30" frameY="0" frameWidth="470" frameHeight="627"/>
+	<SubTexture name="U Rigth0000" x="4676" y="2663" width="356" height="610" frameX="-24" frameY="-9" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Rigth0001" x="4676" y="2663" width="356" height="610" frameX="-24" frameY="-9" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Rigth0002" x="5032" y="2663" width="358" height="614" frameX="-35" frameY="-5" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Rigth0003" x="5032" y="2663" width="358" height="614" frameX="-35" frameY="-5" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Rigth0004" x="5390" y="2663" width="357" height="614" frameX="-21" frameY="-5" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Rigth0005" x="5390" y="2663" width="357" height="614" frameX="-21" frameY="-5" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Rigth0006" x="5747" y="2663" width="364" height="619" frameX="0" frameY="0" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Rigth0007" x="5747" y="2663" width="364" height="619" frameX="0" frameY="0" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Rigth0008" x="6111" y="2663" width="361" height="618" frameX="-7" frameY="-1" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Rigth0009" x="6111" y="2663" width="361" height="618" frameX="-7" frameY="-1" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Rigth0010" x="6111" y="2663" width="361" height="618" frameX="-7" frameY="-1" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Rigth0011" x="6111" y="2663" width="361" height="618" frameX="-7" frameY="-1" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Rigth0012" x="6111" y="2663" width="361" height="618" frameX="-7" frameY="-1" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Rigth0013" x="6111" y="2663" width="361" height="618" frameX="-7" frameY="-1" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Rigth0014" x="6111" y="2663" width="361" height="618" frameX="-7" frameY="-1" frameWidth="393" frameHeight="619"/>
+	<SubTexture name="U Up0000" x="6472" y="2663" width="462" height="653" frameX="-9" frameY="-21" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0001" x="6934" y="2663" width="462" height="653" frameX="-9" frameY="-21" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0002" x="7396" y="2663" width="455" height="660" frameX="-7" frameY="-14" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0003" x="0" y="3323" width="455" height="660" frameX="-7" frameY="-14" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0004" x="455" y="3323" width="446" height="674" frameX="0" frameY="0" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0005" x="901" y="3323" width="446" height="674" frameX="0" frameY="0" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0006" x="1347" y="3323" width="449" height="672" frameX="-3" frameY="-2" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0007" x="1796" y="3323" width="449" height="672" frameX="-3" frameY="-2" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0008" x="2245" y="3323" width="439" height="672" frameX="-3" frameY="-2" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0009" x="2684" y="3323" width="439" height="672" frameX="-3" frameY="-2" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0010" x="3123" y="3323" width="449" height="672" frameX="-3" frameY="-2" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0011" x="3572" y="3323" width="449" height="672" frameX="-3" frameY="-2" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0012" x="4021" y="3323" width="472" height="672" frameX="-3" frameY="-2" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0013" x="4493" y="3323" width="347" height="672" frameX="-3" frameY="-2" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0014" x="4840" y="3323" width="347" height="672" frameX="-3" frameY="-2" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0015" x="5187" y="3323" width="347" height="672" frameX="-3" frameY="-2" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0016" x="5534" y="3323" width="347" height="672" frameX="-3" frameY="-2" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0017" x="4840" y="3323" width="347" height="672" frameX="-3" frameY="-2" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0018" x="5187" y="3323" width="347" height="672" frameX="-3" frameY="-2" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="U Up0019" x="5534" y="3323" width="347" height="672" frameX="-3" frameY="-2" frameWidth="475" frameHeight="674"/>
+	<SubTexture name="chamoy0000" x="5881" y="3323" width="406" height="624" frameX="-4" frameY="-15" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0001" x="5881" y="3323" width="406" height="624" frameX="-4" frameY="-15" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0002" x="6287" y="3323" width="404" height="617" frameX="-6" frameY="-22" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0003" x="6287" y="3323" width="404" height="617" frameX="-6" frameY="-22" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0004" x="6691" y="3323" width="410" height="607" frameX="-8" frameY="-32" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0005" x="6691" y="3323" width="410" height="607" frameX="-8" frameY="-32" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0006" x="7101" y="3323" width="418" height="600" frameX="-15" frameY="-39" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0007" x="7101" y="3323" width="418" height="600" frameX="-15" frameY="-39" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0008" x="7101" y="3323" width="418" height="600" frameX="-15" frameY="-39" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0009" x="7101" y="3323" width="418" height="600" frameX="-15" frameY="-39" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0010" x="7519" y="3323" width="420" height="639" frameX="0" frameY="0" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0011" x="0" y="3997" width="436" height="639" frameX="0" frameY="0" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0012" x="436" y="3997" width="488" height="625" frameX="-3" frameY="-14" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0013" x="924" y="3997" width="471" height="625" frameX="-3" frameY="-14" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0014" x="1395" y="3997" width="494" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0015" x="1395" y="3997" width="494" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0016" x="1889" y="3997" width="490" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0017" x="1889" y="3997" width="490" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0018" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0019" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0020" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0021" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0022" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0023" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0024" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0025" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0026" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0027" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0028" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0029" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0030" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0031" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0032" x="2379" y="3997" width="492" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0033" x="2871" y="3997" width="505" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0034" x="3376" y="3997" width="502" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0035" x="3878" y="3997" width="525" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0036" x="4403" y="3997" width="408" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0037" x="4403" y="3997" width="408" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0038" x="4403" y="3997" width="408" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0039" x="4403" y="3997" width="408" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0040" x="4403" y="3997" width="408" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+	<SubTexture name="chamoy0041" x="4403" y="3997" width="408" height="631" frameX="-3" frameY="-8" frameWidth="528" frameHeight="639"/>
+</TextureAtlas>

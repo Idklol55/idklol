@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Sans_Gold.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Full Silver Up0000" x="0" y="0" width="410" height="681" frameX="-12" frameY="-5" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0001" x="410" y="0" width="428" height="686" frameX="-3" frameY="0" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0002" x="838" y="0" width="434" height="612" frameX="0" frameY="-75" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0003" x="1272" y="0" width="434" height="612" frameX="0" frameY="-75" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0004" x="1706" y="0" width="434" height="642" frameX="0" frameY="-45" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0005" x="2140" y="0" width="434" height="635" frameX="0" frameY="-52" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0006" x="2574" y="0" width="434" height="639" frameX="0" frameY="-48" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0007" x="2574" y="0" width="434" height="639" frameX="0" frameY="-48" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0008" x="3008" y="0" width="434" height="639" frameX="0" frameY="-48" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0009" x="3008" y="0" width="434" height="639" frameX="0" frameY="-48" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0010" x="2574" y="0" width="434" height="639" frameX="0" frameY="-48" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0011" x="2574" y="0" width="434" height="639" frameX="0" frameY="-48" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0012" x="3008" y="0" width="434" height="639" frameX="0" frameY="-48" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0013" x="3008" y="0" width="434" height="639" frameX="0" frameY="-48" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0014" x="2574" y="0" width="434" height="639" frameX="0" frameY="-48" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0015" x="2574" y="0" width="434" height="639" frameX="0" frameY="-48" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0016" x="3008" y="0" width="434" height="639" frameX="0" frameY="-48" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Full Silver Up0017" x="3008" y="0" width="434" height="639" frameX="0" frameY="-48" frameWidth="434" frameHeight="687"/>
+	<SubTexture name="Lost Silver Left finished0000" x="3442" y="0" width="545" height="512" frameX="0" frameY="0" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0001" x="0" y="686" width="545" height="509" frameX="-12" frameY="-12" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0002" x="545" y="686" width="543" height="499" frameX="-27" frameY="-28" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0003" x="1088" y="686" width="547" height="500" frameX="-49" frameY="-43" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0004" x="1635" y="686" width="547" height="488" frameX="-73" frameY="-77" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0005" x="1635" y="686" width="547" height="488" frameX="-73" frameY="-77" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0006" x="2182" y="686" width="548" height="493" frameX="-71" frameY="-67" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0007" x="2182" y="686" width="548" height="493" frameX="-71" frameY="-67" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0008" x="2730" y="686" width="548" height="493" frameX="-71" frameY="-67" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0009" x="2730" y="686" width="548" height="493" frameX="-71" frameY="-67" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0010" x="2182" y="686" width="548" height="493" frameX="-71" frameY="-67" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0011" x="2182" y="686" width="548" height="493" frameX="-71" frameY="-67" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0012" x="2730" y="686" width="548" height="493" frameX="-71" frameY="-67" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0013" x="2730" y="686" width="548" height="493" frameX="-71" frameY="-67" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0014" x="2182" y="686" width="548" height="493" frameX="-71" frameY="-67" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0015" x="2182" y="686" width="548" height="493" frameX="-71" frameY="-67" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0016" x="2730" y="686" width="548" height="493" frameX="-71" frameY="-67" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Lost Silver Left finished0017" x="2730" y="686" width="548" height="493" frameX="-71" frameY="-67" frameWidth="620" frameHeight="565"/>
+	<SubTexture name="Silver Down Full0000" x="3278" y="686" width="484" height="432" frameX="-10" frameY="-61" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0001" x="0" y="1195" width="486" height="429" frameX="-12" frameY="-43" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0002" x="486" y="1195" width="497" height="428" frameX="-1" frameY="-25" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0003" x="983" y="1195" width="500" height="427" frameX="0" frameY="-15" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0004" x="1483" y="1195" width="497" height="429" frameX="-1" frameY="0" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0005" x="1980" y="1195" width="494" height="429" frameX="-1" frameY="-9" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0006" x="2474" y="1195" width="494" height="429" frameX="-1" frameY="-9" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0007" x="2474" y="1195" width="494" height="429" frameX="-1" frameY="-9" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0008" x="1980" y="1195" width="494" height="429" frameX="-1" frameY="-9" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0009" x="1980" y="1195" width="494" height="429" frameX="-1" frameY="-9" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0010" x="2474" y="1195" width="494" height="429" frameX="-1" frameY="-9" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0011" x="2474" y="1195" width="494" height="429" frameX="-1" frameY="-9" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0012" x="1980" y="1195" width="494" height="429" frameX="-1" frameY="-9" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0013" x="1980" y="1195" width="494" height="429" frameX="-1" frameY="-9" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0014" x="2474" y="1195" width="494" height="429" frameX="-1" frameY="-9" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0015" x="2474" y="1195" width="494" height="429" frameX="-1" frameY="-9" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0016" x="1980" y="1195" width="494" height="429" frameX="-1" frameY="-9" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Down Full0017" x="1980" y="1195" width="494" height="429" frameX="-1" frameY="-9" frameWidth="500" frameHeight="493"/>
+	<SubTexture name="Silver Idle0000" x="2968" y="1195" width="388" height="586" frameX="-1" frameY="0" frameWidth="391" frameHeight="586"/>
+	<SubTexture name="Silver Idle0001" x="2968" y="1195" width="388" height="586" frameX="-1" frameY="0" frameWidth="391" frameHeight="586"/>
+	<SubTexture name="Silver Idle0002" x="3356" y="1195" width="391" height="585" frameX="0" frameY="-1" frameWidth="391" frameHeight="586"/>
+	<SubTexture name="Silver Idle0003" x="3356" y="1195" width="391" height="585" frameX="0" frameY="-1" frameWidth="391" frameHeight="586"/>
+	<SubTexture name="Silver Idle0004" x="2968" y="1195" width="388" height="586" frameX="-1" frameY="0" frameWidth="391" frameHeight="586"/>
+	<SubTexture name="Silver Idle0005" x="2968" y="1195" width="388" height="586" frameX="-1" frameY="0" frameWidth="391" frameHeight="586"/>
+	<SubTexture name="Silver Idle0006" x="3356" y="1195" width="391" height="585" frameX="0" frameY="-1" frameWidth="391" frameHeight="586"/>
+	<SubTexture name="Silver Idle0007" x="3356" y="1195" width="391" height="585" frameX="0" frameY="-1" frameWidth="391" frameHeight="586"/>
+	<SubTexture name="Silver Right Finished0000" x="0" y="1781" width="545" height="512" frameX="-63" frameY="0" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0001" x="545" y="1781" width="545" height="509" frameX="-56" frameY="-12" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0002" x="1090" y="1781" width="543" height="499" frameX="-42" frameY="-28" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0003" x="1633" y="1781" width="547" height="500" frameX="-32" frameY="-43" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0004" x="2180" y="1781" width="547" height="488" frameX="0" frameY="-77" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0005" x="2180" y="1781" width="547" height="488" frameX="0" frameY="-77" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0006" x="2727" y="1781" width="548" height="493" frameX="-5" frameY="-67" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0007" x="2727" y="1781" width="548" height="493" frameX="-5" frameY="-67" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0008" x="3275" y="1781" width="548" height="493" frameX="-5" frameY="-67" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0009" x="3275" y="1781" width="548" height="493" frameX="-5" frameY="-67" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0010" x="2727" y="1781" width="548" height="493" frameX="-5" frameY="-67" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0011" x="2727" y="1781" width="548" height="493" frameX="-5" frameY="-67" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0012" x="3275" y="1781" width="548" height="493" frameX="-5" frameY="-67" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0013" x="3275" y="1781" width="548" height="493" frameX="-5" frameY="-67" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0014" x="2727" y="1781" width="548" height="493" frameX="-5" frameY="-67" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0015" x="2727" y="1781" width="548" height="493" frameX="-5" frameY="-67" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0016" x="3275" y="1781" width="548" height="493" frameX="-5" frameY="-67" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Right Finished0017" x="3275" y="1781" width="548" height="493" frameX="-5" frameY="-67" frameWidth="608" frameHeight="565"/>
+	<SubTexture name="Silver Spawn Full0000" x="0" y="2293" width="488" height="626"/>
+	<SubTexture name="Silver Spawn Full0001" x="0" y="2293" width="488" height="626"/>
+	<SubTexture name="Silver Spawn Full0002" x="488" y="2293" width="488" height="626"/>
+	<SubTexture name="Silver Spawn Full0003" x="488" y="2293" width="488" height="626"/>
+	<SubTexture name="Silver Spawn Full0004" x="0" y="2293" width="488" height="626"/>
+	<SubTexture name="Silver Spawn Full0005" x="0" y="2293" width="488" height="626"/>
+	<SubTexture name="Silver Spawn Full0006" x="488" y="2293" width="488" height="626"/>
+	<SubTexture name="Silver Spawn Full0007" x="976" y="2293" width="394" height="590" frameX="-40" frameY="-8" frameWidth="488" frameHeight="626"/>
+	<SubTexture name="Silver Spawn Full0008" x="1370" y="2293" width="388" height="506" frameX="-44" frameY="-89" frameWidth="488" frameHeight="626"/>
+	<SubTexture name="Silver Spawn Full0009" x="1758" y="2293" width="388" height="527" frameX="-44" frameY="-69" frameWidth="488" frameHeight="626"/>
+	<SubTexture name="Silver Spawn Full0010" x="2146" y="2293" width="411" height="543" frameX="-43" frameY="-54" frameWidth="488" frameHeight="626"/>
+	<SubTexture name="Silver Spawn Full0011" x="2557" y="2293" width="395" height="561" frameX="-43" frameY="-36" frameWidth="488" frameHeight="626"/>
+	<SubTexture name="Silver Spawn Full0012" x="2952" y="2293" width="388" height="576" frameX="-44" frameY="-21" frameWidth="488" frameHeight="626"/>
+	<SubTexture name="Silver Spawn Full0013" x="3340" y="2293" width="388" height="576" frameX="-44" frameY="-21" frameWidth="488" frameHeight="626"/>
+	<SubTexture name="Silver Spawn Full0014" x="0" y="2919" width="391" height="586" frameX="-43" frameY="-12" frameWidth="488" frameHeight="626"/>
+	<SubTexture name="Silver Spawn Full0015" x="0" y="2919" width="391" height="586" frameX="-43" frameY="-12" frameWidth="488" frameHeight="626"/>
+	<SubTexture name="Silver Spawn Full0016" x="2968" y="1195" width="388" height="586" frameX="-44" frameY="-12" frameWidth="391" frameHeight="586"/>
+	<SubTexture name="Silver Spawn Full0017" x="2968" y="1195" width="388" height="586" frameX="-44" frameY="-12" frameWidth="391" frameHeight="586"/>
+</TextureAtlas>

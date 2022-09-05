@@ -1,0 +1,48 @@
+{
+	"songs": [
+		[
+			"Nyeh Heh Heh",
+			"papyrus",
+			[
+				254,
+				33,
+				0
+			]
+		],
+		[
+			"Bonely One",
+			"sans",
+			[
+				175,
+		                179,
+		                230
+			]
+		],
+		[
+			"Not Enough",
+			"sans",
+			[
+				175,
+		                179,
+		                230
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekCharacters": [
+		"sans",
+		"bf",
+		"gf"
+	],
+	"storyName": "Undertale Universe",
+	"weekName": "Undertale Universe Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

@@ -1,0 +1,46 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "sans",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Hey boy, I don't think it's a good idea to want to go back\\n underground without a monster soul"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "sans",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Although hey, I don't even know how\\na portal brought you to my brother's room"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "shocked",
+			"text": "BEEEP!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "sans",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "What? A person speaking inside you?\\nyou don't have schizophrenia or something like that?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "Skeed Boop  bap skrrr"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "sans",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "A Rap Battle?\\nhow strange you are..."
+		}
+	]
+}

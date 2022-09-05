@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="YIRIUS.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="2 Yirius0000" x="0" y="0" width="170" height="174" frameX="0" frameY="-11" frameWidth="189" frameHeight="185"/>
+	<SubTexture name="2 Yirius0001" x="170" y="0" width="170" height="174" frameX="0" frameY="-11" frameWidth="189" frameHeight="185"/>
+	<SubTexture name="2 Yirius0002" x="170" y="0" width="170" height="174" frameX="0" frameY="-11" frameWidth="189" frameHeight="185"/>
+	<SubTexture name="2 Yirius0003" x="170" y="0" width="170" height="174" frameX="0" frameY="-11" frameWidth="189" frameHeight="185"/>
+	<SubTexture name="2 Yirius0004" x="340" y="0" width="176" height="173" frameX="0" frameY="-12" frameWidth="189" frameHeight="185"/>
+	<SubTexture name="2 Yirius0005" x="516" y="0" width="184" height="184" frameX="0" frameY="-1" frameWidth="189" frameHeight="185"/>
+	<SubTexture name="2 Yirius0006" x="516" y="0" width="184" height="184" frameX="0" frameY="-1" frameWidth="189" frameHeight="185"/>
+	<SubTexture name="2 Yirius0007" x="700" y="0" width="187" height="184" frameX="0" frameY="-1" frameWidth="189" frameHeight="185"/>
+	<SubTexture name="2 Yirius0008" x="700" y="0" width="187" height="184" frameX="0" frameY="-1" frameWidth="189" frameHeight="185"/>
+	<SubTexture name="2 Yirius0009" x="0" y="184" width="189" height="185"/>
+	<SubTexture name="2 Yirius0010" x="0" y="184" width="189" height="185"/>
+	<SubTexture name="2 Yirius0011" x="0" y="184" width="189" height="185"/>
+	<SubTexture name="2 Yirius0012" x="0" y="184" width="189" height="185"/>
+	<SubTexture name="2 Yirius0013" x="0" y="184" width="189" height="185"/>
+	<SubTexture name="2 Yirius0014" x="0" y="184" width="189" height="185"/>
+	<SubTexture name="2 Yirius0015" x="0" y="184" width="189" height="185"/>
+	<SubTexture name="2 Yirius0016" x="0" y="184" width="189" height="185"/>
+	<SubTexture name="2 Yirius0017" x="340" y="0" width="176" height="173" frameX="0" frameY="-12" frameWidth="189" frameHeight="185"/>
+	<SubTexture name="Yirius0000" x="189" y="184" width="170" height="160" frameX="0" frameY="-1" frameWidth="171" frameHeight="161"/>
+	<SubTexture name="Yirius0001" x="359" y="184" width="170" height="151" frameX="0" frameY="-1" frameWidth="171" frameHeight="161"/>
+	<SubTexture name="Yirius0002" x="529" y="184" width="169" height="148" frameX="-2" frameY="0" frameWidth="171" frameHeight="161"/>
+	<SubTexture name="Yirius0003" x="698" y="184" width="169" height="150" frameX="-2" frameY="0" frameWidth="171" frameHeight="161"/>
+</TextureAtlas>

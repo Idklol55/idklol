@@ -1,0 +1,18 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.115,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "Bep Bop ...."
+		},
+		{
+			"speed": 0.06,
+			"portrait": "sans",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "A thin man with holes in his hands?\\n This is Undertale, not Slenderman boy"
+		}
+	]
+}

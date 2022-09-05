@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bone attack.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bone attack0000" x="0" y="0" width="54" height="102" frameX="-517" frameY="-505" frameWidth="903" frameHeight="983"/>
+	<SubTexture name="bone attack0001" x="0" y="0" width="54" height="102" frameX="-517" frameY="-505" frameWidth="903" frameHeight="983"/>
+	<SubTexture name="bone attack0002" x="54" y="0" width="163" height="106" frameX="-463" frameY="-525" frameWidth="903" frameHeight="983"/>
+	<SubTexture name="bone attack0003" x="217" y="0" width="239" height="345" frameX="-431" frameY="-337" frameWidth="903" frameHeight="983"/>
+	<SubTexture name="bone attack0004" x="456" y="0" width="391" height="971" frameX="-356" frameY="0" frameWidth="903" frameHeight="983"/>
+	<SubTexture name="bone attack0005" x="847" y="0" width="903" height="723" frameX="0" frameY="-224" frameWidth="903" frameHeight="983"/>
+	<SubTexture name="bone attack0006" x="0" y="971" width="546" height="865" frameX="-240" frameY="-118" frameWidth="903" frameHeight="983"/>
+	<SubTexture name="bone attack0007" x="546" y="971" width="0" height="0" frameX="-80" frameY="-495" frameWidth="903" frameHeight="983"/>
+</TextureAtlas>

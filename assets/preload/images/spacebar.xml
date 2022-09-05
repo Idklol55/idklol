@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="spacebar.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ALERT0000" x="0" y="0" width="605" height="630" frameX="-28" frameY="-29" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0001" x="0" y="0" width="605" height="630" frameX="-28" frameY="-29" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0002" x="605" y="0" width="660" height="688"/>
+	<SubTexture name="ALERT0003" x="605" y="0" width="660" height="688"/>
+	<SubTexture name="ALERT0004" x="1265" y="0" width="538" height="560" frameX="-61" frameY="-64" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0005" x="1265" y="0" width="538" height="560" frameX="-61" frameY="-64" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0006" x="1803" y="0" width="552" height="575" frameX="-54" frameY="-57" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0007" x="1803" y="0" width="552" height="575" frameX="-54" frameY="-57" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0008" x="1803" y="0" width="552" height="575" frameX="-54" frameY="-57" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0009" x="2355" y="0" width="480" height="500" frameX="-90" frameY="-94" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0010" x="2355" y="0" width="480" height="500" frameX="-90" frameY="-94" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0011" x="2835" y="0" width="504" height="525" frameX="-78" frameY="-82" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0012" x="2835" y="0" width="504" height="525" frameX="-78" frameY="-82" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0013" x="2835" y="0" width="504" height="525" frameX="-78" frameY="-82" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0014" x="3339" y="0" width="440" height="458" frameX="-110" frameY="-115" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0015" x="3339" y="0" width="440" height="458" frameX="-110" frameY="-115" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0016" x="0" y="688" width="469" height="488" frameX="-96" frameY="-100" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0017" x="0" y="688" width="469" height="488" frameX="-96" frameY="-100" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0018" x="0" y="688" width="469" height="488" frameX="-96" frameY="-100" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0019" x="469" y="688" width="409" height="426" frameX="-126" frameY="-131" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0020" x="469" y="688" width="409" height="426" frameX="-126" frameY="-131" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0021" x="878" y="688" width="444" height="461" frameX="-108" frameY="-114" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0022" x="878" y="688" width="444" height="461" frameX="-108" frameY="-114" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0023" x="878" y="688" width="444" height="461" frameX="-108" frameY="-114" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0024" x="878" y="688" width="444" height="461" frameX="-108" frameY="-114" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0025" x="878" y="688" width="444" height="461" frameX="-108" frameY="-114" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0026" x="878" y="688" width="444" height="461" frameX="-108" frameY="-114" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="ALERT0027" x="878" y="688" width="444" height="461" frameX="-108" frameY="-114" frameWidth="660" frameHeight="688"/>
+	<SubTexture name="spacebar0000" x="1322" y="688" width="765" height="286"/>
+	<SubTexture name="spacebar0001" x="2087" y="688" width="765" height="282" frameX="0" frameY="-3" frameWidth="765" frameHeight="286"/>
+	<SubTexture name="spacebar0002" x="2852" y="688" width="765" height="284" frameX="0" frameY="0" frameWidth="765" frameHeight="286"/>
+	<SubTexture name="spacebar0003" x="0" y="1176" width="765" height="281" frameX="0" frameY="-3" frameWidth="765" frameHeight="286"/>
+	<SubTexture name="spacebar0004" x="765" y="1176" width="765" height="284" frameX="0" frameY="0" frameWidth="765" frameHeight="286"/>
+</TextureAtlas>

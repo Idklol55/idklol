@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="si leei ehto ery gai.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<SubTexture name="Dead0000" x="0" y="0" width="1061" height="506"/>
+	<SubTexture name="Dead0001" x="0" y="0" width="1061" height="506"/>
+	<SubTexture name="Dead0002" x="0" y="506" width="1061" height="505" frameX="0" frameY="0" frameWidth="1061" frameHeight="506"/>
+	<SubTexture name="Dead0003" x="0" y="506" width="1061" height="505" frameX="0" frameY="0" frameWidth="1061" frameHeight="506"/>
+	<SubTexture name="Dead0004" x="0" y="1011" width="1061" height="504" frameX="0" frameY="-1" frameWidth="1061" frameHeight="506"/>
+	<SubTexture name="Dead0005" x="0" y="1011" width="1061" height="504" frameX="0" frameY="-1" frameWidth="1061" frameHeight="506"/>
+</TextureAtlas>

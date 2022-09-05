@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Chara B.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ICON CHARA B0000" x="0" y="0" width="107" height="104" frameX="-2" frameY="0" frameWidth="109" frameHeight="104"/>
+	<SubTexture name="ICON CHARA B0001" x="0" y="0" width="107" height="104" frameX="-2" frameY="0" frameWidth="109" frameHeight="104"/>
+	<SubTexture name="ICON CHARA B0002" x="107" y="0" width="108" height="103" frameX="0" frameY="0" frameWidth="109" frameHeight="104"/>
+	<SubTexture name="ICON CHARA B0003" x="107" y="0" width="108" height="103" frameX="0" frameY="0" frameWidth="109" frameHeight="104"/>
+	<SubTexture name="CHARA ICON B 20000" x="0" y="104" width="114" height="102" frameX="-2" frameY="0" frameWidth="116" frameHeight="106"/>
+	<SubTexture name="CHARA ICON B 20001" x="0" y="104" width="114" height="102" frameX="-2" frameY="0" frameWidth="116" frameHeight="106"/>
+	<SubTexture name="CHARA ICON B 20002" x="114" y="104" width="116" height="106"/>
+	<SubTexture name="CHARA ICON B 20003" x="114" y="104" width="116" height="106"/>
+</TextureAtlas>

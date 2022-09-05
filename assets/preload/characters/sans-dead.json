@@ -1,0 +1,135 @@
+{
+	"mechanic": ["KR"],
+	"animations": [
+		{
+			"offsets": [
+				1,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Silver Idle"
+		},
+		{
+			"offsets": [
+				-9,
+				-198
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Silver Down Full"
+		},
+		{
+			"offsets": [
+				37,
+				141
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Full Silver Up"
+		},
+		{
+			"offsets": [
+				499,
+				16
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Lost Silver Left finished"
+		},
+		{
+			"offsets": [
+				-186,
+				11
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Silver Right Finished"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				6,
+				5
+			],
+			"anim": "fadeIn",
+			"fps": 24,
+			"name": "Silver Spawn Full",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			]
+		},
+		{
+			"offsets": [
+				6,
+				5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "fadeOut",
+			"indices": [
+				15,
+				14,
+				13,
+				12,
+				11,
+				10,
+				9,
+				8,
+				7,
+				6,
+				5,
+				4,
+				3,
+				2,
+				1,
+				0
+			],
+			"name": "Silver Spawn Full"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Sans_Gold",
+	"position": [
+		45,
+		-10
+	],
+	"healthicon": "sans-dead",
+	"flip_x": false,
+	"healthbar_colors": [
+		176,
+		143,
+		213
+	],
+	"camera_position": [
+		-207,
+		-110
+	],
+	"sing_duration": 4,
+	"scale": 1.3
+}

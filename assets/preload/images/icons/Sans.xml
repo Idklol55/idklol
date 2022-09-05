@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Sans.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="SANS ICON0000" x="0" y="0" width="93" height="85" frameX="-1" frameY="0" frameWidth="94" frameHeight="86"/>
+	<SubTexture name="SANS ICON0001" x="0" y="0" width="93" height="85" frameX="-1" frameY="0" frameWidth="94" frameHeight="86"/>
+	<SubTexture name="SANS ICON0002" x="93" y="0" width="93" height="86" frameX="-1" frameY="0" frameWidth="94" frameHeight="86"/>
+	<SubTexture name="SANS ICON0003" x="93" y="0" width="93" height="86" frameX="-1" frameY="0" frameWidth="94" frameHeight="86"/>
+	<SubTexture name="SANS ICON0004" x="186" y="0" width="94" height="85" frameX="0" frameY="0" frameWidth="94" frameHeight="86"/>
+	<SubTexture name="SANS ICON0005" x="186" y="0" width="94" height="85" frameX="0" frameY="0" frameWidth="94" frameHeight="86"/>
+	<SubTexture name="ICON SANS 20000" x="280" y="0" width="93" height="85" frameX="-1" frameY="0" frameWidth="94" frameHeight="86"/>
+	<SubTexture name="ICON SANS 20001" x="280" y="0" width="93" height="85" frameX="-1" frameY="0" frameWidth="94" frameHeight="86"/>
+	<SubTexture name="ICON SANS 20002" x="373" y="0" width="93" height="86" frameX="-1" frameY="0" frameWidth="94" frameHeight="86"/>
+	<SubTexture name="ICON SANS 20003" x="373" y="0" width="93" height="86" frameX="-1" frameY="0" frameWidth="94" frameHeight="86"/>
+	<SubTexture name="ICON SANS 20004" x="0" y="86" width="94" height="85" frameX="0" frameY="0" frameWidth="94" frameHeight="86"/>
+	<SubTexture name="ICON SANS 20005" x="0" y="86" width="94" height="85" frameX="0" frameY="0" frameWidth="94" frameHeight="86"/>
+</TextureAtlas>

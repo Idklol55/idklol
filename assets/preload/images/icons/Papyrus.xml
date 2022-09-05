@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Papyrus.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="PAPYRUS NORMAL0000" x="0" y="0" width="88" height="117" frameX="-4" frameY="-4" frameWidth="99" frameHeight="126"/>
+	<SubTexture name="PAPYRUS NORMAL0001" x="0" y="0" width="88" height="117" frameX="-4" frameY="-4" frameWidth="99" frameHeight="126"/>
+	<SubTexture name="PAPYRUS NORMAL0002" x="88" y="0" width="87" height="125" frameX="-3" frameY="-1" frameWidth="99" frameHeight="126"/>
+	<SubTexture name="PAPYRUS NORMAL0003" x="88" y="0" width="87" height="125" frameX="-3" frameY="-1" frameWidth="99" frameHeight="126"/>
+	<SubTexture name="PAPYRUS NORMAL0004" x="175" y="0" width="99" height="126"/>
+	<SubTexture name="PAPYRUS NORMAL0005" x="175" y="0" width="99" height="126"/>
+	<SubTexture name="ICON PAPYRUS 20000" x="274" y="0" width="97" height="120" frameX="-4" frameY="-7" frameWidth="102" frameHeight="127"/>
+	<SubTexture name="ICON PAPYRUS 20001" x="274" y="0" width="97" height="120" frameX="-4" frameY="-7" frameWidth="102" frameHeight="127"/>
+	<SubTexture name="ICON PAPYRUS 20002" x="371" y="0" width="98" height="120" frameX="-4" frameY="-7" frameWidth="102" frameHeight="127"/>
+	<SubTexture name="ICON PAPYRUS 20003" x="371" y="0" width="98" height="120" frameX="-4" frameY="-7" frameWidth="102" frameHeight="127"/>
+	<SubTexture name="ICON PAPYRUS 20004" x="0" y="126" width="94" height="118" frameX="-4" frameY="-5" frameWidth="102" frameHeight="127"/>
+	<SubTexture name="ICON PAPYRUS 20005" x="0" y="126" width="94" height="118" frameX="-4" frameY="-5" frameWidth="102" frameHeight="127"/>
+	<SubTexture name="ICON PAPYRUS 20006" x="94" y="126" width="95" height="116" frameX="-3" frameY="-2" frameWidth="102" frameHeight="127"/>
+	<SubTexture name="ICON PAPYRUS 20007" x="189" y="126" width="93" height="118" frameX="-1" frameY="0" frameWidth="102" frameHeight="127"/>
+	<SubTexture name="ICON PAPYRUS 20008" x="189" y="126" width="93" height="118" frameX="-1" frameY="0" frameWidth="102" frameHeight="127"/>
+	<SubTexture name="ICON PAPYRUS 20009" x="282" y="126" width="97" height="121" frameX="0" frameY="-4" frameWidth="102" frameHeight="127"/>
+	<SubTexture name="ICON PAPYRUS 20010" x="282" y="126" width="97" height="121" frameX="0" frameY="-4" frameWidth="102" frameHeight="127"/>
+</TextureAtlas>

@@ -1,0 +1,75 @@
+{
+	"mechanic": ["lvl20"],
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				40,
+				140
+			],
+			"anim": "attack",
+			"fps": 24,
+			"name": "Chara Attack",
+			"indices": []
+		},
+		{
+			"offsets": [
+				40,
+				140
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "attack-alert",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			],
+			"name": "Chara Attack"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				28,
+				137
+			],
+			"anim": "attacking",
+			"fps": 24,
+			"name": "Chara Attack",
+			"indices": [
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			]
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/chara_attack",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "chara-enemy",
+	"flip_x": false,
+	"healthbar_colors": [
+		189,
+		16,
+		9
+	],
+	"camera_position": [
+		80,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

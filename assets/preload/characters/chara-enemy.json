@@ -1,0 +1,156 @@
+{
+	"mechanic": ["lvl20"],
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				5
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Chara idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				166,
+				-68
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Chara Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				81,
+				68
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Chara Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				52
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Chara Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				5,
+				-19
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Chara Rigth",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-10,
+				20
+			],
+			"anim": "chamoy",
+			"fps": 24,
+			"name": "chamoy",
+			"indices": []
+		},
+		{
+			"offsets": [
+				183,
+				55
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "kill",
+			"indices": [],
+			"name": "KILL CHARA"
+		},
+		{
+			"offsets": [
+				0,
+				57
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "U Up"
+		},
+		{
+			"offsets": [
+				52,
+				9
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"loop": false,
+			"name": "U Left"
+		},
+		{
+			"offsets": [
+				-39,
+				-6
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"loop": false,
+			"name": "U Down"
+		},
+		{
+			"offsets": [
+				-69,
+				1
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"loop": false,
+			"name": "U Rigth"
+		},
+		{
+			"offsets": [
+				-5,
+				5
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle-alt",
+			"loop": false,
+			"name": "U Idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/chara_enemy",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "chara-enemy",
+	"flip_x": false,
+	"healthbar_colors": [
+		189,
+		16,
+		9
+	],
+	"camera_position": [
+		80,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

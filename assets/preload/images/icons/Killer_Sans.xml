@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Killer Sans.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ICON KILLER SANS0000" x="0" y="0" width="122" height="89" frameX="0" frameY="0" frameWidth="146" frameHeight="89"/>
+	<SubTexture name="ICON KILLER SANS0001" x="0" y="0" width="122" height="89" frameX="0" frameY="0" frameWidth="146" frameHeight="89"/>
+	<SubTexture name="ICON KILLER SANS0002" x="122" y="0" width="123" height="89" frameX="0" frameY="0" frameWidth="146" frameHeight="89"/>
+	<SubTexture name="ICON KILLER SANS0003" x="122" y="0" width="123" height="89" frameX="0" frameY="0" frameWidth="146" frameHeight="89"/>
+	<SubTexture name="ICON KILLER SANS0004" x="245" y="0" width="123" height="89" frameX="0" frameY="0" frameWidth="146" frameHeight="89"/>
+	<SubTexture name="ICON KILLER SANS0005" x="245" y="0" width="123" height="89" frameX="0" frameY="0" frameWidth="146" frameHeight="89"/>
+	<SubTexture name="ICON KILLER SANS0006" x="122" y="0" width="123" height="89" frameX="0" frameY="0" frameWidth="146" frameHeight="89"/>
+	<SubTexture name="ICON KILLER SANS0007" x="0" y="89" width="146" height="89"/>
+	<SubTexture name="ICON KILLER SANS0008" x="146" y="89" width="146" height="89"/>
+	<SubTexture name="ICON KILLER SANS0009" x="146" y="89" width="146" height="89"/>
+	<SubTexture name="ICON KILLER SANS0010" x="292" y="89" width="143" height="89" frameX="0" frameY="0" frameWidth="146" frameHeight="89"/>
+	<SubTexture name="ICON KILLER SANS0011" x="292" y="89" width="143" height="89" frameX="0" frameY="0" frameWidth="146" frameHeight="89"/>
+	<SubTexture name="ICON KILLER SANS0012" x="0" y="178" width="143" height="89" frameX="0" frameY="0" frameWidth="146" frameHeight="89"/>
+	<SubTexture name="ICON KILLER SANS0013" x="0" y="178" width="143" height="89" frameX="0" frameY="0" frameWidth="146" frameHeight="89"/>
+	<SubTexture name="ICON KILLER SANS0014" x="292" y="89" width="143" height="89" frameX="0" frameY="0" frameWidth="146" frameHeight="89"/>
+	<SubTexture name="ICON KILLER SANS0015" x="0" y="89" width="146" height="89"/>
+	<SubTexture name="KILLER ICON SANS 20000" x="143" y="178" width="124" height="89" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20001" x="143" y="178" width="124" height="89" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20002" x="267" y="178" width="122" height="89" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20003" x="267" y="178" width="122" height="89" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20004" x="267" y="178" width="122" height="89" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20005" x="267" y="178" width="122" height="89" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20006" x="267" y="178" width="122" height="89" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20007" x="267" y="178" width="122" height="89" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20008" x="267" y="178" width="122" height="89" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20009" x="267" y="178" width="122" height="89" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20010" x="389" y="178" width="118" height="89" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20011" x="389" y="178" width="118" height="89" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20012" x="0" y="267" width="129" height="108" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20013" x="129" y="267" width="131" height="103" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20014" x="260" y="267" width="131" height="95" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20015" x="0" y="375" width="133" height="100" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20016" x="129" y="267" width="131" height="103" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20017" x="260" y="267" width="131" height="95" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20018" x="0" y="375" width="133" height="100" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20019" x="129" y="267" width="131" height="103" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20020" x="260" y="267" width="131" height="95" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+	<SubTexture name="KILLER ICON SANS 20021" x="0" y="375" width="133" height="100" frameX="0" frameY="0" frameWidth="133" frameHeight="108"/>
+</TextureAtlas>

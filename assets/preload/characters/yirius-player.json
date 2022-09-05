@@ -1,0 +1,155 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-6,
+				-1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Yirius Idle"
+		},
+		{
+			"offsets": [
+				-50,
+				-26
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Yirius DOWN"
+		},
+		{
+			"offsets": [
+				-20,
+				-11
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Yirius U"
+		},
+		{
+			"offsets": [
+				-88,
+				-2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "Miss L"
+		},
+		{
+			"offsets": [
+				-31,
+				-15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "Miss D"
+		},
+		{
+			"offsets": [
+				-11,
+				8
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "Miss U"
+		},
+		{
+			"offsets": [
+				10,
+				-4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "Miss R"
+		},
+		{
+			"offsets": [
+				30,
+				-3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "Yirius Death"
+		},
+		{
+			"offsets": [
+				17,
+				-7
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "Yirius Loop"
+		},
+		{
+			"offsets": [
+				159,
+				-7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "Yirius Confirm"
+		},
+		{
+			"offsets": [
+				-105,
+				-1
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Yirius LEFT"
+		},
+		{
+			"offsets": [
+				-14,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Yirius R"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/YIRIUS",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "yirius-player",
+	"flip_x": false,
+	"healthbar_colors": [
+		104,
+		230,
+		197
+	],
+	"camera_position": [
+		-330,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

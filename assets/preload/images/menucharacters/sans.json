@@ -1,0 +1,10 @@
+{
+	"idle_anim": "SKELETON BROS",
+	"confirm_anim": "M Dad Idle",
+	"position": [
+		205,
+		53
+	],
+	"scale": 0.9,
+	"image": "Menu_Sans"
+}

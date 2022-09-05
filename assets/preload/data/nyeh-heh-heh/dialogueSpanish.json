@@ -1,0 +1,53 @@
+{
+	"dialogue": [
+		{
+			"expression": "shocked",
+			"text": "BEEP?????",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "happy",
+			"text": "WOW, UN HUMANO DE VERDAD\\nSANS, ESTO ES UN HUMANO, VERDAD?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "papyrus"
+		},
+		{
+			"expression": "talk",
+			"text": "Yeah",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "sans"
+		},
+		{
+			"expression": "shocked",
+			"text": "Beep Bup...?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Bueno, yo, el gran Papyrus te capturare\\ncomo se debe en estas situaciones",
+			"boxState": "normal",
+			"speed": 0.06,
+			"portrait": "papyrus"
+		},
+		{
+			"expression": "pissed",
+			"text": "Bap skeed bop!!",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "happy",
+			"text": "QUE?!! una batalla de rap?\\nCLARO, ACEPTO!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "papyrus"
+		}
+	]
+}

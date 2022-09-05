@@ -1,0 +1,10 @@
+{
+	"idle_anim": "CHARA IDLE",
+	"confirm_anim": "CHARA HEY",
+	"position": [
+		-467,
+		-64
+	],
+	"scale": 0.85,
+	"image": "Menu_Chara"
+}

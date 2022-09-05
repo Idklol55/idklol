@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-19,
+				5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "miss 1"
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "bones trap"
+		},
+		{
+			"offsets": [
+				-6,
+				61
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "attack",
+			"indices": [],
+			"name": "bone atack"
+		},
+		{
+			"offsets": [
+				-5,
+				-1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "miss 2"
+		},
+		{
+			"offsets": [
+				-17,
+				4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "miss 3"
+		},
+		{
+			"offsets": [
+				-17,
+				3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "miss 4"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bone-jail-black",
+	"position": [
+		0,
+		260
+	],
+	"healthicon": "bf-black",
+	"flip_x": true,
+	"healthbar_colors": [
+		225,
+		225,
+		225
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

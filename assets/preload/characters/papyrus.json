@@ -1,0 +1,90 @@
+{
+	"mechanic": [],
+	"animations": [
+		{
+			"offsets": [
+				-12,
+				23
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "facha",
+			"indices": [],
+			"name": "Papyrus facha"
+		},
+		{
+			"offsets": [
+				-151,
+				-66
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Papyrus left"
+		},
+		{
+			"offsets": [
+				-60,
+				-22
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Papyrus Down"
+		},
+		{
+			"offsets": [
+				-3,
+				77
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Papyrus Up"
+		},
+		{
+			"offsets": [
+				-97,
+				67
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Papyrus Rigth"
+		},
+		{
+			"offsets": [
+				-5,
+				1
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "Papyrus idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Papyrus",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "papyrus",
+	"flip_x": false,
+	"healthbar_colors": [
+		254,
+		33,
+		-2147483648
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

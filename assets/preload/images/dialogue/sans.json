@@ -1,0 +1,50 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		230,
+		40
+	],
+	"scale": 1.5,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				-3,
+				-5
+			],
+			"idle_offsets": [
+				-3,
+				-6
+			],
+			"loop_name": "Sans normal",
+			"idle_name": "Sans Ntermina"
+		},
+		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"anim": "angry",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Sans terminaS",
+			"loop_name": "Sans serio"
+		},
+		{
+			"loop_name": "Papyrus sorprendido",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Papyrus terminaS",
+			"anim": "happy",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "Sans_Dialogue"
+}

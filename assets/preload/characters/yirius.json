@@ -1,0 +1,155 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-6,
+				-1
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Yirius Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-6,
+				-3
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Yirius R",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-9,
+				-3
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Yirius LEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				-26
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Yirius DOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-20,
+				-11
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Yirius U",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				12,
+				-2
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "Miss L",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				49,
+				-15
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "Miss D",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-11,
+				8
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "Miss U",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				10,
+				-4
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "Miss R",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				30,
+				-3
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "Yirius Death",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				17,
+				-7
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "Yirius Loop",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				159,
+				-7
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "Yirius Confirm",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/YIRIUS",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "yirius",
+	"flip_x": true,
+	"healthbar_colors": [
+		104,
+		230,
+		197
+	],
+	"camera_position": [
+		50,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

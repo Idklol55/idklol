@@ -1,0 +1,155 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-6,
+				-1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				-46,
+				8
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Alex R rifgth"
+		},
+		{
+			"offsets": [
+				41,
+				7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Alex R Left"
+		},
+		{
+			"offsets": [
+				-11,
+				-29
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Alex R Down"
+		},
+		{
+			"offsets": [
+				-19,
+				18
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Alex R Up"
+		},
+		{
+			"offsets": [
+				57,
+				9
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "Miss left"
+		},
+		{
+			"offsets": [
+				-4,
+				-19
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "Miss Down"
+		},
+		{
+			"offsets": [
+				-16,
+				37
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "Miss up"
+		},
+		{
+			"offsets": [
+				-38,
+				14
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "Miss Rigth"
+		},
+		{
+			"offsets": [
+				151,
+				3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "death"
+		},
+		{
+			"offsets": [
+				81,
+				1
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "Alex loop"
+		},
+		{
+			"offsets": [
+				276,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "ALEX confirm"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/ALEX_R",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "alexr",
+	"flip_x": true,
+	"healthbar_colors": [
+		164,
+		100,
+		88
+	],
+	"camera_position": [
+		-330,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

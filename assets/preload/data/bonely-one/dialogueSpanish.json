@@ -1,0 +1,46 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "sans",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Hey chico, yo no creo que sea buena idea querer\\nvolver al subsuelo sin un alma de un monstruo"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "sans",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Aunque bueno, ni siquiera se como es que\\nun portal te trajo al cuarto de mi hermano"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "shocked",
+			"text": "BEEEP!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "sans",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Que? Una persona hablando en tu interior?\\nno tendras Esquizofrenia o algo parecido?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "Skeed Boop  bap skrrr"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "sans",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Una batalla de rap?\\nque raro eres la verdad, pero bueno"
+		}
+	]
+}

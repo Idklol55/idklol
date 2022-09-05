@@ -1,0 +1,37 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		20,
+		-100
+	],
+	"scale": 1.5,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				-153,
+				-6
+			],
+			"idle_offsets": [
+				-153,
+				-6
+			],
+			"loop_name": "Papyrus normal",
+			"idle_name": "Papyrus Ntermina"
+		},
+		{
+			"idle_offsets": [
+				-122,
+				0
+			],
+			"anim": "happy",
+			"loop_offsets": [
+				-122,
+				0
+			],
+			"idle_name": "Papyrus terminaS",
+			"loop_name": "Papyrus sorprendido"
+		}
+	],
+	"image": "Papyrus_Dialogue"
+}

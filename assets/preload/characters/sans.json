@@ -1,0 +1,79 @@
+{
+	"mechanic": ["KR"],
+	"animations": [
+		{
+			"offsets": [
+				109,
+				2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "SANS LEFT NOTE"
+		},
+		{
+			"offsets": [
+				-8,
+				-63
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "SANS DOWN NOTE"
+		},
+		{
+			"offsets": [
+				8,
+				15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "SANS UP "
+		},
+		{
+			"offsets": [
+				-13,
+				-24
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "SANS RIGHT NOTE"
+		},
+		{
+			"offsets": [
+				-5,
+				-3
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "SANS Idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/sans_assets",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "sans",
+	"flip_x": false,
+	"healthbar_colors": [
+		175,
+		179,
+		230
+	],
+	"camera_position": [
+		210,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

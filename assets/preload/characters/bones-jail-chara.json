@@ -1,0 +1,90 @@
+{
+	"mechanic": ["lvl20"],
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				34,
+				35
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "miss 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "bones trap",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				62
+			],
+			"anim": "attack",
+			"fps": 24,
+			"name": "bone atack",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				35,
+				57
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "miss 2",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				19,
+				14
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "miss 3",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				24,
+				1
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "miss 4",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/BONES_CHARA",
+	"position": [
+		-20,
+		200
+	],
+	"healthicon": "chara",
+	"flip_x": true,
+	"healthbar_colors": [
+		41,
+		41,
+		68
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

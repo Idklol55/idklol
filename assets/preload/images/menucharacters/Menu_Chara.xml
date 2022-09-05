@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Menu_Chara.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="CHARA HEY0000" x="534" y="373" width="279" height="339" frameX="0" frameY="-2" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0001" x="534" y="373" width="279" height="339" frameX="0" frameY="-2" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0002" x="813" y="373" width="273" height="340" frameX="0" frameY="-1" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0003" x="813" y="373" width="273" height="340" frameX="0" frameY="-1" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0004" x="1086" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0005" x="1086" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0006" x="1360" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0007" x="1360" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0008" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0009" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0010" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0011" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0012" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0013" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0014" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0015" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0016" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0017" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0018" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0019" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0020" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0021" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0022" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0023" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA HEY0024" x="1634" y="373" width="274" height="341" frameX="-1" frameY="0" frameWidth="279" frameHeight="341"/>
+	<SubTexture name="CHARA IDLE0000" x="0" y="0" width="266" height="355" frameX="-4" frameY="-18" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0001" x="0" y="0" width="266" height="355" frameX="-4" frameY="-18" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0002" x="266" y="0" width="265" height="353" frameX="-3" frameY="-20" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0003" x="266" y="0" width="265" height="353" frameX="-3" frameY="-20" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0004" x="531" y="0" width="265" height="351" frameX="-2" frameY="-22" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0005" x="796" y="0" width="267" height="369" frameX="0" frameY="-4" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0006" x="796" y="0" width="267" height="369" frameX="0" frameY="-4" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0007" x="1063" y="0" width="267" height="373" frameX="0" frameY="0" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0008" x="1063" y="0" width="267" height="373" frameX="0" frameY="0" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0009" x="1330" y="0" width="267" height="366" frameX="0" frameY="-7" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0010" x="1330" y="0" width="267" height="366" frameX="0" frameY="-7" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0011" x="1597" y="0" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0012" x="1597" y="0" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0013" x="0" y="373" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0014" x="0" y="373" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0015" x="267" y="373" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0016" x="267" y="373" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0017" x="267" y="373" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0018" x="267" y="373" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0019" x="267" y="373" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0020" x="267" y="373" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0021" x="267" y="373" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0022" x="267" y="373" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0023" x="267" y="373" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0024" x="267" y="373" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0025" x="267" y="373" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+	<SubTexture name="CHARA IDLE0026" x="267" y="373" width="267" height="368" frameX="0" frameY="-5" frameWidth="270" frameHeight="373"/>
+</TextureAtlas>

@@ -1,0 +1,53 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "shocked",
+			"text": "BEEP?????"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "papyrus",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "LOL, A HUMAN\\nSANS, THIS IS A HUMAN, RIGHT?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "sans",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "yeah"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "Beep Bup...?"
+		},
+		{
+			"speed": 0.06,
+			"portrait": "papyrus",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Well I the great Papyrus will capture you\\nproperly in these situations"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "pissed",
+			"text": "Bap skeed bop!!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "papyrus",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "WHAT?!! a rap battle?\\nI AGREE!"
+		}
+	]
+}

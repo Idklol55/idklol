@@ -1,0 +1,90 @@
+{
+	"mechanic": [],
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-59,
+				57
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Papyrus alt Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-91,
+				65
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Papyrus Alt Rigth",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				74
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Papyrus alt up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-109,
+				-54
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Papyrus Alt left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-17,
+				91
+			],
+			"anim": "laugh",
+			"fps": 24,
+			"name": "Papyrus laugh",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-2,
+				123
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "Papyrus alt idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Papyrus alt",
+	"position": [
+		0,
+		348
+	],
+	"healthicon": "papyrus-alt",
+	"flip_x": false,
+	"healthbar_colors": [
+		254,
+		33,
+		0
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

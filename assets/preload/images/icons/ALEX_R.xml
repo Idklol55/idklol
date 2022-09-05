@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ALEX R.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="2 Alex R0000" x="0" y="0" width="145" height="144" frameX="-1" frameY="-11" frameWidth="190" frameHeight="156"/>
+	<SubTexture name="2 Alex R0001" x="145" y="0" width="145" height="144" frameX="-1" frameY="-11" frameWidth="190" frameHeight="156"/>
+	<SubTexture name="2 Alex R0002" x="290" y="0" width="146" height="145" frameX="0" frameY="-11" frameWidth="190" frameHeight="156"/>
+	<SubTexture name="2 Alex R0003" x="290" y="0" width="146" height="145" frameX="0" frameY="-11" frameWidth="190" frameHeight="156"/>
+	<SubTexture name="2 Alex R0004" x="436" y="0" width="176" height="143" frameX="-1" frameY="-12" frameWidth="190" frameHeight="156"/>
+	<SubTexture name="2 Alex R0005" x="612" y="0" width="184" height="154" frameX="-1" frameY="-1" frameWidth="190" frameHeight="156"/>
+	<SubTexture name="2 Alex R0006" x="796" y="0" width="185" height="155" frameX="0" frameY="-1" frameWidth="190" frameHeight="156"/>
+	<SubTexture name="2 Alex R0007" x="0" y="155" width="188" height="155" frameX="0" frameY="-1" frameWidth="190" frameHeight="156"/>
+	<SubTexture name="2 Alex R0008" x="188" y="155" width="187" height="154" frameX="-1" frameY="-1" frameWidth="190" frameHeight="156"/>
+	<SubTexture name="2 Alex R0009" x="375" y="155" width="189" height="155" frameX="-1" frameY="0" frameWidth="190" frameHeight="156"/>
+	<SubTexture name="2 Alex R0010" x="564" y="155" width="190" height="156"/>
+	<SubTexture name="2 Alex R0011" x="564" y="155" width="190" height="156"/>
+	<SubTexture name="2 Alex R0012" x="375" y="155" width="189" height="155" frameX="-1" frameY="0" frameWidth="190" frameHeight="156"/>
+	<SubTexture name="2 Alex R0013" x="375" y="155" width="189" height="155" frameX="-1" frameY="0" frameWidth="190" frameHeight="156"/>
+	<SubTexture name="2 Alex R0014" x="564" y="155" width="190" height="156"/>
+	<SubTexture name="2 Alex R0015" x="564" y="155" width="190" height="156"/>
+	<SubTexture name="2 Alex R0016" x="375" y="155" width="189" height="155" frameX="-1" frameY="0" frameWidth="190" frameHeight="156"/>
+	<SubTexture name="2 Alex R0017" x="436" y="0" width="176" height="143" frameX="-1" frameY="-12" frameWidth="190" frameHeight="156"/>
+	<SubTexture name="AlexR0000" x="754" y="155" width="135" height="118" frameX="-1" frameY="0" frameWidth="138" frameHeight="119"/>
+	<SubTexture name="AlexR0001" x="754" y="155" width="135" height="118" frameX="-1" frameY="0" frameWidth="138" frameHeight="119"/>
+	<SubTexture name="AlexR0002" x="0" y="311" width="138" height="118" frameX="0" frameY="-1" frameWidth="138" frameHeight="119"/>
+	<SubTexture name="AlexR0003" x="0" y="311" width="138" height="118" frameX="0" frameY="-1" frameWidth="138" frameHeight="119"/>
+</TextureAtlas>
