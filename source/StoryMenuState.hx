@@ -471,24 +471,8 @@ class StoryMenuState extends MusicBeatState
         if(character == this.character) return;
 
         this.character = character;
-		switch(character) {
-			case 'chara':
-				var characterPath:String = 'images/menucharacters/chara.json';
-				var rawJson = null;
-				
-				var charFile:MenuCharacterFile = cast Json.parse(rawJson);
-				frames = Paths.getSparrowAtlas('menucharacters/chara');
-				animation.addByPrefix('idle', charFile.idle_anim, 24);
-				animation.addByPrefix('confirm', charFile.confirm_anim, 24, false);
-
-				if(charFile.scale != 1) {
-					scale.set(charFile.scale, charFile.scale);
-					updateHitbox();
-				}
-				offset.set(charFile.position[0], charFile.position[1]);
-				animation.play('idle');
-			}
 		}
+	}
 
 	function weekIsLocked(weekNum:Int) {
 		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[weekNum]);

@@ -75,9 +75,6 @@ class PlayState extends MusicBeatState
     var jailCooldown:Bool = false;
     var jailTimers = new FlxTimerManager();
 
-	//ofs Camera
-	var ofs = 30;
-
 	public static var ratingStuff:Array<Dynamic> = [
 		['You Suck!', 0.2], //From 0% to 19%
 		['Shit', 0.4], //From 20% to 39%
@@ -430,12 +427,16 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'stagesans':
+				var ofs = 35;
+
 				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -410, -100, 1, 1);
 				SansBG.scale.set(0.8, 0.9);
 				add(SansBG);
-			/*case 'stagepaps':
+			case 'stagepaps':
+				var ofs = 65;
 				
-			case 'stagechara':*/
+			//case 'stagechara':
+				//var ofs = 50;
 			case 'lost':
 				// lmfao
 		}
