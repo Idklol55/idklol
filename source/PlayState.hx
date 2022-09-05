@@ -64,6 +64,8 @@ class PlayState extends MusicBeatState
 	public static var STRUM_X_MIDDLESCROLL = -278;
 	public static var doingreef:Bool = false;
 	
+	var ofs = 0;
+	
 	// BoneJail
     final jailInfo:Map<String, Float> = [
         "spacesneeded" => 14, // spaces needed | espacios necesarios
