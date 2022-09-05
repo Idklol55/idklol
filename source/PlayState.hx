@@ -1168,7 +1168,7 @@ class PlayState extends MusicBeatState
 				if (curDifficulty == 0)
 				case 'Nyeh Heh Heh' | 'Bonely One' | 'Not Enough':
 					startDialogue(dialogueJson);
-				end
+				}
 					
 				default:
 					startCountdown();
