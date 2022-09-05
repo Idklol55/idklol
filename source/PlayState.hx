@@ -814,6 +814,7 @@ class PlayState extends MusicBeatState
 		}
 
 		if (curSong == 'Nyeh Heh Heh' || curSong == 'Bonely One' || curSong == 'Not Enough' || curSong == 'No More Deals' || curSong == 'EEEEChrome')
+		{
 			gf.visible = false;
 		}
 
