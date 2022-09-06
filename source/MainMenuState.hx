@@ -100,7 +100,7 @@ class MainMenuState extends MusicBeatState
 		characters.animation.addByPrefix('freeplay', 'freeplay', 24);
 		characters.animation.addByPrefix('credits', 'credits', 24);
 		characters.animation.addByPrefix('options', 'options', 24);
-		characters.setGraphicSize(Std.int(characters.width * 1));
+		characters.setGraphicSize(Std.int(characters.width * 1.02));
 		characters.scrollFactor.set(1, 1);
 		add(characters);
 		
@@ -174,7 +174,7 @@ class MainMenuState extends MusicBeatState
 
 		#if android
 		addVirtualPad(UP_DOWN, A_B);
-		_virtualpad.y = -46;
+		_virtualpad.y = -47;
 		#end
 
 		super.create();
