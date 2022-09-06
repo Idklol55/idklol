@@ -283,7 +283,7 @@ class TitleState extends MusicBeatState
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
 		logoBl.screenCenter(X);
-		logoBl.y = -60;
+		logoBl.y = -70;
 		// logoBl.color = FlxColor.BLACK;
 
 		swagShader = new ColorSwap();
@@ -445,8 +445,8 @@ class TitleState extends MusicBeatState
 
 				if (logoBl != null)
 					FlxTween.tween(logoBl, {y: -1280}, 2, {ease: FlxEase.circInOut});
-				if (titleText != null)
-					FlxTween.tween(titleText, {y: 1280}, 3, {ease: FlxEase.circInOut});
+				/*if (titleText != null)
+					FlxTween.tween(titleText, {y: 1280}, 1, {ease: FlxEase.circInOut});*/
 
 				transitioning = true;
 				// FlxG.sound.music.stop();
@@ -457,6 +457,8 @@ class TitleState extends MusicBeatState
 						MusicBeatState.switchState(new OutdatedState());
 					} else {
 						MusicBeatState.switchState(new MainMenuState());
+						if (titleText != null)
+							FlxTween.tween(titleText, {y: 1280}, 2, {ease: FlxEase.circInOut});
 					}
 					closedState = true;
 				});
@@ -573,7 +575,7 @@ class TitleState extends MusicBeatState
 				gfDance.animation.play('danceLeft');
 		}
 
-		FlxTween.tween(FlxG.camera, {zoom:1.05}, 1, {ease: FlxEase.quadOut, type: BACKWARD});
+		FlxTween.tween(FlxG.camera, {zoom:1}, 0.8, {ease: FlxEase.quadOut, type: BACKWARD});
 
 		if(!closedState) {
 			sickBeats++;

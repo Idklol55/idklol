@@ -909,14 +909,13 @@ class PlayState extends MusicBeatState
 							}
 						});
 					});
-				case 'senpai' | 'roses' | 'thorns':
-					if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
-					schoolIntro(doof);
-
-				case 'Nyeh Heh Heh' | 'Bonely One' | 'Not Enough':
 				if (storyDifficulty == 0)
-					startDialogue(dialogueJson);
-
+					case 'Nyeh Heh Heh' | 'Bonely One' | 'Not Enough':
+						startDialogue(dialogueJson);
+				else
+					case 'senpai' | 'roses' | 'thorns':
+						if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
+						schoolIntro(doof);
 				default:
 					startCountdown();
 			}
@@ -1294,6 +1293,10 @@ class PlayState extends MusicBeatState
 			}*/
 			#if android
 			androidc.visible = true;
+			if (curSong == 'Not Enough' || curSong == 'No More Deals')
+			{
+				_virtualpad.visible = true;
+			}
 			#end
 			generateStaticArrows(0);
 			generateStaticArrows(1);
@@ -3126,6 +3129,10 @@ class PlayState extends MusicBeatState
 
 		#if android
 		androidc.visible = false;
+		if (curSong == 'Not Enough' || curSong == 'No More Deals')
+		{
+			_virtualpad.visible = false;
+		}
 		#end
 		timeBarBG.visible = false;
 		timeBar.visible = false;
@@ -3182,14 +3189,17 @@ class PlayState extends MusicBeatState
 				campaignScore += songScore;
 				campaignMisses += songMisses;
 				
-				if (curSong == 'Not Enough')
-				{
-					storyPlaylist.push('No More Deals');
-				}
+				if (storyDifficulty == 0)
+					if (curSong == 'Not Enough')
+					{
+						storyPlaylist.push('No More Deals');
+					}
 
-				trace(storyPlaylist);
-				storyPlaylist.remove(storyPlaylist[0]);
-				trace("new" + storyPlaylist);
+					trace(storyPlaylist);
+					storyPlaylist.remove(storyPlaylist[0]);
+					trace("new" + storyPlaylist);
+				else
+					storyPlaylist.remove(storyPlaylist[0]);
 
 				if (storyPlaylist.length <= 0)
 				{
@@ -4546,16 +4556,17 @@ class PlayState extends MusicBeatState
                 {newBF = "bones-jail";}
         }
 
-        //------
-        triggerEventNote("Change Character", "bf", newBF);
-       //------
-
        var spaceBar:FlxSprite = new FlxSprite();
        spaceBar.frames = Paths.getSparrowAtlas('spacebar');
        spaceBar.animation.addByPrefix('push', "spacebar", 24);
+       spaceBar.cameras = [camHUD];
        spaceBar.scrollFactor.set();
        spaceBar.screenCenter(X);
        add(spaceBar);
+
+        //------
+        triggerEventNote("Change Character", "bf", newBF);
+       //------
 
         for (i in playerStrums)
         {
