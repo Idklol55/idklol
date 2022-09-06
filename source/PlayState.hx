@@ -3198,8 +3198,6 @@ class PlayState extends MusicBeatState
 					trace(storyPlaylist);
 					storyPlaylist.remove(storyPlaylist[0]);
 					trace("new" + storyPlaylist);
-				else
-					storyPlaylist.remove(storyPlaylist[0]);
 
 				if (storyPlaylist.length <= 0)
 				{
