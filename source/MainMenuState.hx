@@ -104,8 +104,7 @@ class MainMenuState extends MusicBeatState
 		//characters.scrollFactor.set();
 		add(characters);
 		
-		splash = new FlxSprite(10);
-		splash.frames = Paths.getSparrowAtlas('Splash');
+		splash = new FlxSprite(10).loadGraphic(Paths.image('Splash'));
 		splash.antialiasing = ClientPrefs.globalAntialiasing;
 		//splash.setGraphicSize(Std.int(splash.width * 1.175));
 		splash.updateHitbox();
