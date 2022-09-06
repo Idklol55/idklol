@@ -128,7 +128,7 @@ class PlayState extends MusicBeatState
 	public static var isStoryMode:Bool = false;
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
-	public static var storyDifficulty:Int = 1;
+	public static var storyDifficulty:Int = 0;
 
 	public var vocals:FlxSound;
 
@@ -914,7 +914,7 @@ class PlayState extends MusicBeatState
 						schoolIntro(doof);
 	
 					case 'Nyeh Heh Heh' | 'Bonely One' | 'Not Enough':
-						//if (storyDifficulty !== 1)
+						if (storyDifficulty == 0)
 						startDialogue(dialogueJson);
 				default:
 					startCountdown();
@@ -3189,7 +3189,7 @@ class PlayState extends MusicBeatState
 				campaignScore += songScore;
 				campaignMisses += songMisses;
 				
-				if (storyDifficulty !== 1)
+				if (storyDifficulty == 0)
 					if (curSong == 'Not Enough')
 					{
 						storyPlaylist.push('No More Deals');
