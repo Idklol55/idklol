@@ -909,10 +909,10 @@ class PlayState extends MusicBeatState
 							}
 						});
 					});
+					if (storyDifficulty == 0)
 					case 'Nyeh Heh Heh' | 'Bonely One' | 'Not Enough':
-				if (storyDifficulty == 0)
 						startDialogue(dialogueJson);
-				else
+
 					case 'senpai' | 'roses' | 'thorns':
 						if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
 						schoolIntro(doof);
