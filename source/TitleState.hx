@@ -61,7 +61,6 @@ class TitleState extends MusicBeatState
 	var credTextShit:Alphabet;
 	var textGroup:FlxGroup;
 	var ngSpr:FlxSprite;
-	var undertale:FlxSprite;
 
 	var curWacky:Array<String> = [];
 
@@ -255,10 +254,13 @@ class TitleState extends MusicBeatState
 			bg.makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		}
 		
-		bg.frames = Paths.getSparrowAtlas('titleBG');
-		bg.antialiasing = ClientPrefs.globalAntialiasing;
-		bg.setGraphicSize(Std.int(bg.width * 0.6));
-		bg.updateHitbox();
+		// bg.antialiasing = ClientPrefs.globalAntialiasing;
+		// bg.setGraphicSize(Std.int(bg.width * 0.6));
+		// bg.updateHitbox();
+		
+		
+		
+		
 		add(bg);
 
 		logoBl = new FlxSprite(titleJSON.titlex, titleJSON.titley);
@@ -285,8 +287,7 @@ class TitleState extends MusicBeatState
 		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24, false);
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
-		logoBl.screenCenter(X);
-		logoBl.y -= 20;
+		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
 		swagShader = new ColorSwap();
@@ -371,14 +372,6 @@ class TitleState extends MusicBeatState
 		ngSpr.updateHitbox();
 		ngSpr.screenCenter(X);
 		ngSpr.antialiasing = true;
-		
-		undertale = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('undertale_logo'));
-		add(undertale);
-		undertale.visible = false;
-		undertale.setGraphicSize(Std.int(undertale.width * 0.8));
-		undertale.updateHitbox();
-		undertale.screenCenter(X);
-		undertale.antialiasing = true;
 
 		FlxTween.tween(credTextShit, {y: credTextShit.y + 20}, 2.9, {ease: FlxEase.quadInOut, type: PINGPONG});
 
@@ -453,11 +446,6 @@ class TitleState extends MusicBeatState
 
 				FlxG.camera.flash(FlxColor.BLACK, 1);
 				FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
-
-				if (logoBl != null)
-					FlxTween.tween(logoBl, {y: -1280}, 2.3, {ease: FlxEase.circInOut});
-				if (titleText != null)
-					FlxTween.tween(titleText, {y: 1280}, 2, {ease: FlxEase.circInOut});
 
 				transitioning = true;
 				// FlxG.sound.music.stop();
@@ -584,7 +572,7 @@ class TitleState extends MusicBeatState
 				gfDance.animation.play('danceLeft');
 		}
 
-		//FlxTween.tween(FlxG.camera, {zoom:1.02}, 0.5, {ease: FlxEase.quadOut, type: BACKWARD});
+		FlxTween.tween(FlxG.camera, {zoom:1.02}, 0.5, {ease: FlxEase.quadOut, type: BACKWARD});
 
 		if(!closedState) {
 			sickBeats++;
@@ -647,7 +635,7 @@ class TitleState extends MusicBeatState
 					addMoreText('Night');
 				// credTextShit.text += '\nNight';
 				case 15:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';					
+					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
 
 				case 16:
 					skipIntro();
