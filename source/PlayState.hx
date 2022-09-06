@@ -64,7 +64,7 @@ class PlayState extends MusicBeatState
 	public static var STRUM_X_MIDDLESCROLL = -278;
 	public static var doingreef:Bool = false;
 	
-	var ofs = 0;
+	var ofs = 35;
 	
 	// BoneJail
     final jailInfo:Map<String, Float> = [
@@ -432,8 +432,6 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'stagesans':
-				var ofs = 35;
-
 				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -420, -100, 1, 1);
 				SansBG.scale.set(0.8, 0.9);
 				add(SansBG);
@@ -1510,14 +1508,10 @@ class PlayState extends MusicBeatState
 
 		if (SONG.needsVoices)
 			if (storyDifficulty == 1)
-			{
 				vocals = new FlxSound().loadEmbedded(Paths.voicesCH(PlayState.SONG.song));
-			}
 			else
-			{
 				vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
 			}
-		}
 		else
 			vocals = new FlxSound();
 
@@ -3819,19 +3813,6 @@ class PlayState extends MusicBeatState
 			var xx = (char.getMidpoint().x + camerashit[0]) + char.cameraPosition[0];
 			var yy = (char.getMidpoint().y + camerashit[1]) + char.cameraPosition[1];
 			
-			switch (curStage)
-				{
-					case 'stagepaps':
-						xx = (char.getMidpoint().x - 800) - char.cameraPosition[0];
-						yy = (char.getMidpoint().y - 760) + char.cameraPosition[1];
-					case 'stagesans':
-						xx= (char.getMidpoint().x - 780) - char.cameraPosition[0];
-						yy = (char.getMidpoint().y - 1040) + char.cameraPosition[1];
-					case 'stagechara':
-						xx= (char.getMidpoint().x - 270) - char.cameraPosition[0];
-						yy = (char.getMidpoint().y - 2100) + char.cameraPosition[1];
-				}
-			
 			var singAnimationsPostions:Array<Array<Float>> = [
 				[xx-ofs,yy], 
 				[xx,yy+ofs], 
@@ -3915,15 +3896,12 @@ class PlayState extends MusicBeatState
 				
 				switch (curStage)
 				{
-					case 'stagepaps':
-						xx2 = (boyfriend.getMidpoint().x - 1100) - boyfriend.cameraPosition[0];
-						yy2 = (boyfriend.getMidpoint().y - 760) + boyfriend.cameraPosition[1];
-					case 'stagesans':
-						xx2= (boyfriend.getMidpoint().x - 1010) - boyfriend.cameraPosition[0];
-						yy2 = (boyfriend.getMidpoint().y - 1035) + boyfriend.cameraPosition[1];
-					case 'stagechara':
-						xx2= (boyfriend.getMidpoint().x - 550) - boyfriend.cameraPosition[0];
-						yy2 = (boyfriend.getMidpoint().y - 2100) + boyfriend.cameraPosition[1];
+					case 'school' | 'schoolEvil':
+						xx2 = (boyfriend.getMidpoint().x - 200) - boyfriend.cameraPosition[0];
+						yy2 = (boyfriend.getMidpoint().y - 200) + boyfriend.cameraPosition[1];
+					case 'stagepaps' | 'stagesans' | 'stagechara':
+						xx2= (boyfriend.getMidpoint().x - 250) - boyfriend.cameraPosition[0];
+						yy2 = (boyfriend.getMidpoint().y - 300) + boyfriend.cameraPosition[1];
 				}
 
 				var singAnimationsPostions:Array<Array<Float>> = [
