@@ -176,6 +176,17 @@ class Paths
 		#end
 		return getPath('music/$key.$SOUND_EXT', MUSIC, library);
 	}
+	
+	inline static public function voicesCH(song:String):Any
+	{
+		#if MODS_ALLOWED
+		var file:Sound = returnSongFile(modsSongs(song.toLowerCase().replace(' ', '-') + '/VoicesCH'));
+		if(file != null) {
+			return file;
+		}
+		#end
+		return 'songs:assets/songs/${song.toLowerCase().replace(' ', '-')}/VoicesCH.$SOUND_EXT';
+	}
 
 	inline static public function voices(song:String):Any
 	{

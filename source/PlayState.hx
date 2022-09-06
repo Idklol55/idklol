@@ -129,7 +129,6 @@ class PlayState extends MusicBeatState
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
 	public static var storyDifficulty:Int = 1;
-	var curDifficulty:Int = 0;
 
 	public var vocals:FlxSound;
 
@@ -196,6 +195,10 @@ class PlayState extends MusicBeatState
 	public var camGame:FlxCamera;
 	public var camOther:FlxCamera;
 	public var cameraSpeed:Float = 1;
+
+	//Icons Animated
+	private var playerOneState:String = "default";
+	private var playerTwoState:String = "default";
 
 	var dialogue:Array<String> = ['blah blah blah', 'coolswag'];
 	var dialogueJson:DialogueFile = null;
@@ -431,7 +434,7 @@ class PlayState extends MusicBeatState
 			case 'stagesans':
 				var ofs = 35;
 
-				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -410, -100, 1, 1);
+				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -420, -100, 1, 1);
 				SansBG.scale.set(0.8, 0.9);
 				add(SansBG);
 			case 'stagepaps':
@@ -913,7 +916,7 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 
 				case 'Nyeh Heh Heh' | 'Bonely One' | 'Not Enough':
-				if (curDifficulty == 0)
+				if (storyDifficulty == 0)
 					startDialogue(dialogueJson);
 
 				default:
@@ -1506,7 +1509,15 @@ class PlayState extends MusicBeatState
 		curSong = songData.song;
 
 		if (SONG.needsVoices)
-			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
+			if (storyDifficulty == 1)
+			{
+				vocals = new FlxSound().loadEmbedded(Paths.voicesCH(PlayState.SONG.song));
+			}
+			else
+			{
+				vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
+			}
+		}
 		else
 			vocals = new FlxSound();
 
@@ -2139,6 +2150,25 @@ class PlayState extends MusicBeatState
 		iconP2.scale.set(mult, mult);
 		iconP2.updateHitbox();
 
+		if (curBeat % 2 == 0)
+		{
+			switch (playerOneState)
+			{
+				case 'default':
+					iconP1.animation.play('default');
+				case 'losing':
+					iconP1.animation.play('losing');
+			}
+
+			switch (playerTwoState)
+			{
+				case 'default':
+					iconP2.animation.play('default');
+				case 'losing':
+					iconP2.animation.play('losing');
+			}
+		}
+
 		var iconOffset:Int = 26;
 
 		iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) + (150 * iconP1.scale.x - 150) / 2 - iconOffset;
@@ -2147,15 +2177,26 @@ class PlayState extends MusicBeatState
 		if (health > 2)
 			health = 2;
 
-		if (healthBar.percent < 20)
-			iconP1.animation.curAnim.curFrame = 1;
-		else
-			iconP1.animation.curAnim.curFrame = 0;
+		if (healthBar.percent >= 20) {
+			playerOneState = "losing";
+			playerTwoState = "default";
+		} else {
+			playerOneState = "default";
+			playerTwoState = "default";
+		}
 
-		if (healthBar.percent > 80)
-			iconP2.animation.curAnim.curFrame = 1;
-		else
-			iconP2.animation.curAnim.curFrame = 0;
+		if (healthBar.percent == 50) {
+			playerOneState = "default";
+			playerTwoState = "default";
+		}
+
+		if (healthBar.percent >= 80) {
+			playerOneState = "default";
+			playerTwoState = "losing";
+		} else {
+			playerOneState = "default";
+			playerTwoState = "default";
+		}
 
 		if (FlxG.keys.anyJustPressed(debugKeysCharacter) && !endingSong && !inCutscene) {
 			persistentUpdate = false;
@@ -3148,7 +3189,7 @@ class PlayState extends MusicBeatState
 				campaignScore += songScore;
 				campaignMisses += songMisses;
 				
-				if (SONG.song.toLowerCase() == 'Not Enough')
+				if (curSong == 'Not Enough')
 				{
 					storyPlaylist.push('No More Deals');
 				}
@@ -4187,6 +4228,13 @@ class PlayState extends MusicBeatState
 
 		if(curStep == lastStepHit) {
 			return;
+		}
+
+		if (curSong == 'Not Enough') {
+			switch (curStep) {
+				case 20:
+					bonesJail();
+			}
 		}
 
 		lastStepHit = curStep;
