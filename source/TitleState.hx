@@ -457,8 +457,7 @@ class TitleState extends MusicBeatState
 						MusicBeatState.switchState(new OutdatedState());
 					} else {
 						MusicBeatState.switchState(new MainMenuState());
-						if (titleText != null)
-							FlxTween.tween(titleText, {y: 1280}, 2, {ease: FlxEase.circInOut});
+						FlxTween.tween(titleText, {y: 1280}, 2, {ease: FlxEase.circInOut});
 					}
 					closedState = true;
 				});
