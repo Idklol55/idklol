@@ -255,7 +255,7 @@ class TitleState extends MusicBeatState
 		}
 		
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
-		bg.setGraphicSize(Std.int(bg.width * 0.6));
+		bg.setGraphicSize(Std.int(bg.width * 1));
 		bg.updateHitbox();
 		add(bg);
 
@@ -283,7 +283,7 @@ class TitleState extends MusicBeatState
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
 		logoBl.screenCenter(X);
-		logoBl.y = -30;
+		logoBl.y = -60;
 		// logoBl.color = FlxColor.BLACK;
 
 		swagShader = new ColorSwap();
@@ -444,9 +444,9 @@ class TitleState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
 
 				if (logoBl != null)
-					FlxTween.tween(logoBl, {y: -1280}, 2.2, {ease: FlxEase.circInOut});
+					FlxTween.tween(logoBl, {y: -1280}, 2, {ease: FlxEase.circInOut});
 				if (titleText != null)
-					FlxTween.tween(titleText, {y: 1280}, 2, {ease: FlxEase.circInOut});
+					FlxTween.tween(titleText, {y: 1280}, 2.5, {ease: FlxEase.circInOut});
 
 				transitioning = true;
 				// FlxG.sound.music.stop();

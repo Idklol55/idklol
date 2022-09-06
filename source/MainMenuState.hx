@@ -101,7 +101,7 @@ class MainMenuState extends MusicBeatState
 		characters.animation.addByPrefix('credits', 'credits', 24);
 		characters.animation.addByPrefix('options', 'options', 24);
 		characters.setGraphicSize(Std.int(characters.width * 1));
-		characters.scrollFactor.set(1, 1);
+		//characters.scrollFactor.set();
 		add(characters);
 		
 		splash = new FlxSprite(10);
