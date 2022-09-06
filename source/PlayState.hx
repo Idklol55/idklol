@@ -1511,7 +1511,6 @@ class PlayState extends MusicBeatState
 				vocals = new FlxSound().loadEmbedded(Paths.voicesCH(PlayState.SONG.song));
 			else
 				vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
-			}
 		else
 			vocals = new FlxSound();
 

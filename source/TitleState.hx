@@ -248,10 +248,10 @@ class TitleState extends MusicBeatState
 
 		var bg:FlxSprite = new FlxSprite();
 		
-		if (titleJSON.backgroundSprite != null && titleJSON.backgroundSprite.length > 0 && titleJSON.backgroundSprite != "titleBG"){
+		if (titleJSON.backgroundSprite != null && titleJSON.backgroundSprite.length > 0 && titleJSON.backgroundSprite != "none"){
 			bg.loadGraphic(Paths.image(titleJSON.backgroundSprite));
 		}else{
-			bg.makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+			bg.loadGraphic(Paths.image('titleBG'));
 		}
 		
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
@@ -283,7 +283,7 @@ class TitleState extends MusicBeatState
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
 		logoBl.screenCenter(X);
-		logoBl.y = -20;
+		logoBl.y = -30;
 		// logoBl.color = FlxColor.BLACK;
 
 		swagShader = new ColorSwap();
