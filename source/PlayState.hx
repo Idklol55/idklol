@@ -909,14 +909,13 @@ class PlayState extends MusicBeatState
 							}
 						});
 					});
+					if (storyDifficulty !== 1)
+					case 'Nyeh Heh Heh' | 'Bonely One' | 'Not Enough':
+						startDialogue(dialogueJson);
+					else
 					case 'senpai' | 'roses' | 'thorns':
 						if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
 						schoolIntro(doof);
-
-					//if (storyDifficulty == 0)
-					case 'Nyeh Heh Heh' | 'Bonely One' | 'Not Enough':
-						startDialogue(dialogueJson);
-					//else
 				default:
 					startCountdown();
 			}
@@ -3190,7 +3189,7 @@ class PlayState extends MusicBeatState
 				campaignScore += songScore;
 				campaignMisses += songMisses;
 				
-				if (storyDifficulty == 0)
+				if (storyDifficulty !== 1)
 					if (curSong == 'Not Enough')
 					{
 						storyPlaylist.push('No More Deals');
