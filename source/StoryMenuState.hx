@@ -464,7 +464,7 @@ class StoryMenuState extends MusicBeatState
         }
 	}
 
- 	public function changeCharacter(?character:String = 'bf', diff:Int = 0){
+ 	/*public function changeCharacter(?character:String = 'bf', diff:Int = 0){
         if(character == null) character = '';
          if(character == 'bf' && diff == 1) character = 'chara';
          if(character == this.character) return;
