@@ -344,7 +344,7 @@ class StoryMenuState extends MusicBeatState
 		}
 		else
 			newImagePath = image;
-			//changeCharacter();
+			changeCharacter();//grpWeekCharacters
 			updateImages();
 
 		if(newImagePath != lastImagePath)
@@ -471,13 +471,13 @@ class StoryMenuState extends MusicBeatState
 		if(character == this.character) return;
 
 		this.character = character;
-		switch(grpWeekCharacters) {//MenuCharacter
+		switch(MenuCharacter) {
 				case 'bf':
-                    character = 'bf';
+                    character == 'bf';
                 case 'chara':
-                    character = 'chara';
+                    character == 'chara';
                 default:
-                    character = 'bf';
+                    character == 'bf';
             } 
 	}
 
