@@ -104,7 +104,7 @@ class HealthIcon extends FlxSprite
 					antialiasing = ClientPrefs.globalAntialiasing;
 					iconOffsets[0] = (width - 135) / 2;
 					iconOffsets[1] = (width - 150) / 2;
-					//flipX = true;
+					flipX = true;
 					updateHitbox();
 				case 'chara-black':
 					var file:FlxAtlasFrames = Paths.getSparrowAtlas('icons/Chara_B');
@@ -113,7 +113,7 @@ class HealthIcon extends FlxSprite
 					animation.addByPrefix('default', 'ICON CHARA B', 24, true);
 					animation.addByPrefix('losing', 'CHARA ICON B 2', 24, true);
 					antialiasing = ClientPrefs.globalAntialiasing;
-					//flipX = true;
+					flipX = true;
 					iconOffsets[0] = (width - 135) / 2;
 					iconOffsets[1] = (width - 150) / 2;
 					updateHitbox();
