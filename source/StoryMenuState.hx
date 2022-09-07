@@ -341,11 +341,11 @@ class StoryMenuState extends MusicBeatState
 		{
 			var graphic:FlxGraphic = image;
 			newImagePath = graphic.assetsKey;
+			updateImages();
 		}
 		else
 			newImagePath = image;
 			changeCharacter();//grpWeekCharacters
-			updateImages();
 
 		if(newImagePath != lastImagePath)
 		{
@@ -460,7 +460,7 @@ class StoryMenuState extends MusicBeatState
 
         var weekArray:Array<String> = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]).weekCharacters;
         for (i in 0...grpWeekCharacters.length) {
-            grpWeekCharacters.members[i].changeCharacter(weekArray[i]);
+            grpWeekCharacters.members[i].changeCharacter, curDifficulty(weekArray[i]);
         }
 	}
 
