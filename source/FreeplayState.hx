@@ -99,8 +99,8 @@ class FreeplayState extends MusicBeatState
 		}*/
 		
 		//if(FlxG.save.data.UnlockSong){
-		addSong(No More Deals, 0, chara-enemy, FlxColor.fromRGB(176, 143, 213));
-		addSong(EEEEChrome, 0, sans-dead, FlxColor.fromRGB(38, 28, 62));
+		addSong('No More Deals', 0, 'chara-enemy', FlxColor.fromRGB(176, 143, 213));
+		addSong('EEEEChrome', 0, 'sans-dead', FlxColor.fromRGB(38, 28, 62));
 		//}
 
 		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
