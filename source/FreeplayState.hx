@@ -387,15 +387,6 @@ class FreeplayState extends MusicBeatState
 
 	function changeDiff(change:Int = 0)
 	{
-		if (songs[curSelected].songName == 'No More Deals'){
-			diffText.text = "< CHAMOY >";
-			curDifficulty = 0;
-		}
-		if (songs[curSelected].songName == 'EEEEChrome'){
-			diffText.text = "< IM DEAD >";
-			curDifficulty = 0;
-		}
-
 		curDifficulty += change;
 
 		if (curDifficulty < 0)
@@ -411,17 +402,20 @@ class FreeplayState extends MusicBeatState
 		#end
 
 		PlayState.storyDifficulty = curDifficulty;
-		diffText.text = '< ' + CoolUtil.difficultyString() + ' >';
-		positionHighscore();
-
-		switch (curDifficulty)
-		{
-			case 0:
-				diffText.text = '< BF >';
-			case 1:
-				diffText.text = "< CHARA >";
-			}
+		if (songs[curSelected].songName == 'No More Deals'){
+			if (curDifficulty == 0)
+				diffText.text = '< CHAMOY >';
 		}
+		else if (songs[curSelected].songName == 'EEEEChrome'){
+			if (curDifficulty == 0)
+			diffText.text = '< IM DEAD >';
+		}
+		else
+		{
+			diffText.text = '< ' + CoolUtil.difficultyString() + ' >';
+		}
+
+		positionHighscore();
 	}
 
 	function changeSelection(change:Int = 0, playSound:Bool = true)
