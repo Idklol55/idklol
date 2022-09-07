@@ -99,8 +99,8 @@ class FreeplayState extends MusicBeatState
 		}*/
 		
 		//if(FlxG.save.data.UnlockSong){
-		addSong('No More Deals', 0, 'chara-enemy', FlxColor.fromRGB(176, 143, 213));
-		addSong('EEEEChrome', 0, 'sans-dead', FlxColor.fromRGB(38, 28, 62));
+		addSong('No More Deals', 0, 'chara-enemy', FlxColor.fromRGB(34, 28, 62));
+		addSong('EEEEChrome', 0, 'sans-dead', FlxColor.fromRGB(176, 143, 213));
 		//}
 
 		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
@@ -123,7 +123,7 @@ class FreeplayState extends MusicBeatState
 
 			// using a FlxGroup is too much fuss!
 			iconArray.push(icon);
-			//icon.setGraphicSize(Std.int(icon.width * 1.05));
+			icon.setGraphicSize(Std.int(icon.width * 1.05));
 			add(icon);
 
 			// songText.x += 40;
@@ -388,11 +388,11 @@ class FreeplayState extends MusicBeatState
 	function changeDiff(change:Int = 0)
 	{
 		if (songs[curSelected].songName == 'No More Deals'){
-			diffText.text = "< CHAMOY >";
+			diffText.text = '< ' CHAMOY ' >';
 			curDifficulty = 0;
 		}
 		if (songs[curSelected].songName == 'EEEEChrome'){
-			diffText.text = "< IM DEAD >";
+			diffText.text = '< ' IM DEAD ' >';
 			curDifficulty = 0;
 		}
 

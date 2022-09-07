@@ -1294,7 +1294,7 @@ class PlayState extends MusicBeatState
 			}*/
 			#if android
 			androidc.visible = true;
-			if (SONG.song.toLowerCase() == 'Not Enough' || SONG.song.toLowerCase() == 'No More Deals')
+			if (SONG.song == 'Not Enough' || SONG.song == 'No More Deals')
 			{
 				_virtualpad.visible = true;
 			}
@@ -3141,7 +3141,7 @@ class PlayState extends MusicBeatState
 
 		#if android
 		androidc.visible = false;
-		if (SONG.song.toLowerCase() == 'Not Enough' || SONG.song.toLowerCase() == 'No More Deals')
+		if (SONG.song == 'Not Enough' || SONG.song == 'No More Deals')
 		{
 			_virtualpad.visible = false;
 		}
