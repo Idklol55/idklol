@@ -433,7 +433,7 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'stagesans':
-				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -420, -100, 1, 1);
+				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -410, -110, 1, 1);
 				SansBG.scale.set(0.8, 0.9);
 				add(SansBG);
 			case 'stagepaps':
@@ -624,6 +624,16 @@ class PlayState extends MusicBeatState
 		strumLine = new FlxSprite(ClientPrefs.middleScroll ? STRUM_X_MIDDLESCROLL : STRUM_X, 50).makeGraphic(FlxG.width, 10);
 		if(ClientPrefs.downScroll) strumLine.y = FlxG.height - 150;
 		strumLine.scrollFactor.set();
+
+       spaceBar = new FlxSprite();
+       spaceBar.frames = Paths.getSparrowAtlas('spacebar');
+       spaceBar.animation.addByPrefix('push', "spacebar", 24);
+       spaceBars.setGraphicSize(Std.int(spaceBar.width * 0.9));
+       spaceBar.cameras = [camHUD];
+       spaceBar.scrollFactor.set();
+       spaceBar.screenCenter(X);
+       spaceBar.y += 10;
+       add(spaceBar);
 
 		var showTime:Bool = (ClientPrefs.timeBarType != 'Disabled');
 		timeTxt = new FlxText(STRUM_X + (FlxG.width / 2) - 248, 19, 400, "", 32);
@@ -3913,9 +3923,9 @@ class PlayState extends MusicBeatState
 					case 'school' | 'schoolEvil':
 						xx2 = (boyfriend.getMidpoint().x - 200) - boyfriend.cameraPosition[0];
 						yy2 = (boyfriend.getMidpoint().y - 200) + boyfriend.cameraPosition[1];
-					case 'stagepaps' | 'stagesans' | 'stagechara':
+					/*case 'stagepaps' | 'stagesans' | 'stagechara':
 						xx2= (boyfriend.getMidpoint().x - 250) - boyfriend.cameraPosition[0];
-						yy2 = (boyfriend.getMidpoint().y - 300) + boyfriend.cameraPosition[1];
+						yy2 = (boyfriend.getMidpoint().y - 300) + boyfriend.cameraPosition[1];*/
 				}
 
 				var singAnimationsPostions:Array<Array<Float>> = [
@@ -4560,15 +4570,6 @@ class PlayState extends MusicBeatState
             default:
                 {newBF = "bones-jail";}
         }
-
-       spaceBar = new FlxSprite();
-       spaceBar.frames = Paths.getSparrowAtlas('spacebar');
-       spaceBar.animation.addByPrefix('push', "spacebar", 24);
-       spaceBar.scrollFactor.set();
-       spaceBar.screenCenter(X);
-       spaceBar.cameras = [camHUD];
-       spaceBar.y += 5;
-       add(spaceBar);
 
         //------
         triggerEventNote("Change Character", "bf", newBF);

@@ -573,7 +573,7 @@ class TitleState extends MusicBeatState
 				gfDance.animation.play('danceLeft');
 		}
 
-		FlxTween.tween(FlxG.camera, {zoom:1.02}, 0.7, {ease: FlxEase.quadOut, type: BACKWARD});
+		FlxTween.tween(FlxG.camera, {zoom:1.02}, 0.5, {ease: FlxEase.quadOut, type: BACKWARD});
 
 		if(!closedState) {
 			sickBeats++;

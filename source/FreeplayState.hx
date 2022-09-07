@@ -388,11 +388,11 @@ class FreeplayState extends MusicBeatState
 	function changeDiff(change:Int = 0)
 	{
 		if (songs[curSelected].songName == 'EEEEChrome'){
-			diffText.text = "< CHAMOY >";
-			curDifficulty = 0;
-		else
-		if (songs[curSelected].songName == 'No More Deals'){
 			diffText.text = "< IM DEAD >";
+			curDifficulty = 0;
+
+		if (songs[curSelected].songName == 'No More Deals'){
+			diffText.text = "< CHAMOY >";
 			curDifficulty = 0;
 		} else{
 		curDifficulty += change;
