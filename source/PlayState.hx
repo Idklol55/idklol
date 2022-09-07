@@ -1294,10 +1294,10 @@ class PlayState extends MusicBeatState
 			}*/
 			#if android
 			androidc.visible = true;
-			if (SONG.song == 'Not Enough' || SONG.song == 'No More Deals')
-			{
+			//if (SONG.song == 'Not Enough' || SONG.song == 'No More Deals')
+			//{
 				_virtualpad.visible = true;
-			}
+			//}
 			#end
 			generateStaticArrows(0);
 			generateStaticArrows(1);
@@ -1942,16 +1942,6 @@ class PlayState extends MusicBeatState
                     {newBF = "bf-sans";}
             }
             boyfriend.stunned = false;
-
-            spaceBar = new FlxSprite();
-            spaceBar.frames = Paths.getSparrowAtlas('spacebar');
-            spaceBar.animation.addByPrefix('push', "spacebar", 24);
-            spaceBar.setGraphicSize(Std.int(spaceBar.width * 0.9));
-            spaceBar.cameras = [camHUD];
-            spaceBar.scrollFactor.set();
-            spaceBar.screenCenter(X);
-            spaceBar.y += 10;
-            add(spaceBar);
             spaceBar.animation.play('push', false);
 
             //------
@@ -3141,10 +3131,10 @@ class PlayState extends MusicBeatState
 
 		#if android
 		androidc.visible = false;
-		if (SONG.song == 'Not Enough' || SONG.song == 'No More Deals')
-		{
+		//if (SONG.song == 'Not Enough' || SONG.song == 'No More Deals')
+		//{
 			_virtualpad.visible = false;
-		}
+		//}
 		#end
 		timeBarBG.visible = false;
 		timeBar.visible = false;
@@ -3923,9 +3913,9 @@ class PlayState extends MusicBeatState
 					case 'school' | 'schoolEvil':
 						xx2 = (boyfriend.getMidpoint().x - 200) - boyfriend.cameraPosition[0];
 						yy2 = (boyfriend.getMidpoint().y - 200) + boyfriend.cameraPosition[1];
-					/*case 'stagepaps' | 'stagesans' | 'stagechara':
-						xx2= (boyfriend.getMidpoint().x - 250) - boyfriend.cameraPosition[0];
-						yy2 = (boyfriend.getMidpoint().y - 300) + boyfriend.cameraPosition[1];*/
+					case 'stagepaps' | 'stagesans' | 'stagechara':
+						xx2= (boyfriend.getMidpoint().x - 200) - boyfriend.cameraPosition[0];
+						yy2 = (boyfriend.getMidpoint().y - 200) + boyfriend.cameraPosition[1];
 				}
 
 				var singAnimationsPostions:Array<Array<Float>> = [
@@ -4579,6 +4569,17 @@ class PlayState extends MusicBeatState
         {
             FlxTween.tween(i, {alpha: 0.8}, 0.5, {ease: FlxEase.linear});
         }
+
+        spaceBar = new FlxSprite();
+        spaceBar.frames = Paths.getSparrowAtlas('spacebar');
+        spaceBar.animation.addByPrefix('push', "spacebar", 24);
+        spaceBar.setGraphicSize(Std.int(spaceBar.width * 0.9));
+        spaceBar.animation.play('push', false);
+        spaceBar.cameras = [camHUD];
+        spaceBar.scrollFactor.set();
+        spaceBar.screenCenter(X);
+        spaceBar.y += 10;
+        add(spaceBar);
 
         FlxG.camera.flash(FlxColor.WHITE, 0.5);
         FlxG.sound.play(Paths.sound('bones'));

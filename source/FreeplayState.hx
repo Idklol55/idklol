@@ -30,7 +30,7 @@ class FreeplayState extends MusicBeatState
 
 	var selector:FlxText;
 	private static var curSelected:Int = 0;
-	var curDifficulty:Int = 0;
+	var curDifficulty:Int = -1;
 	private static var lastDifficultyName:String = '';
 
 	var scoreBG:FlxSprite;
@@ -412,9 +412,7 @@ class FreeplayState extends MusicBeatState
 		}
 		else
 		{
-			diffText.text = '< ' + CoolUtil.difficultyString() + ' >';
-		}
-
+		diffText.text = '< ' + CoolUtil.difficultyString() + ' >';
 		positionHighscore();
 	}
 

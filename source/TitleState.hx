@@ -444,7 +444,7 @@ class TitleState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
 
 				if (logoBl != null)
-					FlxTween.tween(logoBl, {y: -1280}, 1.8, {ease: FlxEase.circInOut});
+					FlxTween.tween(logoBl, {y: -1280}, 1.7, {ease: FlxEase.circInOut});
 
 				transitioning = true;
 				// FlxG.sound.music.stop();
@@ -456,7 +456,7 @@ class TitleState extends MusicBeatState
 					} else {
 						MusicBeatState.switchState(new MainMenuState());
 						if (titleText != null)
-							FlxTween.tween(titleText, {y: 1280}, 1.2, {ease: FlxEase.circInOut});
+							FlxTween.tween(titleText, {y: 1280}, 1.7, {ease: FlxEase.circInOut});
 					}
 					closedState = true;
 				});
@@ -573,7 +573,7 @@ class TitleState extends MusicBeatState
 				gfDance.animation.play('danceLeft');
 		}
 
-		FlxTween.tween(FlxG.camera, {zoom:1.05}, 0.3, {ease: FlxEase.quadOut, type: BACKWARD});
+		FlxTween.tween(FlxG.camera, {zoom:1.05}, 0.2, {ease: FlxEase.quadOut, type: BACKWARD});
 
 		if(!closedState) {
 			sickBeats++;
