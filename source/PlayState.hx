@@ -1946,7 +1946,7 @@ class PlayState extends MusicBeatState
             spaceBar = new FlxSprite();
             spaceBar.frames = Paths.getSparrowAtlas('spacebar');
             spaceBar.animation.addByPrefix('push', "spacebar", 24);
-            spaceBars.setGraphicSize(Std.int(spaceBar.width * 0.9));
+            spaceBar.setGraphicSize(Std.int(spaceBar.width * 0.9));
             spaceBar.cameras = [camHUD];
             spaceBar.scrollFactor.set();
             spaceBar.screenCenter(X);
