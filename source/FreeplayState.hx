@@ -123,7 +123,7 @@ class FreeplayState extends MusicBeatState
 
 			// using a FlxGroup is too much fuss!
 			iconArray.push(icon);
-			icon.setGraphicSize(Std.int(icon.width * 1.05));
+			//icon.setGraphicSize(Std.int(icon.width * 1.05));
 			add(icon);
 
 			// songText.x += 40;
