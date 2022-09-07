@@ -17,6 +17,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import lime.net.curl.CURLCode;
 import flixel.graphics.FlxGraphic;
+import MenuCharacter;
 import WeekData;
 
 using StringTools;
@@ -471,7 +472,7 @@ class StoryMenuState extends MusicBeatState
 		if(character == this.character) return;
 
 		this.character = character;
-		switch(MenuCharacter) {
+		switch(grpWeekCharacters) {
 				case 'bf':
                     character == 'bf';
                 case 'chara':
