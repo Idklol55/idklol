@@ -394,7 +394,7 @@ class FreeplayState extends MusicBeatState
 		if (songs[curSelected].songName == 'EEEEChrome'){
 			diffText.text = "< IM DEAD >";
 			curDifficulty = 0;
-		else
+		} else{
 
 		curDifficulty += change;
 
