@@ -17,7 +17,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import lime.net.curl.CURLCode;
 import flixel.graphics.FlxGraphic;
-import MenuCharacter;
+import flixel.group.FlxTypedGroup<MenuCharacter>;
 import WeekData;
 
 using StringTools;

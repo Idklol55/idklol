@@ -53,7 +53,7 @@ class HealthIcon extends FlxSprite
 					animation.addByPrefix('losing', 'ICON SANS 2', 24, true);
 					antialiasing = ClientPrefs.globalAntialiasing;
 					iconOffsets[0] = (width - 135) / 2;
-					iconOffsets[1] = (width - 135) / 2;
+					iconOffsets[1] = (width - 150) / 2;
 					updateHitbox();
 				case 'sans-black':
 					var file:FlxAtlasFrames = Paths.getSparrowAtlas('icons/Sans_B');
@@ -63,7 +63,7 @@ class HealthIcon extends FlxSprite
 					animation.addByPrefix('losing', 'ICON SANS B 2', 24, true);
 					antialiasing = ClientPrefs.globalAntialiasing;
 					iconOffsets[0] = (width - 135) / 2;
-					iconOffsets[1] = (width - 135) / 2;
+					iconOffsets[1] = (width - 150) / 2;
 					updateHitbox();
 				case 'papyrus':
 					var file:FlxAtlasFrames = Paths.getSparrowAtlas('icons/Papyrus');
@@ -93,7 +93,18 @@ class HealthIcon extends FlxSprite
 					animation.addByPrefix('losing', 'CHARA ICON 2', 24, true);
 					antialiasing = ClientPrefs.globalAntialiasing;
 					iconOffsets[0] = (width - 135) / 2;
-					iconOffsets[1] = (width - 135) / 2;
+					iconOffsets[1] = (width - 150) / 2;
+					updateHitbox();
+				case 'chara-sans':
+					var file:FlxAtlasFrames = Paths.getSparrowAtlas('icons/Chara');
+					frames = file;
+					
+					animation.addByPrefix('default', 'ICON CHARA', 24, true);
+					animation.addByPrefix('losing', 'CHARA ICON 2', 24, true);
+					antialiasing = ClientPrefs.globalAntialiasing;
+					iconOffsets[0] = (width - 135) / 2;
+					iconOffsets[1] = (width - 150) / 2;
+					//flipX = true;
 					updateHitbox();
 				case 'chara-black':
 					var file:FlxAtlasFrames = Paths.getSparrowAtlas('icons/Chara_B');
@@ -102,8 +113,9 @@ class HealthIcon extends FlxSprite
 					animation.addByPrefix('default', 'ICON CHARA B', 24, true);
 					animation.addByPrefix('losing', 'CHARA ICON B 2', 24, true);
 					antialiasing = ClientPrefs.globalAntialiasing;
+					//flipX = true;
 					iconOffsets[0] = (width - 135) / 2;
-					iconOffsets[1] = (width - 135) / 2;
+					iconOffsets[1] = (width - 150) / 2;
 					updateHitbox();
 				case 'sans-dead':
 					var file:FlxAtlasFrames = Paths.getSparrowAtlas('icons/Killer_Sans');
@@ -113,7 +125,7 @@ class HealthIcon extends FlxSprite
 					animation.addByPrefix('losing', 'KILLER ICON SANS 2', 24, true);
 					antialiasing = ClientPrefs.globalAntialiasing;
 					iconOffsets[0] = (width - 135) / 2;
-					iconOffsets[1] = (width - 135) / 2;
+					iconOffsets[1] = (width - 150) / 2;
 					updateHitbox();
 				default:
 					var name:String = 'icons/' + char;
