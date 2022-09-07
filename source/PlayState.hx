@@ -76,6 +76,7 @@ class PlayState extends MusicBeatState
     var inJail:Bool = false;
     var jailCooldown:Bool = false;
     var jailTimers = new FlxTimerManager();
+    var spaceBar:FlxSprite;
 
 	public static var ratingStuff:Array<Dynamic> = [
 		['You Suck!', 0.2], //From 0% to 19%
@@ -798,13 +799,6 @@ class PlayState extends MusicBeatState
 			botplayTxt.y = timeBarBG.y - 78;
 		}
 
-       var spaceBar:FlxSprite = new FlxSprite();
-       spaceBar.frames = Paths.getSparrowAtlas('spacebar');
-       spaceBar.animation.addByPrefix('push', "spacebar", 24);
-       spaceBar.scrollFactor.set();
-       spaceBar.screenCenter(X);
-       add(spaceBar);
-
 		strumLineNotes.cameras = [camHUD];
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
@@ -818,7 +812,6 @@ class PlayState extends MusicBeatState
 		timeBarBG.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
 		doof.cameras = [camHUD];
-       spaceBar.cameras = [camHUD];
 
 		#if android
 		addAndroidControls();
@@ -1949,6 +1942,7 @@ class PlayState extends MusicBeatState
                     {newBF = "bf-sans";}
             }
             boyfriend.stunned = false;
+            spaceBar.animation.play('push', false);
 
             //------
             triggerEventNote("Change Character", "bf", newBF);
@@ -4561,6 +4555,15 @@ class PlayState extends MusicBeatState
             default:
                 {newBF = "bones-jail";}
         }
+
+       spaceBar = new FlxSprite();
+       spaceBar.frames = Paths.getSparrowAtlas('spacebar');
+       spaceBar.animation.addByPrefix('push', "spacebar", 24);
+       spaceBar.scrollFactor.set();
+       spaceBar.screenCenter(X);
+       spaceBar.cameras = [camHUD];
+       spaceBar.y += 5;
+       add(spaceBar);
 
         //------
         triggerEventNote("Change Character", "bf", newBF);
