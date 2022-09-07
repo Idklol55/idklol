@@ -388,11 +388,11 @@ class FreeplayState extends MusicBeatState
 	function changeDiff(change:Int = 0)
 	{
 		if (songs[curSelected].songName == 'No More Deals'){
-			diffText.text = '< ' + CHAMOY + ' >';
+			diffText.text = "< CHAMOY >";
 			curDifficulty = 0;
 		}
 		if (songs[curSelected].songName == 'EEEEChrome'){
-			diffText.text = '< ' + IM DEAD + ' >';
+			diffText.text = "< IM DEAD >";
 			curDifficulty = 0;
 		}
 
@@ -413,6 +413,15 @@ class FreeplayState extends MusicBeatState
 		PlayState.storyDifficulty = curDifficulty;
 		diffText.text = '< ' + CoolUtil.difficultyString() + ' >';
 		positionHighscore();
+
+		switch (curDifficulty)
+		{
+			case 0:
+				diffText.text = '< BF >';
+			case 1:
+				diffText.text = "< CHARA >";
+			}
+		}
 	}
 
 	function changeSelection(change:Int = 0, playSound:Bool = true)
