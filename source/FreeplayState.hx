@@ -123,7 +123,8 @@ class FreeplayState extends MusicBeatState
 
 			// using a FlxGroup is too much fuss!
 			iconArray.push(icon);
-			icon.setGraphicSize(Std.int(icon.width * 1.05));
+			//icon.setGraphicSize(Std.int(icon.width * 2));
+			icon.x -= 20;
 			add(icon);
 
 			// songText.x += 40;
@@ -317,6 +318,8 @@ class FreeplayState extends MusicBeatState
 				var poop:String = Highscore.formatSong(songs[curSelected].songName.toLowerCase(), curDifficulty);
 				PlayState.SONG = Song.loadFromJson(poop, songs[curSelected].songName.toLowerCase());
 				if (PlayState.SONG.needsVoices)
+					vocals = new FlxSound().loadEmbedded(Paths.voicesCH(PlayState.SONG.song));
+				else
 					vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
 				else
 					vocals = new FlxSound();
@@ -412,7 +415,9 @@ class FreeplayState extends MusicBeatState
 		}
 		else
 		{
-		diffText.text = '< ' + CoolUtil.difficultyString() + ' >';
+			diffText.text = '< ' + CoolUtil.difficultyString() + ' >';
+		}
+		
 		positionHighscore();
 	}
 
