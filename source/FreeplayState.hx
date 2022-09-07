@@ -123,7 +123,7 @@ class FreeplayState extends MusicBeatState
 
 			// using a FlxGroup is too much fuss!
 			iconArray.push(icon);
-			icon.setGraphicSize(Std.int(icon.width * 1.01));
+			icon.setGraphicSize(Std.int(icon.width * 1.05));
 			add(icon);
 
 			// songText.x += 40;
@@ -205,7 +205,7 @@ class FreeplayState extends MusicBeatState
 
 		#if android
 		addVirtualPad(FULL, A_B_C_X_Y_Z);
-		_virtualpad.y = -26;
+		_virtualpad.y = -25;
 		#end
 
 		super.create();
@@ -387,10 +387,10 @@ class FreeplayState extends MusicBeatState
 
 	function changeDiff(change:Int = 0)
 	{
-		if (songs[curSelected].songName == 'No More Deals'){
+		/*if (songs[curSelected].songName == 'No More Deals'){
 			diffText.text = "< CHAMOY >";
 			curDifficulty = 0;
-		}
+		}*/
 		if (songs[curSelected].songName == 'EEEEChrome'){
 			diffText.text = "< IM DEAD >";
 			curDifficulty = 0;
