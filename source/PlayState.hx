@@ -798,6 +798,13 @@ class PlayState extends MusicBeatState
 			botplayTxt.y = timeBarBG.y - 78;
 		}
 
+       var spaceBar:FlxSprite = new FlxSprite();
+       spaceBar.frames = Paths.getSparrowAtlas('spacebar');
+       spaceBar.animation.addByPrefix('push', "spacebar", 24);
+       spaceBar.scrollFactor.set();
+       spaceBar.screenCenter(X);
+       add(spaceBar);
+
 		strumLineNotes.cameras = [camHUD];
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
@@ -811,6 +818,7 @@ class PlayState extends MusicBeatState
 		timeBarBG.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
 		doof.cameras = [camHUD];
+       spaceBar.cameras = [camHUD];
 
 		#if android
 		addAndroidControls();
@@ -1293,7 +1301,7 @@ class PlayState extends MusicBeatState
 			}*/
 			#if android
 			androidc.visible = true;
-			if (curSong == 'Not Enough' || curSong == 'No More Deals')
+			if (SONG.Not Enough || SONG.No More Deals)
 			{
 				_virtualpad.visible = true;
 			}
@@ -3129,7 +3137,7 @@ class PlayState extends MusicBeatState
 
 		#if android
 		androidc.visible = false;
-		if (curSong == 'Not Enough' || curSong == 'No More Deals')
+		if (SONG.Not Enough || SONG.No More Deals)
 		{
 			_virtualpad.visible = false;
 		}
@@ -4553,14 +4561,6 @@ class PlayState extends MusicBeatState
             default:
                 {newBF = "bones-jail";}
         }
-
-       var spaceBar:FlxSprite = new FlxSprite();
-       spaceBar.frames = Paths.getSparrowAtlas('spacebar');
-       spaceBar.animation.addByPrefix('push', "spacebar", 24);
-       spaceBar.cameras = [camHUD];
-       spaceBar.scrollFactor.set();
-       spaceBar.screenCenter(X);
-       add(spaceBar);
 
         //------
         triggerEventNote("Change Character", "bf", newBF);

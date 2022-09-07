@@ -464,13 +464,22 @@ class StoryMenuState extends MusicBeatState
         }
 	}
 
- 	/*public function changeCharacter(?character:String = 'bf', diff:Int = 0){
-        if(character == null) character = '';
-         if(character == 'bf' && diff == 1) character = 'chara';
-         if(character == this.character) return;
+	public var character:String = 'bf';
+	public function changeCharacter(?character:String = 'bf', diff:Int = 0){
+		if(character == null) character = '';
+		if(character == 'bf' && diff == 1) character = 'chara';
+		if(character == this.character) return;
 
-          this.character = character;
-       }*/
+		this.character = character;
+		switch(grpWeekCharacters) {//MenuCharacter
+			case 'bf':
+                    character = 'bf':
+                case 'chara':
+                    character = 'chara':
+                default:
+                    character = 'bf':
+            } 
+	}
 
 	function weekIsLocked(weekNum:Int) {
 		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[weekNum]);
