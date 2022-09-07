@@ -3180,6 +3180,11 @@ class PlayState extends MusicBeatState
 				#end
 			}
 
+			/*if(curSong == 'No More Deals' && !FlxG.save.data.UnlockSong){
+				FlxG.save.data.UnlockSong=true;
+				FlxG.save.flush();
+			}*/
+
 			if (chartingMode)
 			{
 				openChartEditor();
