@@ -281,6 +281,9 @@ class PlayState extends MusicBeatState
 	// Less laggy controls
 	private var keysArray:Array<Dynamic>;
 
+	//I copied from QT 2.0 LOL
+	public static var THISISFUCKINGDISGUSTINGPLEASESAVEME:Bool = true;
+
 	override public function create()
 	{
 		#if MODS_ALLOWED
@@ -359,6 +362,7 @@ class PlayState extends MusicBeatState
 		#end
 
 		GameOverSubstate.resetVariables();
+		THISISFUCKINGDISGUSTINGPLEASESAVEME = true;
 		var songName:String = Paths.formatToSongPath(SONG.song);
 		curStage = PlayState.SONG.stage;
 		//trace('stage is: ' + curStage);
@@ -434,13 +438,13 @@ class PlayState extends MusicBeatState
 
 			case 'stagesans':
 				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -410, -110, 1, 1);
-				SansBG.scale.set(0.8, 0.9);
+				SansBG.scale.set(0.8, 0.8);
 				add(SansBG);
 			case 'stagepaps':
 				var ofs = 65;
 				
-			//case 'stagechara':
-				//var ofs = 50;
+			case 'stagechara':
+				var ofs = 50;
 			case 'lost':
 				// lmfao
 		}
@@ -2485,6 +2489,7 @@ class PlayState extends MusicBeatState
 	{
 		persistentUpdate = false;
 		paused = true;
+		THISISFUCKINGDISGUSTINGPLEASESAVEME = false;
 		cancelMusicFadeTween();
 		CustomFadeTransition.nextCamera = camOther;
 		MusicBeatState.switchState(new ChartingState());
@@ -3144,6 +3149,7 @@ class PlayState extends MusicBeatState
 		camZooming = false;
 		inCutscene = false;
 		updateTime = false;
+		THISISFUCKINGDISGUSTINGPLEASESAVEME = false;
 
 		deathCounter = 0;
 		seenCutscene = false;
@@ -4222,12 +4228,12 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
-		if (curSong == 'Not Enough') {
+		/*if (curSong == 'Not Enough') {
 			switch (curStep) {
 				case 20:
 					bonesJail();
 			}
-		}
+		}*/
 
 		lastStepHit = curStep;
 		setOnLuas('curStep', curStep);

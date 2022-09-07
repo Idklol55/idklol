@@ -125,7 +125,7 @@ class HealthIcon extends FlxSprite
 					animation.addByPrefix('losing', 'KILLER ICON SANS 2', 24, true);
 					antialiasing = ClientPrefs.globalAntialiasing;
 					iconOffsets[0] = (width - 135) / 2;
-					iconOffsets[1] = (width - 150) / 2;
+					iconOffsets[1] = (width - 160) / 2;
 					updateHitbox();
 				default:
 					var name:String = 'icons/' + char;
