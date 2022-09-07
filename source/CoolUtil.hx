@@ -53,7 +53,8 @@ class CoolUtil
 			}
 			else if (PlayState.SONG.song.toLowerCase() == "EEEEChrome")
 			{
-				dumbShit = "IM DEAD";
+				if (PlayState.storyDifficulty == 0)
+					dumbShit = "IM DEAD";
 			}
 		}
 		return dumbShit;
