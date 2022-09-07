@@ -625,16 +625,6 @@ class PlayState extends MusicBeatState
 		if(ClientPrefs.downScroll) strumLine.y = FlxG.height - 150;
 		strumLine.scrollFactor.set();
 
-       spaceBar = new FlxSprite();
-       spaceBar.frames = Paths.getSparrowAtlas('spacebar');
-       spaceBar.animation.addByPrefix('push', "spacebar", 24);
-       spaceBars.setGraphicSize(Std.int(spaceBar.width * 0.9));
-       spaceBar.cameras = [camHUD];
-       spaceBar.scrollFactor.set();
-       spaceBar.screenCenter(X);
-       spaceBar.y += 10;
-       add(spaceBar);
-
 		var showTime:Bool = (ClientPrefs.timeBarType != 'Disabled');
 		timeTxt = new FlxText(STRUM_X + (FlxG.width / 2) - 248, 19, 400, "", 32);
 		timeTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -1304,7 +1294,7 @@ class PlayState extends MusicBeatState
 			}*/
 			#if android
 			androidc.visible = true;
-			if (SONG.song.toLowerCase == 'Not Enough' || SONG.song.toLowerCase == 'No More Deals')
+			if (SONG.song.toLowerCase() == 'Not Enough' || SONG.song.toLowerCase() == 'No More Deals')
 			{
 				_virtualpad.visible = true;
 			}
@@ -1952,6 +1942,16 @@ class PlayState extends MusicBeatState
                     {newBF = "bf-sans";}
             }
             boyfriend.stunned = false;
+
+            spaceBar = new FlxSprite();
+            spaceBar.frames = Paths.getSparrowAtlas('spacebar');
+            spaceBar.animation.addByPrefix('push', "spacebar", 24);
+            spaceBars.setGraphicSize(Std.int(spaceBar.width * 0.9));
+            spaceBar.cameras = [camHUD];
+            spaceBar.scrollFactor.set();
+            spaceBar.screenCenter(X);
+            spaceBar.y += 10;
+            add(spaceBar);
             spaceBar.animation.play('push', false);
 
             //------
@@ -3141,7 +3141,7 @@ class PlayState extends MusicBeatState
 
 		#if android
 		androidc.visible = false;
-		if (SONG.song.toLowerCase == 'Not Enough' || SONG.song.toLowerCase == 'No More Deals')
+		if (SONG.song.toLowerCase() == 'Not Enough' || SONG.song.toLowerCase() == 'No More Deals')
 		{
 			_virtualpad.visible = false;
 		}
