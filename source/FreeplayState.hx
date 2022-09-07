@@ -30,7 +30,7 @@ class FreeplayState extends MusicBeatState
 
 	var selector:FlxText;
 	private static var curSelected:Int = 0;
-	var curDifficulty:Int = -1;
+	var curDifficulty:Int = 0;
 	private static var lastDifficultyName:String = '';
 
 	var scoreBG:FlxSprite;
@@ -390,7 +390,7 @@ class FreeplayState extends MusicBeatState
 		if (songs[curSelected].songName == 'No More Deals'){
 			diffText.text = "< CHAMOY >";
 			curDifficulty = 0;
-		} else{
+		}
 		if (songs[curSelected].songName == 'EEEEChrome'){
 			diffText.text = "< IM DEAD >";
 			curDifficulty = 0;
