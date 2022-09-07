@@ -1301,7 +1301,7 @@ class PlayState extends MusicBeatState
 			}*/
 			#if android
 			androidc.visible = true;
-			if (SONG.Not Enough || SONG.No More Deals)
+			if (songName == 'Not Enough' || songName == 'No More Deals')
 			{
 				_virtualpad.visible = true;
 			}
@@ -3137,7 +3137,7 @@ class PlayState extends MusicBeatState
 
 		#if android
 		androidc.visible = false;
-		if (SONG.Not Enough || SONG.No More Deals)
+		if (songName == 'Not Enough' || songName == 'No More Deals')
 		{
 			_virtualpad.visible = false;
 		}
