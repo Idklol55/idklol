@@ -395,14 +395,11 @@ class FreeplayState extends MusicBeatState
 		vocals = null;
 	}
 
-	function changeDiff(change:Int = 0, ?jank:Bool = false)
+	function changeDiff(change:Int = 0)
 	{
-		if (jank)
-			curDifficulty = 0;
-		else
 			curDifficulty += change;
 
-		if (songs[curSelected].songName.toLowerCase() == 'No More Deals' || songs[curSelected].songName.toLowerCase() == 'EEEEChrome')
+		if (songs[curSelected].songName == 'No More Deals' || songs[curSelected].songName == 'EEEEChrome')
 		{
 			curDifficulty = 0;
 		}
@@ -422,11 +419,11 @@ class FreeplayState extends MusicBeatState
 		#end
 
 		PlayState.storyDifficulty = curDifficulty;
-		if (songs[curSelected].songName.toLowerCase() == 'No More Deals')
+		if (songs[curSelected].songName == 'No More Deals')
 		{
 			diffText.text = '< CHAMOY >';
 		}
-		else if (songs[curSelected].songName.toLowerCase() == 'EEEEChrome')
+		else if (songs[curSelected].songName == 'EEEEChrome')
 		{
 			diffText.text = '< IM DEAD >';
 		}

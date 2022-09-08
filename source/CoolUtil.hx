@@ -44,8 +44,6 @@ class CoolUtil
 	{
 		var dumbShit:String = difficulties[PlayState.storyDifficulty].toUpperCase();
 
-		if (PlayState.SONG != null && PlayState.THISISFUCKINGDISGUSTINGPLEASESAVEME == true)
-		{
 			if (PlayState.SONG.song.toLowerCase() == 'No More Deals')
 			{
 					dumbShit = 'CHAMOY';
