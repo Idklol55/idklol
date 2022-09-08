@@ -936,9 +936,6 @@ class PlayState extends MusicBeatState
 						case 'senpai' | 'roses' | 'thorns':
 							if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
 							schoolIntro(doof);
-	
-					case 'Nyeh Heh Heh' | 'Bonely One' | 'Not Enough':
-						startDialogue(dialogueJson);
 				default:
 					startCountdown();
 			}
@@ -3235,7 +3232,7 @@ class PlayState extends MusicBeatState
 				trace(storyPlaylist);
 				storyPlaylist.remove(storyPlaylist[0]);
 				trace("new" + storyPlaylist);
-					
+
 				if (storyPlaylist.length <= 0)
 				{
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
