@@ -30,7 +30,7 @@ class FreeplayState extends MusicBeatState
 
 	var selector:FlxText;
 	private static var curSelected:Int = 0;
-	var curDifficulty:Int = -1;
+	var curDifficulty:Int = 0;
 	private static var lastDifficultyName:String = '';
 
 	var scoreBG:FlxSprite;
@@ -392,14 +392,24 @@ class FreeplayState extends MusicBeatState
 		vocals = null;
 	}
 
-	function changeDiff(change:Int = 0)
+	function changeDiff(change:Int = 0), ?jank:Bool = false
 	{
-		curDifficulty += change;
-
-		if (curDifficulty < 0)
-			curDifficulty = CoolUtil.difficulties.length-1;
-		if (curDifficulty >= CoolUtil.difficulties.length)
+		if (jank)
 			curDifficulty = 0;
+		else
+			curDifficulty += change;
+
+		if (songs[curSelected].songName.toLowerCase() == "No More Deals" || songs[curSelected].songName.toLowerCase() == "EEEEChrome")
+		{
+			curDifficulty = 0;
+		}
+		else
+		{
+			if (curDifficulty < 0)
+				curDifficulty = CoolUtil.difficulties.length-1;
+			if (curDifficulty >= CoolUtil.difficulties.length)
+				curDifficulty = 0;
+		}
 
 		lastDifficultyName = CoolUtil.difficulties[curDifficulty];
 
@@ -409,12 +419,10 @@ class FreeplayState extends MusicBeatState
 		#end
 
 		PlayState.storyDifficulty = curDifficulty;
-		if (songs[curSelected].songName == 'No More Deals'){
-			if (curDifficulty == 0)
+		if (songs[curSelected].songName.toLowerCase() == "No More Deals")
 				diffText.text = '< CHAMOY >';
 		}
-		else if (songs[curSelected].songName == 'EEEEChrome'){
-			if (curDifficulty == 0)
+		else if (songs[curSelected].songName.toLowerCase() == "EEEEChrome")
 			diffText.text = '< IM DEAD >';
 		}
 		else

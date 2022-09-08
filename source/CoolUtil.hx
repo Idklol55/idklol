@@ -48,12 +48,10 @@ class CoolUtil
 		{
 			if (PlayState.SONG.song.toLowerCase() == "No More Deals")
 			{
-				if (PlayState.storyDifficulty == 0)
 					dumbShit = "CHAMOY";
 			}
 			else if (PlayState.SONG.song.toLowerCase() == "EEEEChrome")
 			{
-				if (PlayState.storyDifficulty == 0)
 					dumbShit = "IM DEAD";
 			}
 		}
