@@ -46,11 +46,11 @@ class CoolUtil
 
 		if (PlayState.SONG != null && PlayState.THISISFUCKINGDISGUSTINGPLEASESAVEME == true)
 		{
-			if (PlayState.SONG.song.toLowerCase() == "No More Deals")
+			if (PlayState.SONG.song.toLowerCase()=='No More Deals')
 			{
 					dumbShit = "CHAMOY";
 			}
-			else if (PlayState.SONG.song.toLowerCase() == "EEEEChrome")
+			else if (PlayState.SONG.song.toLowerCase()=='EEEEChrome')
 			{
 					dumbShit = "IM DEAD";
 			}

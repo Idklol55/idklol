@@ -179,7 +179,7 @@ class Paths
 	
 	inline static public function voicesCH(song:String):Any
 	{
-		#if (desktop && MODS_ALLOWED)
+		#if desktop
 		var file:Sound = returnSongFile(modsSongs(song.toLowerCase().replace(' ', '-') + '/VoicesCH'));
 		if(file != null) {
 			return file;
@@ -190,7 +190,7 @@ class Paths
 
 	inline static public function voices(song:String):Any
 	{
-		#if (desktop && MODS_ALLOWED)
+		#if desktop
 		var file:Sound = returnSongFile(modsSongs(song.toLowerCase().replace(' ', '-') + '/Voices'));
 		if(file != null) {
 			return file;
@@ -201,7 +201,7 @@ class Paths
 
 	inline static public function inst(song:String):Any
 	{
-		#if (desktop && MODS_ALLOWED)
+		#if desktop
 		var file:Sound = returnSongFile(modsSongs(song.toLowerCase().replace(' ', '-') + '/Inst'));
 		if(file != null) {
 			return file;
@@ -210,7 +210,7 @@ class Paths
 		return 'songs:assets/songs/${song.toLowerCase().replace(' ', '-')}/Inst.$SOUND_EXT';
 	}
 
-	#if (desktop && MODS_ALLOWED)
+	#if desktop
 	inline static private function returnSongFile(file:String):Sound
 	{
 		if(FileSystem.exists(file)) {
