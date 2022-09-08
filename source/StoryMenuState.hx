@@ -460,7 +460,7 @@ class StoryMenuState extends MusicBeatState
 
         var weekArray:Array<String> = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]).weekCharacters;
         for (i in 0...grpWeekCharacters.length) {
-            grpWeekCharacters.members[i].changeCharacter(weekArray[i]).curDifficulty;
+            grpWeekCharacters.members[i].changeCharacter(weekArray[i]);
         }
 	}
 
