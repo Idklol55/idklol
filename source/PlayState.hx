@@ -809,6 +809,7 @@ class PlayState extends MusicBeatState
 		spaceBar.antialiasing = ClientPrefs.globalAntialiasing;
 		spaceBar.cameras = [camOther];
 		spaceBar.animation.addByPrefix('push', 'spacebar', 24, true);
+		spaceBar.animation.addByPrefix('warning', 'ALERT', 24, true);
 		spaceBar.scale.set(0.8, 0.8);
 		spaceBar.updateHitbox();
 		spaceBar.antialiasing = true;
@@ -1962,7 +1963,6 @@ class PlayState extends MusicBeatState
                     {newBF = "bf-sans";}
             }
             boyfriend.stunned = false;
-            spaceBar.animation.play('push', false);
 
             //------
             triggerEventNote("Change Character", "bf", newBF);
