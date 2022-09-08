@@ -52,7 +52,6 @@ class CoolUtil
 			{
 					dumbShit = 'IM DEAD';
 			}
-		}
 		return dumbShit;
 	}
 
