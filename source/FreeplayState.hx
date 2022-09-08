@@ -420,9 +420,11 @@ class FreeplayState extends MusicBeatState
 
 		PlayState.storyDifficulty = curDifficulty;
 		if (songs[curSelected].songName.toLowerCase() == "No More Deals")
+		{
 				diffText.text = '< CHAMOY >';
 		}
 		else if (songs[curSelected].songName.toLowerCase() == "EEEEChrome")
+		{
 			diffText.text = '< IM DEAD >';
 		}
 		else
