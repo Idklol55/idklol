@@ -179,38 +179,38 @@ class Paths
 	
 	inline static public function voicesCH(song:String):Any
 	{
-		//#if MODS_ALLOWED
+		#if (desktop && MODS_ALLOWED)
 		var file:Sound = returnSongFile(modsSongs(song.toLowerCase().replace(' ', '-') + '/VoicesCH'));
 		if(file != null) {
 			return file;
 		}
-		//#end
+		#end
 		return 'songs:assets/songs/${song.toLowerCase().replace(' ', '-')}/VoicesCH.$SOUND_EXT';
 	}
 
 	inline static public function voices(song:String):Any
 	{
-		//#if MODS_ALLOWED
+		#if (desktop && MODS_ALLOWED)
 		var file:Sound = returnSongFile(modsSongs(song.toLowerCase().replace(' ', '-') + '/Voices'));
 		if(file != null) {
 			return file;
 		}
-		//#end
+		#end
 		return 'songs:assets/songs/${song.toLowerCase().replace(' ', '-')}/Voices.$SOUND_EXT';
 	}
 
 	inline static public function inst(song:String):Any
 	{
-		//#if MODS_ALLOWED
+		#if (desktop && MODS_ALLOWED)
 		var file:Sound = returnSongFile(modsSongs(song.toLowerCase().replace(' ', '-') + '/Inst'));
 		if(file != null) {
 			return file;
 		}
-		//#end
+		#end
 		return 'songs:assets/songs/${song.toLowerCase().replace(' ', '-')}/Inst.$SOUND_EXT';
 	}
 
-	//#if MODS_ALLOWED
+	#if (desktop && MODS_ALLOWED)
 	inline static private function returnSongFile(file:String):Sound
 	{
 		if(FileSystem.exists(file)) {
@@ -221,7 +221,7 @@ class Paths
 		}
 		return null;
 	}
-	//#end
+	#end
 
 	inline static public function image(key:String, ?library:String):Dynamic
 	{
