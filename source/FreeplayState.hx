@@ -392,7 +392,7 @@ class FreeplayState extends MusicBeatState
 		vocals = null;
 	}
 
-	function changeDiff(change:Int = 0), ?jank:Bool = false
+	function changeDiff(change:Int = 0), ?jank:Bool = false)
 	{
 		if (jank)
 			curDifficulty = 0;
