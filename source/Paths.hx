@@ -210,7 +210,7 @@ class Paths
 		return 'songs:assets/songs/${song.toLowerCase().replace(' ', '-')}/Inst.$SOUND_EXT';
 	}
 
-	#if MODS_ALLOWED
+	//#if MODS_ALLOWED
 	inline static private function returnSongFile(file:String):Sound
 	{
 		if(FileSystem.exists(file)) {
@@ -221,7 +221,7 @@ class Paths
 		}
 		return null;
 	}
-	#end
+	//#end
 
 	inline static public function image(key:String, ?library:String):Dynamic
 	{
