@@ -64,8 +64,6 @@ class PlayState extends MusicBeatState
 	public static var STRUM_X_MIDDLESCROLL = -278;
 	public static var doingreef:Bool = false;
 	
-	var ofs = 35;
-	
 	// BoneJail
     final jailInfo:Map<String, Float> = [
         "spacesneeded" => 14, // spaces needed | espacios necesarios
@@ -77,6 +75,9 @@ class PlayState extends MusicBeatState
     var jailCooldown:Bool = false;
     var jailTimers = new FlxTimerManager();
     var spaceBar:FlxSprite;
+    
+    //ofs Camera
+	var ofs = 35;
 
 	public static var ratingStuff:Array<Dynamic> = [
 		['You Suck!', 0.2], //From 0% to 19%
@@ -437,7 +438,7 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'stagesans':
-				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -410, -110, 1, 1);
+				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -410, -100, 1, 1);
 				SansBG.scale.set(0.8, 0.8);
 				add(SansBG);
 			case 'stagepaps':
@@ -802,6 +803,18 @@ class PlayState extends MusicBeatState
 		if(ClientPrefs.downScroll) {
 			botplayTxt.y = timeBarBG.y - 78;
 		}
+		
+		spaceBar = new FlxSprite(0, 0);
+		spaceBar.frames = Paths.getSparrowAtlas('spacebar');
+		spaceBar.antialiasing = ClientPrefs.globalAntialiasing;
+		spaceBar.cameras = [camOther];
+		spaceBar.animation.addByPrefix('push', 'spacebar', 24, true);
+		spaceBar.scale.set(0.8, 0.8);
+		spaceBar.updateHitbox();
+		spaceBar.antialiasing = true;
+		spaceBar.screenCenter();
+		spaceBar.alpha = 0.0001;
+		add(spaceBar);
 
 		strumLineNotes.cameras = [camHUD];
 		grpNoteSplashes.cameras = [camHUD];
@@ -1298,10 +1311,10 @@ class PlayState extends MusicBeatState
 			}*/
 			#if android
 			androidc.visible = true;
-			//if (SONG.song == 'Not Enough' || SONG.song == 'No More Deals')
-			//{
+			if (SONG.song.toLowerCase() == "Not Enough" || SONG.song.toLowerCase() == "No More Deals")
+			{
 				_virtualpad.visible = true;
-			//}
+			}
 			#end
 			generateStaticArrows(0);
 			generateStaticArrows(1);
@@ -1929,6 +1942,7 @@ class PlayState extends MusicBeatState
             }
             jailCooldown = false;
             spaces = 0;
+            spaceBar.alpha = 0.0001;
             inJail = false;
 
             var newBF:String = "bf-sans";
@@ -3064,6 +3078,9 @@ class PlayState extends MusicBeatState
 				case 'school' | 'schoolEvil':
 					camFollow.x = boyfriend.getMidpoint().x - 200;
 					camFollow.y = boyfriend.getMidpoint().y - 200;
+				case 'stagepaps' | 'stagesans' | 'stagechara':
+					camFollow.x = boyfriend.getMidpoint().x - 200;
+					camFollow.y = boyfriend.getMidpoint().y - 200;
 			}
 			camFollow.x -= boyfriend.cameraPosition[0];
 			camFollow.y += boyfriend.cameraPosition[1];
@@ -3136,10 +3153,10 @@ class PlayState extends MusicBeatState
 
 		#if android
 		androidc.visible = false;
-		//if (SONG.song == 'Not Enough' || SONG.song == 'No More Deals')
-		//{
+		if (SONG.song.toLowerCase() == "Not Enough" || SONG.song.toLowerCase() == "No More Deals")
+		{
 			_virtualpad.visible = false;
-		//}
+		}
 		#end
 		timeBarBG.visible = false;
 		timeBar.visible = false;
@@ -4576,20 +4593,10 @@ class PlayState extends MusicBeatState
             FlxTween.tween(i, {alpha: 0.8}, 0.5, {ease: FlxEase.linear});
         }
 
-        spaceBar = new FlxSprite();
-        spaceBar.frames = Paths.getSparrowAtlas('spacebar');
-        spaceBar.animation.addByPrefix('push', "spacebar", 24);
-        spaceBar.setGraphicSize(Std.int(spaceBar.width * 0.9));
-        spaceBar.animation.play('push', false);
-        spaceBar.cameras = [camHUD];
-        spaceBar.scrollFactor.set();
-        spaceBar.screenCenter(X);
-        spaceBar.y += 10;
-        add(spaceBar);
-
         FlxG.camera.flash(FlxColor.WHITE, 0.5);
         FlxG.sound.play(Paths.sound('bones'));
         spaceBar.animation.play('push', true);
+        spaceBar.alpha = 1;
         inJail = true;
         spaces = Std.int(jailInfo["spacesneeded"]);
         boyfriend.stunned = true;
