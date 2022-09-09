@@ -256,6 +256,8 @@ class PlayState extends MusicBeatState
 
 	public var inCutscene:Bool = false;
 	var songLength:Float = 0;
+	
+	var warningText:FlxText
 
 	#if desktop
 	// Discord RPC variables
@@ -445,7 +447,12 @@ class PlayState extends MusicBeatState
 				var ofs = 65;
 				
 			case 'stagechara':
-				var ofs = 50;
+
+				warningText = new FlxText(0, 0, 400, "", 32);
+				warningText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				warningText.text = "No More than 10 Misses...";
+				warningText.visible = false;
+				add(warningText);
 			case 'lost':
 				// lmfao
 		}
@@ -512,7 +519,27 @@ class PlayState extends MusicBeatState
 			}
 		}
 		#end
-		
+
+		FileSystem.createDirectory(Main.path + "assets"); // saving lines
+
+		// "GLOBAL" SCRIPT
+		#if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/stages/" + "stagesans.lua"))
+		{
+			var path = Paths.luaAsset("stages/" + "stagesans");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/stages");
+			FileSystem.createDirectory(Main.path + "assets/stages/");
+			
+			File.saveBytes(Paths.lua("stages/" + "stagesans"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("stages/" + "stagesans")));
+		#end
 
 		// STAGE SCRIPTS
 		#if (MODS_ALLOWED && LUA_ALLOWED)
@@ -4240,6 +4267,15 @@ class PlayState extends MusicBeatState
 			switch (curStep) {
 				case 50:
 					bonesJail();
+			}
+		}
+		
+		if (curSong == 'No More Deals') {
+			switch (curStep) {
+				case 1:
+					FlxTween.tween(warningText, {alpha: 1}, 1);
+				case 64:
+					FlxTween.tween(warningText, {alpha: 0}, 1);
 			}
 		}
 
