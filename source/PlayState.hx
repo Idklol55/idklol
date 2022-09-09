@@ -3060,13 +3060,6 @@ class PlayState extends MusicBeatState
 		if(isDad)
 		{
 			camFollow.set(dad.getMidpoint().x + 150, dad.getMidpoint().y - 100);
-			
-			switch (dad.curCharacter)
-			{
-				case 'sans':
-					camFollow.x = dad.getMidpoint().x - 200;
-					camFollow.y = dad.getMidpoint().y - 0;
-			}
 			camFollow.x += dad.cameraPosition[0];
 			camFollow.y += dad.cameraPosition[1];
 			tweenCamIn();
@@ -3075,12 +3068,12 @@ class PlayState extends MusicBeatState
 		{
 			camFollow.set(boyfriend.getMidpoint().x - 100, boyfriend.getMidpoint().y - 100);
 
-			switch (boyfriend.curCharacter)
+			/*switch (boyfriend.curCharacter)
 			{
 				case 'bf-sans' | 'chara-sans' | 'bf-black' | 'chara-black' | 'bones-jail' | 'bones-jail-chara' | 'bones-jail-black' | 'bones-jail-black-chara':
 					camFollow.x = boyfriend.getMidpoint().x - 200;
 					camFollow.y = boyfriend.getMidpoint().y - 200;
-			}
+			}*/
 			camFollow.x -= boyfriend.cameraPosition[0];
 			camFollow.y += boyfriend.cameraPosition[1];
 
@@ -3932,12 +3925,12 @@ class PlayState extends MusicBeatState
 				var xx2 = (boyfriend.getMidpoint().x - 100) - boyfriend.cameraPosition[0]; 
 				var yy2 = (boyfriend.getMidpoint().y - 100) + boyfriend.cameraPosition[1]; 
 				
-				switch (curStage)
+				/*switch (curStage)
 				{
 					case 'stagepaps' | 'stagesans' | 'stagechara':
 						xx2= (boyfriend.getMidpoint().x - 200) - boyfriend.cameraPosition[0];
 						yy2 = (boyfriend.getMidpoint().y - 200) + boyfriend.cameraPosition[1];
-				}
+				}*/
 
 				var singAnimationsPostions:Array<Array<Float>> = [
 					[xx2-ofs,yy2], 

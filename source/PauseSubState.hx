@@ -32,7 +32,10 @@ class PauseSubState extends MusicBeatSubstate
 	public function new(x:Float, y:Float)
 	{
 		super();
-		if(CoolUtil.difficulties.length < 2) menuItemsOG.remove('Change Difficulty'); //No need to change difficulty if there is only one!
+		if(CoolUtil.difficulties.length < 2
+		|| PlayState.SONG.song == 'EEEEChrome'
+		|| PlayState.SONG.song == 'No More Deals')
+		menuItemsOG.remove('Change Difficulty'); //No need to change difficulty if there is only one!
 
 		if(PlayState.chartingMode)
 		{
@@ -66,11 +69,11 @@ class PauseSubState extends MusicBeatSubstate
 		add(levelInfo);
 
 		var levelDifficulty:FlxText = new FlxText(20, 15 + 32, 0, "", 32);
-		if (FreeplayState.songs[curSelected].songName == 'No More Deals')
+		if (PlayState.SONG.song == 'No More Deals')
 		{
 			levelDifficulty.text = "CHAMOY";
 		}
-		else if (FreeplayState.songs[curSelected].songName == 'EEEEChrome')
+		else if (PlayState.SONG.song == 'EEEEChrome')
 		{
 			levelDifficulty.text = "IM DEAD";
 		}
