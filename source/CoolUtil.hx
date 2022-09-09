@@ -42,17 +42,7 @@ class CoolUtil
 
 	public static function difficultyString():String
 	{
-		var dumbShit:String = difficulties[PlayState.storyDifficulty].toUpperCase();
-
-			if (PlayState.SONG.song.toLowerCase() == 'No More Deals')
-			{
-					dumbShit = 'CHAMOY';
-			}
-			else if (PlayState.SONG.song.toLowerCase() == 'EEEEChrome')
-			{
-					dumbShit = 'IM DEAD';
-			}
-		return dumbShit;
+		return difficulties[PlayState.storyDifficulty].toUpperCase();
 	}
 
 	inline public static function boundTo(value:Float, min:Float, max:Float):Float {

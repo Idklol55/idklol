@@ -341,11 +341,9 @@ class StoryMenuState extends MusicBeatState
 		{
 			var graphic:FlxGraphic = image;
 			newImagePath = graphic.assetsKey;
-			updateImages();
 		}
 		else
 			newImagePath = image;
-			changeCharacter();//grpWeekCharacters
 
 		if(newImagePath != lastImagePath)
 		{
@@ -363,6 +361,7 @@ class StoryMenuState extends MusicBeatState
 		}
 		lastImagePath = newImagePath;
 		lastDifficultyName = CoolUtil.difficulties[curDifficulty];
+		updateImages();
 
 		#if !switch
 		intendedScore = Highscore.getWeekScore(WeekData.weeksList[curWeek], curDifficulty);
@@ -460,10 +459,11 @@ class StoryMenuState extends MusicBeatState
 
         var weekArray:Array<String> = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]).weekCharacters;
         for (i in 0...grpWeekCharacters.length) {
-            grpWeekCharacters.members[i].changeCharacter(weekArray[i]);
+            grpWeekCharacters.members[i].changeCharacter, curDifficulty(weekArray[i]);
         }
 	}
 
+	/*public var character:MenuCharacter;
 	public var character:String = 'bf';
 	public function changeCharacter(?character:String = 'bf', diff:Int = 0){
 		if(character == null) character = '';
@@ -479,7 +479,7 @@ class StoryMenuState extends MusicBeatState
                 default:
                     character = 'bf';
             } 
-	}
+	}*/
 
 	function weekIsLocked(weekNum:Int) {
 		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[weekNum]);
