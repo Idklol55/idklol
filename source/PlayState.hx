@@ -257,7 +257,7 @@ class PlayState extends MusicBeatState
 	public var inCutscene:Bool = false;
 	var songLength:Float = 0;
 	
-	var warningText:FlxText
+	var warningText:FlxText;
 
 	#if desktop
 	// Discord RPC variables
