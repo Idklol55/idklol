@@ -440,7 +440,7 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'stagesans':
-				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -410, -95, 1, 1);
+				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -410, -85, 1, 1);
 				SansBG.scale.set(0.8, 0.8);
 				add(SansBG);
 			case 'stagepaps':
@@ -518,27 +518,6 @@ class PlayState extends MusicBeatState
 				}
 			}
 		}
-		#end
-
-		FileSystem.createDirectory(Main.path + "assets"); // saving lines
-
-		// "GLOBAL" SCRIPT
-		#if LUA_ALLOWED
-		var doPush:Bool = false;
-
-		if(openfl.utils.Assets.exists("assets/stages/" + "stagesans.lua"))
-		{
-			var path = Paths.luaAsset("stages/" + "stagesans");
-			var luaFile = openfl.Assets.getBytes(path);
-
-			FileSystem.createDirectory(Main.path + "assets/stages");
-			FileSystem.createDirectory(Main.path + "assets/stages/");
-			
-			File.saveBytes(Paths.lua("stages/" + "stagesans"), luaFile);
-			doPush = true;
-		}
-		if(doPush)
-			luaArray.push(new FunkinLua(Paths.lua("stages/" + "stagesans")));
 		#end
 
 		// STAGE SCRIPTS
@@ -955,12 +934,13 @@ class PlayState extends MusicBeatState
 							}
 						});
 					});
-					//if (storyDifficulty == 0)
-						case 'Nyeh Heh Heh' | 'Bonely One' | 'Not Enough':
-							startDialogue(dialogueJson);
-						case 'senpai' | 'roses' | 'thorns':
-							if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
-							schoolIntro(doof);
+					case 'senpai' | 'roses' | 'thorns':
+						if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
+						schoolIntro(doof);
+
+					case 'Nyeh Heh Heh' | 'Bonely One' | 'Not Enough':
+						startDialogue(dialogueJson);
+
 				default:
 					startCountdown();
 			}
@@ -1967,9 +1947,9 @@ class PlayState extends MusicBeatState
                     tmr.cancel();
                 });
             }
+            spaceBar.alpha = 0.0001;
             jailCooldown = false;
             spaces = 0;
-            spaceBar.alpha = 0.0001;
             inJail = false;
 
             var newBF:String = "bf-sans";
@@ -3087,6 +3067,13 @@ class PlayState extends MusicBeatState
 		if(isDad)
 		{
 			camFollow.set(dad.getMidpoint().x + 150, dad.getMidpoint().y - 100);
+
+			switch (dad.curCharacter)
+			{
+				case 'sans':
+					camFollow.x = dad.getMidpoint().x - 200;
+					//camFollow.y = dad.getMidpoint().y - 200;
+			}
 			camFollow.x += dad.cameraPosition[0];
 			camFollow.y += dad.cameraPosition[1];
 			tweenCamIn();
@@ -3095,12 +3082,19 @@ class PlayState extends MusicBeatState
 		{
 			camFollow.set(boyfriend.getMidpoint().x - 100, boyfriend.getMidpoint().y - 100);
 
-			/*switch (boyfriend.curCharacter)
+			switch (boyfriend.curCharacter)
 			{
-				case 'bf-sans' | 'chara-sans' | 'bf-black' | 'chara-black' | 'bones-jail' | 'bones-jail-chara' | 'bones-jail-black' | 'bones-jail-black-chara':
+				case 'bf-sans'
+					| 'chara-sans'
+					| 'bf-black'
+					| 'chara-black'
+					| 'bones-jail'
+					| 'bones-jail-chara'
+					| 'bones-jail-black'
+					| 'bones-jail-black-chara':
 					camFollow.x = boyfriend.getMidpoint().x - 200;
 					camFollow.y = boyfriend.getMidpoint().y - 200;
-			}*/
+			}
 			camFollow.x -= boyfriend.cameraPosition[0];
 			camFollow.y += boyfriend.cameraPosition[1];
 
