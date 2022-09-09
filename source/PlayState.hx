@@ -1311,10 +1311,10 @@ class PlayState extends MusicBeatState
 			}*/
 			#if android
 			androidc.visible = true;
-			if(SONG.song.toLowerCase()=='Not Enough' || SONG.song.toLowerCase()=='No More Deals')
-			{
+			//if(SONG.song.toLowerCase()=='Not Enough' || SONG.song.toLowerCase()=='No More Deals')
+			//{
 				_virtualpad.visible = true;
-			}
+			//}
 			#end
 			generateStaticArrows(0);
 			generateStaticArrows(1);
@@ -3152,10 +3152,10 @@ class PlayState extends MusicBeatState
 
 		#if android
 		androidc.visible = false;
-		if(SONG.song.toLowerCase()=='Not Enough' || SONG.song.toLowerCase()=='No More Deals')
-		{
+		//if(SONG.song.toLowerCase()=='Not Enough' || SONG.song.toLowerCase()=='No More Deals')
+		//{
 			_virtualpad.visible = false;
-		}
+		//}
 		#end
 		timeBarBG.visible = false;
 		timeBar.visible = false;
@@ -3219,12 +3219,12 @@ class PlayState extends MusicBeatState
 				campaignMisses += songMisses;
 				
 				if (storyDifficulty == 0)
-				{
+				//{
 					if (curSong == 'Not Enough')
 					{
 						storyPlaylist.push('No More Deals');
 					}
-				}
+				//}
 
 				trace(storyPlaylist);
 				storyPlaylist.remove(storyPlaylist[0]);
@@ -4246,12 +4246,12 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
-		/*if (curSong == 'Not Enough') {
+		if (curSong == 'Not Enough') {
 			switch (curStep) {
-				case 20:
+				case 50:
 					bonesJail();
 			}
-		}*/
+		}
 
 		lastStepHit = curStep;
 		setOnLuas('curStep', curStep);
