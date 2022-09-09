@@ -444,7 +444,7 @@ class TitleState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
 
 				if (logoBl != null)
-					FlxTween.tween(logoBl, {y: -1280}, 2.1, {ease: FlxEase.circInOut});
+					FlxTween.tween(logoBl, {y: -1280}, 2, {ease: FlxEase.circInOut});
 
 				transitioning = true;
 				// FlxG.sound.music.stop();

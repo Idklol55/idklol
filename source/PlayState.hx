@@ -438,7 +438,7 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'stagesans':
-				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -410, -100, 1, 1);
+				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -410, -95, 1, 1);
 				SansBG.scale.set(0.8, 0.8);
 				add(SansBG);
 			case 'stagepaps':
@@ -810,7 +810,7 @@ class PlayState extends MusicBeatState
 		spaceBar.cameras = [camOther];
 		spaceBar.animation.addByPrefix('push', 'spacebar', 24, true);
 		spaceBar.animation.addByPrefix('warning', 'ALERT', 24, true);
-		spaceBar.scale.set(0.8, 0.8);
+		spaceBar.scale.set(0.5, 0.5);
 		spaceBar.updateHitbox();
 		spaceBar.antialiasing = true;
 		spaceBar.screenCenter();
@@ -3060,6 +3060,13 @@ class PlayState extends MusicBeatState
 		if(isDad)
 		{
 			camFollow.set(dad.getMidpoint().x + 150, dad.getMidpoint().y - 100);
+			
+			switch (dad.curCharacter)
+			{
+				case 'sans':
+					camFollow.x = dad.getMidpoint().x - 200;
+					camFollow.y = dad.getMidpoint().y - 0;
+			}
 			camFollow.x += dad.cameraPosition[0];
 			camFollow.y += dad.cameraPosition[1];
 			tweenCamIn();
@@ -3068,16 +3075,9 @@ class PlayState extends MusicBeatState
 		{
 			camFollow.set(boyfriend.getMidpoint().x - 100, boyfriend.getMidpoint().y - 100);
 
-			switch (curStage)
+			switch (boyfriend.curCharacter)
 			{
-				case 'limo':
-					camFollow.x = boyfriend.getMidpoint().x - 300;
-				case 'mall':
-					camFollow.y = boyfriend.getMidpoint().y - 200;
-				case 'school' | 'schoolEvil':
-					camFollow.x = boyfriend.getMidpoint().x - 200;
-					camFollow.y = boyfriend.getMidpoint().y - 200;
-				case 'stagepaps' | 'stagesans' | 'stagechara':
+				case 'bf-sans' | 'chara-sans' | 'bf-black' | 'chara-black' | 'bones-jail' | 'bones-jail-chara' | 'bones-jail-black' | 'bones-jail-black-chara':
 					camFollow.x = boyfriend.getMidpoint().x - 200;
 					camFollow.y = boyfriend.getMidpoint().y - 200;
 			}
@@ -3850,7 +3850,7 @@ class PlayState extends MusicBeatState
 
 			var xx = (char.getMidpoint().x + camerashit[0]) + char.cameraPosition[0];
 			var yy = (char.getMidpoint().y + camerashit[1]) + char.cameraPosition[1];
-			
+
 			var singAnimationsPostions:Array<Array<Float>> = [
 				[xx-ofs,yy], 
 				[xx,yy+ofs], 
@@ -3934,9 +3934,6 @@ class PlayState extends MusicBeatState
 				
 				switch (curStage)
 				{
-					case 'school' | 'schoolEvil':
-						xx2 = (boyfriend.getMidpoint().x - 200) - boyfriend.cameraPosition[0];
-						yy2 = (boyfriend.getMidpoint().y - 200) + boyfriend.cameraPosition[1];
 					case 'stagepaps' | 'stagesans' | 'stagechara':
 						xx2= (boyfriend.getMidpoint().x - 200) - boyfriend.cameraPosition[0];
 						yy2 = (boyfriend.getMidpoint().y - 200) + boyfriend.cameraPosition[1];
