@@ -77,7 +77,7 @@ class PlayState extends MusicBeatState
     var spaceBar:FlxSprite;
     
     //ofs Camera
-	var ofs = 35;
+	var ofs = 0;
 
 	public static var ratingStuff:Array<Dynamic> = [
 		['You Suck!', 0.2], //From 0% to 19%
