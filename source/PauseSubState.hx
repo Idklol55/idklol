@@ -66,11 +66,11 @@ class PauseSubState extends MusicBeatSubstate
 		add(levelInfo);
 
 		var levelDifficulty:FlxText = new FlxText(20, 15 + 32, 0, "", 32);
-		if (PlayState.SONG.song == 'No More Deals')
+		if (FreeplayState.songs[curSelected].songName == 'No More Deals')
 		{
 			levelDifficulty.text = "CHAMOY";
 		}
-		else if (PlayState.SONG.song == 'EEEEChrome')
+		else if (FreeplayState.songs[curSelected].songName == 'EEEEChrome')
 		{
 			levelDifficulty.text = "IM DEAD";
 		}
