@@ -440,7 +440,7 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'stagesans':
-				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -410, -80, 1, 1);
+				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -410, -70, 1, 1);
 				SansBG.scale.set(0.8, 0.8);
 				add(SansBG);
 			case 'stagepaps':
@@ -3122,7 +3122,7 @@ class PlayState extends MusicBeatState
 					| 'bones-jail-chara'
 					| 'bones-jail-black'
 					| 'bones-jail-black-chara':
-					camFollow.x = boyfriend.getMidpoint().x - 290;
+					camFollow.x = boyfriend.getMidpoint().x - 300;
 					camFollow.y = boyfriend.getMidpoint().y - 250;
 			}
 			camFollow.x -= boyfriend.cameraPosition[0];
@@ -3985,7 +3985,7 @@ class PlayState extends MusicBeatState
 				switch (boyfriend.curCharacter)
 				{
 					case 'bf-sans':
-						xx2= (boyfriend.getMidpoint().x - 290) - boyfriend.cameraPosition[0];
+						xx2= (boyfriend.getMidpoint().x - 300) - boyfriend.cameraPosition[0];
 						yy2 = (boyfriend.getMidpoint().y - 250) + boyfriend.cameraPosition[1];
 				}
 
@@ -4295,16 +4295,16 @@ class PlayState extends MusicBeatState
 
 		if (curSong == 'Not Enough') {
 			switch (curStep) {
-				case 50:
+				case 128 | 260 | 520 | 899:
 					bonesJail();
 			}
 		}
 		
 		if (curSong == 'No More Deals') {
 			switch (curStep) {
-				case 1:
+				case 12:
 					FlxTween.tween(warningText, {alpha: 1}, 1);
-				case 64:
+				case 53:
 					FlxTween.tween(warningText, {alpha: 0}, 1);
 			}
 		}
