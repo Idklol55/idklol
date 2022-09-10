@@ -451,7 +451,7 @@ class PlayState extends MusicBeatState
 				CharaBG.scale.set(1.9, 2);
 				add(CharaBG);
 
-				warningText = new FlxText(0, -50, 0, "No More than 10 Misses...", 32);
+				warningText = new FlxText(0, 0, 0, "No More than 10 Misses...", 32);
 				warningText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 				warningText.screenCenter(X);
 				warningText.alpha = 0;
@@ -3101,8 +3101,8 @@ class PlayState extends MusicBeatState
 			switch (dad.curCharacter)
 			{
 				case 'sans':
-					camFollow.x = dad.getMidpoint().x + 170;
-					//camFollow.y = dad.getMidpoint().y - 200;
+					camFollow.x = dad.getMidpoint().x + 180;
+					//camFollow.y = dad.getMidpoint().y - 100;
 			}
 			camFollow.x += dad.cameraPosition[0];
 			camFollow.y += dad.cameraPosition[1];
@@ -3122,7 +3122,7 @@ class PlayState extends MusicBeatState
 					| 'bones-jail-chara'
 					| 'bones-jail-black'
 					| 'bones-jail-black-chara':
-					camFollow.x = boyfriend.getMidpoint().x - 270;
+					camFollow.x = boyfriend.getMidpoint().x - 290;
 					camFollow.y = boyfriend.getMidpoint().y - 250;
 			}
 			camFollow.x -= boyfriend.cameraPosition[0];
@@ -3898,8 +3898,8 @@ class PlayState extends MusicBeatState
 			switch (dad.curCharacter)
 			{
 				case 'sans':
-					camFollow.x = dad.getMidpoint().x - 120;
-					//camFollow.y = dad.getMidpoint().y - 200;
+					xx = (char.getMidpoint().x + 180) + char.cameraPosition[0];
+					//yy = (char.getMidpoint().y - 100) + char.cameraPosition[1];
 			}
 			var singAnimationsPostions:Array<Array<Float>> = [
 				[xx-ofs,yy], 
@@ -3982,12 +3982,12 @@ class PlayState extends MusicBeatState
 				var xx2 = (boyfriend.getMidpoint().x - 100) - boyfriend.cameraPosition[0]; 
 				var yy2 = (boyfriend.getMidpoint().y - 100) + boyfriend.cameraPosition[1]; 
 				
-				/*switch (curStage)
+				switch (boyfriend.curCharacter)
 				{
-					case 'stagepaps' | 'stagesans' | 'stagechara':
-						xx2= (boyfriend.getMidpoint().x - 200) - boyfriend.cameraPosition[0];
-						yy2 = (boyfriend.getMidpoint().y - 200) + boyfriend.cameraPosition[1];
-				}*/
+					case 'bf-sans':
+						xx2= (boyfriend.getMidpoint().x - 290) - boyfriend.cameraPosition[0];
+						yy2 = (boyfriend.getMidpoint().y - 250) + boyfriend.cameraPosition[1];
+				}
 
 				var singAnimationsPostions:Array<Array<Float>> = [
 					[xx2-ofs,yy2], 
