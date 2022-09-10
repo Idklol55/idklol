@@ -2525,11 +2525,6 @@ class PlayState extends MusicBeatState
 		#end
 	}
 
-	if (curSong == 'EEEEChrome')
-	{
-		health > 0.50
-	}
-
 	/*if (curSong == 'EEEEChrome' && health > 0.45)
 	{
 			paused = true;
