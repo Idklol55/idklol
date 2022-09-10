@@ -2525,9 +2525,9 @@ class PlayState extends MusicBeatState
 		#end
 	}
 
-	if (curSong == 'EEEEChrome'){
-		 if (health > 0.45)
-		}
+	if (curSong == 'EEEEChrome')
+	{
+		health > 0.50
 	}
 
 	/*if (curSong == 'EEEEChrome' && health > 0.45)
@@ -3905,8 +3905,8 @@ class PlayState extends MusicBeatState
 			switch (dad.curCharacter)
 			{
 				case 'sans':
-					camFollow.x = char.getMidpoint().x - 120;
-					//camFollow.y = char.getMidpoint().y - 200;
+					camFollow.x = dad.getMidpoint().x - 120;
+					//camFollow.y = dad.getMidpoint().y - 200;
 			}
 			var singAnimationsPostions:Array<Array<Float>> = [
 				[xx-ofs,yy], 
