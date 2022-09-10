@@ -440,7 +440,7 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'stagesans':
-				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -410, -85, 1, 1);
+				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -410, -80, 1, 1);
 				SansBG.scale.set(0.8, 0.8);
 				add(SansBG);
 			case 'stagepaps':
@@ -3071,7 +3071,7 @@ class PlayState extends MusicBeatState
 			switch (dad.curCharacter)
 			{
 				case 'sans':
-					camFollow.x = dad.getMidpoint().x - 180;
+					camFollow.x = dad.getMidpoint().x - 150;
 					//camFollow.y = dad.getMidpoint().y - 200;
 			}
 			camFollow.x += dad.cameraPosition[0];
@@ -3092,8 +3092,8 @@ class PlayState extends MusicBeatState
 					| 'bones-jail-chara'
 					| 'bones-jail-black'
 					| 'bones-jail-black-chara':
-					camFollow.x = boyfriend.getMidpoint().x - 180;
-					camFollow.y = boyfriend.getMidpoint().y - 210;
+					camFollow.x = boyfriend.getMidpoint().x - 230;
+					camFollow.y = boyfriend.getMidpoint().y - 230;
 			}
 			camFollow.x -= boyfriend.cameraPosition[0];
 			camFollow.y += boyfriend.cameraPosition[1];
