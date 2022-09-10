@@ -440,7 +440,7 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'stagesans':
-				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -390, -70, 1, 1);
+				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -420, -70, 1, 1);
 				SansBG.scale.set(0.8, 0.8);
 				add(SansBG);
 			case 'stagepaps':
@@ -3101,7 +3101,7 @@ class PlayState extends MusicBeatState
 			switch (dad.curCharacter)
 			{
 				case 'sans':
-					camFollow.x = dad.getMidpoint().x + 180;
+					camFollow.x = dad.getMidpoint().x + 190;
 					camFollow.y = dad.getMidpoint().y - 100;
 			}
 			camFollow.x += dad.cameraPosition[0];
@@ -3118,8 +3118,8 @@ class PlayState extends MusicBeatState
 					camFollow.x = boyfriend.getMidpoint().x - 300;
 					camFollow.y = boyfriend.getMidpoint().y - 250;
 				case 'chara-sans' | 'chara-black' | 'bones-jail-chara' | 'bones-jail-black-chara':
-					camFollow.x = boyfriend.getMidpoint().x - 300;
-					camFollow.y = boyfriend.getMidpoint().y - 230;
+					camFollow.x = boyfriend.getMidpoint().x - 330;
+					camFollow.y = boyfriend.getMidpoint().y - 220;
 			}
 			camFollow.x -= boyfriend.cameraPosition[0];
 			camFollow.y += boyfriend.cameraPosition[1];
@@ -3894,7 +3894,7 @@ class PlayState extends MusicBeatState
 			switch (dad.curCharacter)
 			{
 				case 'sans':
-					xx = (char.getMidpoint().x + 180) + char.cameraPosition[0];
+					xx = (char.getMidpoint().x + 190) + char.cameraPosition[0];
 					yy = (char.getMidpoint().y - 100) + char.cameraPosition[1];
 			}
 			var singAnimationsPostions:Array<Array<Float>> = [
