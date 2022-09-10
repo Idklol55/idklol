@@ -447,11 +447,16 @@ class PlayState extends MusicBeatState
 				var ofs = 65;
 				
 			case 'stagechara':
+				var CharaBG:BGSprite = new BGSprite('Stages/Charabg', -410, -100, 1, 1);
+				CharaBG.scale.set(1.9, 2);
+				add(CharaBG);
 
 				warningText = new FlxText(0, 0, 400, "", 32);
 				warningText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 				warningText.text = "No More than 10 Misses...";
 				warningText.visible = false;
+				warningText.x = 170;
+				warningText.y = 560;
 				add(warningText);
 			case 'lost':
 				// lmfao
@@ -2520,6 +2525,37 @@ class PlayState extends MusicBeatState
 		#end
 	}
 
+	/*if (curSong == 'EEEEChrome' && health > 0.45)
+	{
+			paused = true;
+
+			vocals.stop();
+			FlxG.sound.music.stop();
+
+			persistentUpdate = false;
+			persistentDraw = false;
+			for (tween in modchartTweens) {
+				tween.active = true;
+			}
+			for (timer in modchartTimers) {
+			timer.active = true;
+			}
+			openSubState(new GameOverSubstate(boyfriend.getScreenPosition().x - boyfriend.positionArray[0], boyfriend.getScreenPosition().y - boyfriend.positionArray[1], camFollowPos.x, camFollowPos.y));
+			
+				#if desktop
+				// Game Over doesn't get his own variable because it's only used here
+				DiscordClient.changePresence("Game Over - " + detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+				#end
+				return true;
+			}
+		}
+		return false;
+	}*/
+
+	if (curSong == 'EEEEChrome'){
+		 if (health > 0.45)
+	}
+
 	public var isDead:Bool = false; //Don't mess with this on Lua!!!
 	function doDeathCheck(?skipHealthCheck:Bool = false) {
 		if (((skipHealthCheck && instakillOnMiss) || health <= 0) && !practiceMode && !isDead)
@@ -4267,6 +4303,8 @@ class PlayState extends MusicBeatState
 		if (curSong == 'No More Deals') {
 			switch (curStep) {
 				case 1:
+					warningText.alpha = 0;
+					warningText.visible = true;
 					FlxTween.tween(warningText, {alpha: 1}, 1);
 				case 64:
 					FlxTween.tween(warningText, {alpha: 0}, 1);
