@@ -2525,6 +2525,11 @@ class PlayState extends MusicBeatState
 		#end
 	}
 
+	if (curSong == 'EEEEChrome'){
+		 if (health > 0.45)
+		}
+	}
+
 	/*if (curSong == 'EEEEChrome' && health > 0.45)
 	{
 			paused = true;
@@ -2551,10 +2556,6 @@ class PlayState extends MusicBeatState
 		}
 		return false;
 	}*/
-
-	if (curSong == 'EEEEChrome'){
-		 if (health > 0.45)
-	}
 
 	public var isDead:Bool = false; //Don't mess with this on Lua!!!
 	function doDeathCheck(?skipHealthCheck:Bool = false) {
@@ -3107,7 +3108,7 @@ class PlayState extends MusicBeatState
 			switch (dad.curCharacter)
 			{
 				case 'sans':
-					camFollow.x = dad.getMidpoint().x - 150;
+					camFollow.x = dad.getMidpoint().x - 120;
 					//camFollow.y = dad.getMidpoint().y - 200;
 			}
 			camFollow.x += dad.cameraPosition[0];
@@ -3128,8 +3129,8 @@ class PlayState extends MusicBeatState
 					| 'bones-jail-chara'
 					| 'bones-jail-black'
 					| 'bones-jail-black-chara':
-					camFollow.x = boyfriend.getMidpoint().x - 230;
-					camFollow.y = boyfriend.getMidpoint().y - 230;
+					camFollow.x = boyfriend.getMidpoint().x - 250;
+					camFollow.y = boyfriend.getMidpoint().y - 250;
 			}
 			camFollow.x -= boyfriend.cameraPosition[0];
 			camFollow.y += boyfriend.cameraPosition[1];
@@ -3901,6 +3902,12 @@ class PlayState extends MusicBeatState
 			var xx = (char.getMidpoint().x + camerashit[0]) + char.cameraPosition[0];
 			var yy = (char.getMidpoint().y + camerashit[1]) + char.cameraPosition[1];
 
+			switch (dad.curCharacter)
+			{
+				case 'sans':
+					camFollow.x = char.getMidpoint().x - 120;
+					//camFollow.y = char.getMidpoint().y - 200;
+			}
 			var singAnimationsPostions:Array<Array<Float>> = [
 				[xx-ofs,yy], 
 				[xx,yy+ofs], 
