@@ -77,7 +77,7 @@ class PlayState extends MusicBeatState
     var spaceBar:FlxSprite;
     
     //ofs Camera
-	var ofs = 0;
+	var ofs = 35;
 
 	public static var ratingStuff:Array<Dynamic> = [
 		['You Suck!', 0.2], //From 0% to 19%
@@ -3103,7 +3103,7 @@ class PlayState extends MusicBeatState
 			switch (dad.curCharacter)
 			{
 				case 'sans':
-					camFollow.x = dad.getMidpoint().x - 120;
+					camFollow.x = dad.getMidpoint().x + 170;
 					//camFollow.y = dad.getMidpoint().y - 200;
 			}
 			camFollow.x += dad.cameraPosition[0];
@@ -3124,7 +3124,7 @@ class PlayState extends MusicBeatState
 					| 'bones-jail-chara'
 					| 'bones-jail-black'
 					| 'bones-jail-black-chara':
-					camFollow.x = boyfriend.getMidpoint().x - 250;
+					camFollow.x = boyfriend.getMidpoint().x - 270;
 					camFollow.y = boyfriend.getMidpoint().y - 250;
 			}
 			camFollow.x -= boyfriend.cameraPosition[0];
