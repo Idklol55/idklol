@@ -451,12 +451,10 @@ class PlayState extends MusicBeatState
 				CharaBG.scale.set(1.9, 2);
 				add(CharaBG);
 
-				warningText = new FlxText(0, 0, 400, "", 32);
+				warningText = new FlxText(0, -50, 0, "No More than 10 Misses...", 32);
 				warningText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-				warningText.text = "No More than 10 Misses...";
-				warningText.visible = false;
-				warningText.x = 170;
-				warningText.y = 560;
+				warningText.screenCenter(X);
+				warningText.alpha = 0;
 				add(warningText);
 			case 'lost':
 				// lmfao
@@ -4305,8 +4303,6 @@ class PlayState extends MusicBeatState
 		if (curSong == 'No More Deals') {
 			switch (curStep) {
 				case 1:
-					warningText.alpha = 0;
-					warningText.visible = true;
 					FlxTween.tween(warningText, {alpha: 1}, 1);
 				case 64:
 					FlxTween.tween(warningText, {alpha: 0}, 1);
