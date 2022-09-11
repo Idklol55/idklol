@@ -440,7 +440,7 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'stagesans':
-				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -460, -80, 1, 1);
+				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -460, -85, 1, 1);
 				SansBG.scale.set(0.8, 0.8);
 				add(SansBG);
 			case 'stagepaps':
@@ -454,8 +454,8 @@ class PlayState extends MusicBeatState
 				warningText = new FlxText("No More than 10 Misses...", 32);
 				warningText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 				warningText.screenCenter(X);
-				warningText.y -= 20;
-				warningText.alpha = 0;
+				warningText.visible = false;
+				//warningText.y -= 20;
 				add(warningText);
 			case 'lost':
 				// lmfao
@@ -3116,7 +3116,7 @@ class PlayState extends MusicBeatState
 			switch (boyfriend.curCharacter)
 			{
 				case 'bf-sans' | 'bf-black' | 'bones-jail' | 'bones-jail-black':
-					camFollow.x = boyfriend.getMidpoint().x - 330;
+					camFollow.x = boyfriend.getMidpoint().x - 350;
 					camFollow.y = boyfriend.getMidpoint().y - 250;
 				case 'chara-sans' | 'chara-black' | 'bones-jail-chara' | 'bones-jail-black-chara':
 					camFollow.x = boyfriend.getMidpoint().x - 330;
@@ -3982,7 +3982,7 @@ class PlayState extends MusicBeatState
 				switch (boyfriend.curCharacter)
 				{
 					case 'bf-sans':
-						xx2= (boyfriend.getMidpoint().x - 330) - boyfriend.cameraPosition[0];
+						xx2= (boyfriend.getMidpoint().x - 350) - boyfriend.cameraPosition[0];
 						yy2 = (boyfriend.getMidpoint().y - 250) + boyfriend.cameraPosition[1];
 				}
 
