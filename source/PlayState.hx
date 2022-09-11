@@ -3102,7 +3102,7 @@ class PlayState extends MusicBeatState
 			switch (dad.curCharacter)
 			{
 				case 'sans':
-					camFollow.x = dad.getMidpoint().x + 220;
+					camFollow.x = dad.getMidpoint().x + 230;
 					camFollow.y = dad.getMidpoint().y - 100;
 			}
 			camFollow.x += dad.cameraPosition[0];
@@ -3895,7 +3895,7 @@ class PlayState extends MusicBeatState
 			switch (dad.curCharacter)
 			{
 				case 'sans':
-					xx = (char.getMidpoint().x + 220) + char.cameraPosition[0];
+					xx = (char.getMidpoint().x + 230) + char.cameraPosition[0];
 					yy = (char.getMidpoint().y - 100) + char.cameraPosition[1];
 			}
 			var singAnimationsPostions:Array<Array<Float>> = [
