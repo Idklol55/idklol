@@ -451,13 +451,13 @@ class PlayState extends MusicBeatState
 				CharaBG.scale.set(1.9, 2);
 				add(CharaBG);
 
-				warningText = new FlxText("No More than 10 Misses...", 32);
+				warningText = new FlxText(400, timeBarBG.y - 20, FlxG.width - 800, "No More than 10 Misses...", 32);
 				warningText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 				warningText.cameras = [camHUD];
-				warningText.screenCenter(X);
-				//warningText.visible = false;
-				//warningText.y -= 20;
-				add(warningText);
+				warningText.borderSize = 1.25;
+				warningText.scrollFactor.set();
+				warningText.alpha = 0;
+				add(warningText);				
 			case 'lost':
 				// lmfao
 		}
@@ -818,9 +818,9 @@ class PlayState extends MusicBeatState
 		spaceBar = new FlxSprite(0, 0);
 		spaceBar.frames = Paths.getSparrowAtlas('spacebar');
 		spaceBar.antialiasing = ClientPrefs.globalAntialiasing;
-		spaceBar.cameras = [camOther];
 		spaceBar.animation.addByPrefix('push', 'spacebar', 24, true);
 		spaceBar.animation.addByPrefix('warning', 'ALERT', 24, true);
+		spaceBar.cameras = [camOther];
 		spaceBar.scale.set(0.5, 0.5);
 		spaceBar.updateHitbox();
 		spaceBar.antialiasing = true;
@@ -3261,12 +3261,10 @@ class PlayState extends MusicBeatState
 				campaignMisses += songMisses;
 				
 				if (storyDifficulty == 0)
-				//{
 					if (curSong == 'Not Enough')
 					{
 						storyPlaylist.push('No More Deals');
 					}
-				//}
 
 				trace(storyPlaylist);
 				storyPlaylist.remove(storyPlaylist[0]);
