@@ -441,7 +441,7 @@ class PlayState extends MusicBeatState
 
 			case 'stagesans':
 				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -460, -80, 1, 1);
-				SansBG.scale.set(0.8, 0.82);
+				SansBG.scale.set(0.8, 0.81);
 				add(SansBG);
 			case 'stagepaps':
 				var ofs = 65;
