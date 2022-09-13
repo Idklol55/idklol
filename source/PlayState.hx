@@ -451,12 +451,13 @@ class PlayState extends MusicBeatState
 				CharaBG.scale.set(1.9, 2);
 				add(CharaBG);
 
-				warningText = new FlxText(400, warningText.y - 20, FlxG.width - 800, "No More than 10 Misses...", 32);
+				warningText = new FlxText(0, 0, 400, "No More than 10 Misses...", 32);
 				warningText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-				warningText.cameras = [camHUD];
-				warningText.borderSize = 1.25;
-				warningText.scrollFactor.set();
-				warningText.alpha = 0;
+				warningText.fieldWidth = 1000;
+				warningText.size = 32;
+				warningText.x = 170;
+				warningText.y = 560;
+				warningText.visible = false;
 				add(warningText);
 			case 'lost':
 				// lmfao
@@ -4284,7 +4285,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 		
-		if (curSong == 'No More Deals') {
+		if (curStage == 'stagechara' && curSong == 'No More Deals') {
 			switch (curStep) {
 				case 12:
 					FlxTween.tween(warningText, {alpha: 1}, 1);
