@@ -63,18 +63,6 @@ class PlayState extends MusicBeatState
 	public static var STRUM_X = 42;
 	public static var STRUM_X_MIDDLESCROLL = -278;
 	public static var doingreef:Bool = false;
-	
-	// BoneJail
-    final jailInfo:Map<String, Float> = [
-        "spacesneeded" => 14, // spaces needed | espacios necesarios
-        "coolDown" => .25, // the cooldown betweens spacebat | tiempo de reutilización entre el espacio
-    ];
-
-    var spaces:Int = 0;
-    var inJail:Bool = false;
-    var jailCooldown:Bool = false;
-    var jailTimers = new FlxTimerManager();
-    var spaceBar:FlxSprite;
     
     //ofs Camera
 	var ofs = 35;
@@ -201,6 +189,18 @@ class PlayState extends MusicBeatState
 	//Icons Animated
 	private var playerOneState:String = "default";
 	private var playerTwoState:String = "default";
+	
+	// BoneJail
+    final jailInfo:Map<String, Float> = [
+        "spacesneeded" => 14, // spaces needed | espacios necesarios
+        "coolDown" => .25, // the cooldown betweens spacebat | tiempo de reutilización entre el espacio
+    ];
+
+    var spaces:Int = 0;
+    var inJail:Bool = false;
+    var jailCooldown:Bool = false;
+    var jailTimers = new FlxTimerManager();
+    var spaceBar:FlxSprite;
 
 	var dialogue:Array<String> = ['blah blah blah', 'coolswag'];
 	var dialogueJson:DialogueFile = null;
@@ -440,8 +440,8 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'stagesans':
-				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -460, -80, 1, 1);
-				SansBG.scale.set(0.81, 0.81);
+				var SansBG:BGSprite = new BGSprite('Stages/Sansbg', -460, -81, 1, 1);
+				SansBG.scale.set(0.8, 0.81);
 				add(SansBG);
 			case 'stagepaps':
 				var ofs = 65;
@@ -457,7 +457,7 @@ class PlayState extends MusicBeatState
 				warningText.size = 32;
 				warningText.x = 170;
 				warningText.y = 560;
-				warningText.visible = false;
+				warningText.alpha = 0;
 				add(warningText);
 			case 'lost':
 				// lmfao
@@ -820,7 +820,7 @@ class PlayState extends MusicBeatState
 		spaceBar.frames = Paths.getSparrowAtlas('spacebar');
 		spaceBar.antialiasing = ClientPrefs.globalAntialiasing;
 		spaceBar.animation.addByPrefix('push', 'spacebar', 24, true);
-		spaceBar.animation.addByPrefix('warning', 'ALERT', 24, true);
+		spaceBar.animation.addByPrefix('alert', 'ALERT', 24, true);
 		spaceBar.cameras = [camOther];
 		spaceBar.scale.set(0.5, 0.5);
 		spaceBar.updateHitbox();
@@ -3106,7 +3106,7 @@ class PlayState extends MusicBeatState
 			switch (boyfriend.curCharacter)
 			{
 				case 'bf-sans' | 'bf-black' | 'bones-jail' | 'bones-jail-black':
-					camFollow.x = boyfriend.getMidpoint().x - 370;
+					camFollow.x = boyfriend.getMidpoint().x - 375;
 					camFollow.y = boyfriend.getMidpoint().y - 240;
 				case 'chara-sans' | 'chara-black' | 'bones-jail-chara' | 'bones-jail-black-chara':
 					camFollow.x = boyfriend.getMidpoint().x - 330;
@@ -3970,7 +3970,7 @@ class PlayState extends MusicBeatState
 				switch (boyfriend.curCharacter)
 				{
 					case 'bf-sans' | 'bf-black' | 'bones-jail' | 'bones-jail-black':
-						xx2= (boyfriend.getMidpoint().x - 370) - boyfriend.cameraPosition[0];
+						xx2= (boyfriend.getMidpoint().x - 375) - boyfriend.cameraPosition[0];
 						yy2 = (boyfriend.getMidpoint().y - 240) + boyfriend.cameraPosition[1];
 				}
 
@@ -4278,22 +4278,24 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
-		if (curSong == 'Not Enough') {
-			switch (curStep) {
-				case 128 | 260 | 520 | 899:
-					bonesJail();
-			}
-		}
-		
-		if (curStage == 'stagechara' && curSong == 'No More Deals') {
-			switch (curStep) {
+		if (curStage == 'stagechara' && curSong == 'No More Deals')
+		{
+			switch (curStep)
+			{
 				case 12:
 					FlxTween.tween(warningText, {alpha: 1}, 1);
 				case 53:
 					FlxTween.tween(warningText, {alpha: 0}, 1);
 			}
 		}
-
+		if (curSong == 'Not Enough')
+		{
+			switch (curStep) 
+			{
+				case 128 | 260 | 520 | 899:
+					bonesJail();
+			}
+		}
 		lastStepHit = curStep;
 		setOnLuas('curStep', curStep);
 		callOnLuas('onStepHit', []);
