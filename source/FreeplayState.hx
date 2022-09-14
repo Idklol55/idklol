@@ -318,7 +318,7 @@ class FreeplayState extends MusicBeatState
 				var poop:String = Highscore.formatSong(songs[curSelected].songName.toLowerCase(), curDifficulty);
 				PlayState.SONG = Song.loadFromJson(poop, songs[curSelected].songName.toLowerCase());
 				if (PlayState.SONG.needsVoices)
-				if (curDifficulty == 1)
+				if (curDifficulty == 1)// Good
 				{
 					vocals = new FlxSound().loadEmbedded(Paths.voicesCH(PlayState.SONG.song));
 				}
@@ -328,8 +328,6 @@ class FreeplayState extends MusicBeatState
 				}
 				else
 					vocals = new FlxSound();
-
-				PlayState.THISISFUCKINGDISGUSTINGPLEASESAVEME = false; // Forces playstate to not have this to true so it stops CoolUtil from breaking difficulty selection (or something). IDFK IT JUST WORKS SHUT UP I DON'T WANT FUCKING TO TALK ABOUT THIS VARIABLE
 
 				FlxG.sound.list.add(vocals);
 				FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 0.7);

@@ -191,16 +191,16 @@ class PlayState extends MusicBeatState
 	private var playerTwoState:String = "default";
 	
 	// BoneJail
-    final jailInfo:Map<String, Float> = [
-        "spacesneeded" => 14, // spaces needed | espacios necesarios
-        "coolDown" => .25, // the cooldown betweens spacebat | tiempo de reutilización entre el espacio
-    ];
+	final jailInfo:Map<String, Float> = [
+		"spacesneeded" => 14, // spaces needed
+		"coolDown" => .25, // the cooldown betweens spacebat
+	];
 
-    var spaces:Int = 0;
-    var inJail:Bool = false;
-    var jailCooldown:Bool = false;
-    var jailTimers = new FlxTimerManager();
-    var spaceBar:FlxSprite;
+	var spaces:Int = 0;
+	var inJail:Bool = false;
+	var jailCooldown:Bool = false;
+	var jailTimers = new FlxTimerManager();
+	var spaceBar:FlxSprite;
 
 	var dialogue:Array<String> = ['blah blah blah', 'coolswag'];
 	var dialogueJson:DialogueFile = null;
@@ -284,9 +284,6 @@ class PlayState extends MusicBeatState
 	// Less laggy controls
 	private var keysArray:Array<Dynamic>;
 
-	//I copied from QT 2.0 LOL
-	public static var THISISFUCKINGDISGUSTINGPLEASESAVEME:Bool = true;
-
 	override public function create()
 	{
 		#if MODS_ALLOWED
@@ -365,7 +362,6 @@ class PlayState extends MusicBeatState
 		#end
 
 		GameOverSubstate.resetVariables();
-		THISISFUCKINGDISGUSTINGPLEASESAVEME = true;
 		var songName:String = Paths.formatToSongPath(SONG.song);
 		curStage = PlayState.SONG.stage;
 		//trace('stage is: ' + curStage);
@@ -578,7 +574,12 @@ class PlayState extends MusicBeatState
 			SONG.gfVersion = gfVersion; //Fix for the Chart Editor
 		}
 
-		if (curSong == 'Nyeh Heh Heh' || curSong == 'Bonely One' || curSong == 'Not Enough' || curSong == 'No More Deals' || curSong == 'EEEEChrome')
+		//remove gf Only the designated songs
+		if (curSong == 'Nyeh Heh Heh'
+		|| curSong == 'Bonely One'
+		|| curSong == 'Not Enough'
+		|| curSong == 'No More Deals'
+		|| curSong == 'EEEEChrome')
 		{
 			gf.visible = false;
 		}
@@ -2517,7 +2518,6 @@ class PlayState extends MusicBeatState
 	{
 		persistentUpdate = false;
 		paused = true;
-		THISISFUCKINGDISGUSTINGPLEASESAVEME = false;
 		cancelMusicFadeTween();
 		CustomFadeTransition.nextCamera = camOther;
 		MusicBeatState.switchState(new ChartingState());
@@ -3106,7 +3106,7 @@ class PlayState extends MusicBeatState
 			switch (boyfriend.curCharacter)
 			{
 				case 'bf-sans' | 'bf-black' | 'bones-jail' | 'bones-jail-black':
-					camFollow.x = boyfriend.getMidpoint().x - 375;
+					camFollow.x = boyfriend.getMidpoint().x - 370;
 					camFollow.y = boyfriend.getMidpoint().y - 240;
 				case 'chara-sans' | 'chara-black' | 'bones-jail-chara' | 'bones-jail-black-chara':
 					camFollow.x = boyfriend.getMidpoint().x - 330;
@@ -3196,7 +3196,6 @@ class PlayState extends MusicBeatState
 		camZooming = false;
 		inCutscene = false;
 		updateTime = false;
-		THISISFUCKINGDISGUSTINGPLEASESAVEME = false;
 
 		deathCounter = 0;
 		seenCutscene = false;
@@ -3970,7 +3969,7 @@ class PlayState extends MusicBeatState
 				switch (boyfriend.curCharacter)
 				{
 					case 'bf-sans' | 'bf-black' | 'bones-jail' | 'bones-jail-black':
-						xx2= (boyfriend.getMidpoint().x - 375) - boyfriend.cameraPosition[0];
+						xx2= (boyfriend.getMidpoint().x - 370) - boyfriend.cameraPosition[0];
 						yy2 = (boyfriend.getMidpoint().y - 240) + boyfriend.cameraPosition[1];
 				}
 
