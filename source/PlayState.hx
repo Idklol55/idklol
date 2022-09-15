@@ -453,7 +453,7 @@ class PlayState extends MusicBeatState
 				warningText.size = 32;
 				warningText.x = 170;
 				warningText.y = 560;
-				warningText.alpha = 0;
+				warningText.visible = false;
 				add(warningText);
 			case 'lost':
 				// lmfao
@@ -3106,8 +3106,8 @@ class PlayState extends MusicBeatState
 			switch (boyfriend.curCharacter)
 			{
 				case 'bf-sans' | 'bf-black' | 'bones-jail' | 'bones-jail-black':
-					camFollow.x = boyfriend.getMidpoint().x - 370;
-					camFollow.y = boyfriend.getMidpoint().y - 240;
+					camFollow.x = boyfriend.getMidpoint().x - 375;
+					camFollow.y = boyfriend.getMidpoint().y - 235;
 				case 'chara-sans' | 'chara-black' | 'bones-jail-chara' | 'bones-jail-black-chara':
 					camFollow.x = boyfriend.getMidpoint().x - 330;
 					camFollow.y = boyfriend.getMidpoint().y - 220;
@@ -3969,8 +3969,8 @@ class PlayState extends MusicBeatState
 				switch (boyfriend.curCharacter)
 				{
 					case 'bf-sans' | 'bf-black' | 'bones-jail' | 'bones-jail-black':
-						xx2= (boyfriend.getMidpoint().x - 370) - boyfriend.cameraPosition[0];
-						yy2 = (boyfriend.getMidpoint().y - 240) + boyfriend.cameraPosition[1];
+						xx2= (boyfriend.getMidpoint().x - 375) - boyfriend.cameraPosition[0];
+						yy2 = (boyfriend.getMidpoint().y - 235) + boyfriend.cameraPosition[1];
 				}
 
 				var singAnimationsPostions:Array<Array<Float>> = [
@@ -4282,6 +4282,9 @@ class PlayState extends MusicBeatState
 			switch (curStep)
 			{
 				case 12:
+					warningText.visible = true;
+					warningText.alpha = 0;
+
 					FlxTween.tween(warningText, {alpha: 1}, 1);
 				case 53:
 					FlxTween.tween(warningText, {alpha: 0}, 1);
