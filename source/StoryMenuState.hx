@@ -139,7 +139,7 @@ class StoryMenuState extends MusicBeatState
 		lockedIcon.antialiasing = ClientPrefs.globalAntialiasing;
 		lockedIcon.alpha = 0.00001;
 		lockedIcon.y -= 70;
-		add(lockedIcon);/*
+		add(lockedIcon);*/
 
 		leftArrow = new FlxSprite(grpWeekText.members[0].x + grpWeekText.members[0].width + 10, grpWeekText.members[0].y + 10);
 		leftArrow.frames = ui_tex;
