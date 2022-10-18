@@ -48,6 +48,7 @@ class StoryMenuState extends MusicBeatState
 
 	var difficultySelectors:FlxGroup;
 	var sprDifficulty:FlxSprite;
+	var lockedIcon:FlxSprite;
 	var leftArrow:FlxSprite;
 	var rightArrow:FlxSprite;
 
@@ -132,6 +133,13 @@ class StoryMenuState extends MusicBeatState
 
 		difficultySelectors = new FlxGroup();
 		add(difficultySelectors);
+
+		/*lockedIcon = new FlxSprite(0, 0).loadGraphic(Paths.image('storymenu/Locked', 'preload'));
+		lockedIcon.screenCenter();
+		lockedIcon.antialiasing = ClientPrefs.globalAntialiasing;
+		lockedIcon.alpha = 0.00001;
+		lockedIcon.y -= 70;
+		add(lockedIcon);/*
 
 		leftArrow = new FlxSprite(grpWeekText.members[0].x + grpWeekText.members[0].width + 10, grpWeekText.members[0].y + 10);
 		leftArrow.frames = ui_tex;
@@ -329,6 +337,10 @@ class StoryMenuState extends MusicBeatState
 	function changeDifficulty(change:Int = 0):Void
 	{
 		curDifficulty += change;
+
+		if (!FlxG.save.data.Unlock){
+			curDifficulty = 1;
+		}
 
 		if (curDifficulty < 0)
 			curDifficulty = CoolUtil.difficulties.length-1;

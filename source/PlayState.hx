@@ -780,6 +780,10 @@ class PlayState extends MusicBeatState
 
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
 			'health', 0, 2);
+		if (curSong == 'EEEEChrome') {//i think lol
+			healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
+			'health', 0, 2);
+		}
 		healthBar.scrollFactor.set();
 		// healthBar
 		healthBar.visible = !ClientPrefs.hideHud;
@@ -956,6 +960,10 @@ class PlayState extends MusicBeatState
 			startCountdown();
 		}
 		RecalculateRating();
+
+		if (FlxG.save.data.Weeknames.exists(WeekData.getWeekFileName())
+			&& WeekData.getCurrentWeek().songs[0][0] == curSong)
+		{
 
 		//PRECACHING MISS SOUNDS BECAUSE I THINK THEY CAN LAG PEOPLE AND FUCK THEM UP IDK HOW HAXE WORKS
 		CoolUtil.precacheSound('missnote1');
@@ -3232,11 +3240,6 @@ class PlayState extends MusicBeatState
 				#end
 			}
 
-			/*if(curSong == 'No More Deals' && !FlxG.save.data.UnlockSong){
-				FlxG.save.data.UnlockSong=true;
-				FlxG.save.flush();
-			}*/
-
 			if (chartingMode)
 			{
 				openChartEditor();
@@ -3247,16 +3250,33 @@ class PlayState extends MusicBeatState
 			{
 				campaignScore += songScore;
 				campaignMisses += songMisses;
-				
-				if (storyDifficulty == 0)
-					if (curSong == 'Not Enough')
-					{
-						storyPlaylist.push('No More Deals');
-					}
 
-				trace(storyPlaylist);
+				var lastSong:String = storyPlaylist[0];
+
+				if (WeekData.getWeekFileName() == 'Undertale Universe Week')
+				{
+					if (!cpuControlled && !practiceMode)
+					{
+						if (storyDifficulty == 0)
+						{
+							switch (lastSong.toLowerCase())
+							{
+								case 'no-more-deals' | 'No More Deals':
+									storyPlaylist[storyPlaylist.length] = 'not-enough';
+
+									FlxG.save.data.Unlock = true;
+									FlxG.save.flush();
+							}
+						}
+					}
+				}
+
 				storyPlaylist.remove(storyPlaylist[0]);
-				trace("new" + storyPlaylist);
+
+			/*if(curSong == 'No More Deals' && !FlxG.save.data.UnlockSong){
+					FlxG.save.data.UnlockSong=true;
+					FlxG.save.flush();
+			}*/
 
 				if (storyPlaylist.length <= 0)
 				{

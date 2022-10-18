@@ -7,10 +7,12 @@ import flixel.graphics.FlxGraphic;
 import Controls;
 
 class ClientPrefs {
+	public static var Unlock:Bool = false;
+	public static var Weekname:Bool = false;
 	public static var downScroll:Bool = false;
 	public static var middleScroll:Bool = false;
 	public static var showFPS:Bool = true;
-	public static var flashing:Bool = true;
+	public static var flashing:Bool = false;
 	public static var globalAntialiasing:Bool = true;
 	public static var noteSplashes:Bool = true;
 	public static var lowQuality:Bool = false;
@@ -82,6 +84,8 @@ class ClientPrefs {
 	}
 
 	public static function saveSettings() {
+		FlxG.save.data.Unlock = Unlock;
+		FlxG.save.data.Weekname = Weekname;
 		FlxG.save.data.downScroll = downScroll;
 		FlxG.save.data.middleScroll = middleScroll;
 		FlxG.save.data.showFPS = showFPS;
@@ -125,6 +129,14 @@ class ClientPrefs {
 	}
 
 	public static function loadPrefs() {
+		if (FlxG.save.data.Unlock != null)
+		{
+			Unlock = FlxG.save.data.Unlock;
+		}
+		if (FlxG.save.data.Weekname != null)
+		{
+			Weekname = FlxG.save.data.Weekname;
+		}
 		if(FlxG.save.data.downScroll != null) {
 			downScroll = FlxG.save.data.downScroll;
 		}
