@@ -961,7 +961,7 @@ class PlayState extends MusicBeatState
 		}
 		RecalculateRating();
 
-		if (FlxG.save.data.Weeknames.exists(WeekData.getWeekFileName())
+		if (FlxG.save.data.Weekname.exists(WeekData.getWeekFileName())
 			&& WeekData.getCurrentWeek().songs[0][0] == curSong)
 		{
 
