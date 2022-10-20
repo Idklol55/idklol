@@ -957,8 +957,11 @@ class PlayState extends MusicBeatState
 		RecalculateRating();
 
 		if (FlxG.save.data.Weekname.exists(WeekData.getWeekFileName())
-			&& WeekData.getCurrentWeek().songs[0][0] == curSong)
+			&& WeekData.getCurrentWeek().songs[0][0] == curSong) // Clear week progress if start over
 		{
+			FlxG.save.data.Weekname.remove(WeekData.getWeekFileName());
+			FlxG.save.flush();
+		}
 
 		//PRECACHING MISS SOUNDS BECAUSE I THINK THEY CAN LAG PEOPLE AND FUCK THEM UP IDK HOW HAXE WORKS
 		CoolUtil.precacheSound('missnote1');
@@ -3248,22 +3251,23 @@ class PlayState extends MusicBeatState
 
 				var lastSong:String = storyPlaylist[0];
 
-				if (WeekData.getWeekFileName() == 'Undertale Universe Week')
+				if (WeekData.getWeekFileName() == 'Week Suicide')
 				{
 					if (storyDifficulty == 0)
 					{
 						if (!cpuControlled && !practiceMode)
+						{
+							switch (lastSong.toLowerCase())
 							{
-								switch (lastSong.toLowerCase())
-								{
-									case 'no-more-deals' | 'No More Deals':
-										storyPlaylist[storyPlaylist.length] = 'not-enough';
+								case 'no-more-deals' | 'No More Deals':
+									storyPlaylist[storyPlaylist.length] = 'not-enough';
 
-										FlxG.save.data.Unlock = true;
-										FlxG.save.flush();
-								}
+									FlxG.save.data.Unlock = true;
+									FlxG.save.flush();
 							}
 						}
+					}
+				}
 
 				storyPlaylist.remove(storyPlaylist[0]);
 
