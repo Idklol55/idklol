@@ -574,7 +574,6 @@ class PlayState extends MusicBeatState
 			SONG.gfVersion = gfVersion; //Fix for the Chart Editor
 		}
 
-		//remove gf Only the designated songs
 		if (curSong == 'Nyeh Heh Heh'
 		|| curSong == 'Bonely One'
 		|| curSong == 'Not Enough'
@@ -3251,21 +3250,20 @@ class PlayState extends MusicBeatState
 
 				if (WeekData.getWeekFileName() == 'Undertale Universe Week')
 				{
-					if (!cpuControlled && !practiceMode)
+					if (storyDifficulty == 0)
 					{
-						if (storyDifficulty == 0)
-						{
-							switch (lastSong.toLowerCase())
+						if (!cpuControlled && !practiceMode)
 							{
-								case 'no-more-deals' | 'No More Deals':
-									storyPlaylist[storyPlaylist.length] = 'not-enough';
+								switch (lastSong.toLowerCase())
+								{
+									case 'no-more-deals' | 'No More Deals':
+										storyPlaylist[storyPlaylist.length] = 'not-enough';
 
-									FlxG.save.data.Unlock = true;
-									FlxG.save.flush();
+										FlxG.save.data.Unlock = true;
+										FlxG.save.flush();
+								}
 							}
 						}
-					}
-				}
 
 				storyPlaylist.remove(storyPlaylist[0]);
 
