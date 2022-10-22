@@ -338,7 +338,7 @@ class StoryMenuState extends MusicBeatState
 	{
 		curDifficulty += change;
 
-		if (!FlxG.save.data.Unlock){
+		if (FlxG.save.data.Unlock){
 			curDifficulty = 1;
 		}
 
@@ -369,11 +369,11 @@ class StoryMenuState extends MusicBeatState
 			tweenDifficulty = FlxTween.tween(sprDifficulty, {y: leftArrow.y + 15, alpha: 1}, 0.07, {onComplete: function(twn:FlxTween)
 			{
 				tweenDifficulty = null;
+				updateImages();
 			}});
 		}
 		lastImagePath = newImagePath;
 		lastDifficultyName = CoolUtil.difficulties[curDifficulty];
-		updateImages();
 
 		#if !switch
 		intendedScore = Highscore.getWeekScore(WeekData.weeksList[curWeek], curDifficulty);
