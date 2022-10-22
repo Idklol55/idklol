@@ -32,7 +32,7 @@ class StoryMenuState extends MusicBeatState
 	var scoreText:FlxText;
 
 	private static var lastDifficultyName:String = '';
-	var curDifficulty:Int = 0;
+	var curDifficulty:Int = 1;
 
 	var txtWeekTitle:FlxText;
 	var bgSprite:FlxSprite;
@@ -347,6 +347,23 @@ class StoryMenuState extends MusicBeatState
 		if (curDifficulty >= CoolUtil.difficulties.length)
 			curDifficulty = 0;
 
+		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]);
+
+        bgSprite.visible = true;
+        var assetName:String = leWeek.weekBackground;
+        if(assetName == null || assetName.length < 1) {
+            bgSprite.visible = false;
+        } else {
+            if (curDifficulty == 1)
+                bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stageCH'));
+            else
+                bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stage'));
+        }
+
+        var weekArray:Array<String> = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]).weekCharacters;
+        for (i in 0...grpWeekCharacters.length) {
+            grpWeekCharacters.members[i].changeCharacter(weekArray[i], curDifficulty);
+
 		var image:Dynamic = Paths.image('menudifficulties/' + Paths.formatToSongPath(CoolUtil.difficulties[curDifficulty]));
 		var newImagePath:String = '';
 		if(Std.isOfType(image, FlxGraphic))
@@ -369,7 +386,6 @@ class StoryMenuState extends MusicBeatState
 			tweenDifficulty = FlxTween.tween(sprDifficulty, {y: leftArrow.y + 15, alpha: 1}, 0.07, {onComplete: function(twn:FlxTween)
 			{
 				tweenDifficulty = null;
-				updateImages();
 			}});
 		}
 		lastImagePath = newImagePath;
@@ -455,7 +471,7 @@ class StoryMenuState extends MusicBeatState
 		updateText();
 	}
 
-	function updateImages(){
+	/*function updateImages(){
         var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]);
 
         bgSprite.visible = true;
@@ -473,7 +489,7 @@ class StoryMenuState extends MusicBeatState
         for (i in 0...grpWeekCharacters.length) {
             grpWeekCharacters.members[i].changeCharacter(weekArray[i], curDifficulty);
         }
-	}
+	}*/
 
 	/*public var character:MenuCharacter;
 	public var character:String = 'bf';
