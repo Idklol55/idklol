@@ -1,11 +1,17 @@
-# THE FOLLOWING ACTIONS CODE IS FROM THE PSYCH ENGINE REPO: https://github.com/ShadowMario/FNF-PsychEngine/blob/main/.github/workflows/main.yml
+# This is a basic workflow to help you get started with Actions
 
 name: Build
 
 # Controls when the action will run.
 on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
   # Allows you to run this workflow manually from the Actions tab
-  workflow_main:
+  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -35,15 +41,11 @@ jobs:
           haxelib install flixel-addons
           haxelib install tjson
           haxelib install hxjsonast
-          haxelib install hxCodec
+          haxelib git hxCodec https://github.com/polybiusproxy/hxcodec
           haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit
           haxelib install hscript
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
-          haxelib git hxvm-luajit https://github.com/nebulazorua/hxvm-luajit
-          haxelib git faxe https://github.com/uhrobots/faxe
-          haxelib git polymod https://github.com/MasterEric/polymod.git
-          haxelib git hxCodec https://github.com/polybiusproxy/hxCodec
           haxelib install hxcpp-debug-server
           haxelib list
         shell: cmd
@@ -57,6 +59,7 @@ jobs:
           name: windowsBuild
           path: export/release/windows/bin
   buildAndroid:
+    name: buildAndroid
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -77,23 +80,30 @@ jobs:
         uses: android-actions/setup-android@v2
 
       - name: Setup Haxe
-        uses: krdlab/setup-haxe@master
+        uses: krdlab/setup-haxe@v1.1.5
         with:
-          haxe-version: 4.2.5
+          haxe-version: 4.2.2
 
-      - name: Install Haxelibs
+      - name: Install Haxelib
         run: |
-          haxelib --quiet install lime 7.9.0
-          haxelib --quiet install openfl 9.1.0
-          haxelib --quiet install flixel
-          haxelib --quiet --never run lime setup
-          haxelib --quiet install flixel-ui
-          haxelib --quiet install flixel-addons
-          haxelib --quiet install polymod
-          haxelib --quiet install hscript
-          haxelib --quiet install hxcpp-debug-server
-          haxelib --quiet git hxCodec https://github.com/polybiusproxy/hxCodec
-          haxelib --quiet git extension-androidtools https://github.com/MAJigsaw77/extension-androidtools.git
+          haxelib setup ~/haxelib
+          haxelib install hxcpp > /dev/null
+          haxelib install lime 7.9.0 --quiet
+          haxelib install openfl 9.1.0 --quiet
+          haxelib --never install flixel 4.9.0 --quiet
+          haxelib run lime setup --quiet
+          haxelib install hscript
+          haxelib install flixel-tools 1.5.1 --quiet
+          haxelib install flixel-ui 2.3.3 --quiet
+          haxelib install hscript --quiet
+          haxelib install flixel-addons 2.10.0 --quiet
+          haxelib git hxCodec https://github.com/polybiusproxy/hxcodec
+          haxelib git linc_luajit https://github.com/Sirox228/linc_luajit.git
+          haxelib git extension-androidtools https://github.com/majigsaw77/extension-androidtools.git
+          haxelib list
+
+      - name: Create Version Tag
+        run: echo "${{github.run_id}}" > VERSION
 
       - name: Setup Lime
         run: |
@@ -104,12 +114,11 @@ jobs:
           haxelib run lime config ANDROID_SETUP true
           haxelib set lime 7.9.0
           haxelib set openfl 9.1.0
-          haxelib list
         env:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
 
       - name: Compile
-        run: haxelib run lime build android -Dnightly
+        run: haxelib run lime build android --app-version="4.0.0-${{ github.run_id}}"
 
       - name: Publish Artifact
         uses: actions/upload-artifact@v2.2.4
