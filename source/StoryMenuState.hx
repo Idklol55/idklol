@@ -360,10 +360,6 @@ class StoryMenuState extends MusicBeatState
                 bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stage'));
         }
 
-        var weekArray:Array<String> = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]).weekCharacters;
-        for (i in 0...grpWeekCharacters.length) {
-            grpWeekCharacters.members[i].changeCharacter(weekArray[i], curDifficulty);
-
 		var image:Dynamic = Paths.image('menudifficulties/' + Paths.formatToSongPath(CoolUtil.difficulties[curDifficulty]));
 		var newImagePath:String = '';
 		if(Std.isOfType(image, FlxGraphic))
@@ -539,6 +535,5 @@ class StoryMenuState extends MusicBeatState
 		#if !switch
 		intendedScore = Highscore.getWeekScore(WeekData.weeksList[curWeek], curDifficulty);
 		#end
-		}
 	}
 }
