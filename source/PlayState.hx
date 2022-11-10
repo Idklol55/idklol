@@ -940,7 +940,7 @@ class PlayState extends MusicBeatState
 						if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
 						schoolIntro(doof);
 
-					case 'Nyeh Heh Heh' | 'Bonely On'Not Enough':
+					case 'Nyeh Heh Heh' | 'Bonely One' | 'Not Enough':
 						startDialogue(dialogueJson);
 
 				default:
@@ -2530,7 +2530,7 @@ class PlayState extends MusicBeatState
 		#end
 	}
 
-	var nodead = (Paths.formatToSongPath(SONG.song) == "EEEEChrome");
+	var noDead = (Paths.formatToSongPath(SONG.song) == "EEEEChrome");
 	public var isDead:Bool = false; //Don't mess with this on Lua!!!
 	function doDeathCheck(?skipHealthCheck:Bool = false) {
 		if (((skipHealthCheck && instakillOnMiss) || health <= 0) && !practiceMode && !isDead && !noDead)
