@@ -293,6 +293,9 @@ class StoryMenuState extends MusicBeatState
 	{
 		if (!weekIsLocked(curWeek))
 		{
+			if (curDifficulty = 1 && FlxG.save.data.Unlock) {
+				selectedWeek = true;
+			}
 			if (stopspamming == false)
 			{
 				FlxG.sound.play(Paths.sound('confirmMenu'));
@@ -338,16 +341,12 @@ class StoryMenuState extends MusicBeatState
 	{
 		curDifficulty += change;
 
-		if (FlxG.save.data.Unlock){
-			curDifficulty = 1;
-		}
-
 		if (curDifficulty < 0)
 			curDifficulty = CoolUtil.difficulties.length-1;
 		if (curDifficulty >= CoolUtil.difficulties.length)
 			curDifficulty = 0;
 
-		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]);
+		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[curDifficulty]);
 
         bgSprite.visible = true;
         var assetName:String = leWeek.weekBackground;
@@ -467,7 +466,7 @@ class StoryMenuState extends MusicBeatState
 		updateText();
 	}
 
-	/*function updateImages(){
+	function updateImages(){
         var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]);
 
         bgSprite.visible = true;
@@ -478,30 +477,29 @@ class StoryMenuState extends MusicBeatState
             if (curDifficulty == 1)
                 bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stageCH'));
             else
+			if (curDifficulty == 0)
                 bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stage'));
         }
 
         var weekArray:Array<String> = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]).weekCharacters;
         for (i in 0...grpWeekCharacters.length) {
-            grpWeekCharacters.members[i].changeCharacter(weekArray[i], curDifficulty);
+            grpWeekCharacters.members[i].changeCharacter(weekArray[i]);
         }
-	}*/
+	}
 
-	/*public var character:MenuCharacter;
-	public var character:String = 'bf';
+	public var character:MenuCharacter = grpWeekCharacters;
 	public function changeCharacter(?character:String = 'bf', diff:Int = 0){
-		if(character == null) character = '';
-		if(character == 'bf' && diff == 1) character = 'chara';
-		if(character == this.character) return;
+        if(character == null) character = '';
+        if(character == 'bf' && diff == 1) character = 'chara';
+        if(character == this.character) return;
 
-		this.character = character;
-		switch(character){
-				case 'bf':
-                    character = 'bf';
-                case 'chara':
-                    character = 'chara';
-            } 
-	}*/
+        this.character = character;
+       /* switch(grpWeekCharacters) {
+			case 'bf':
+				character = 'bf';
+			case 'chara':
+				character = 'chara';*/
+	{
 
 	function weekIsLocked(weekNum:Int) {
 		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[weekNum]);
