@@ -483,7 +483,7 @@ class StoryMenuState extends MusicBeatState
 
         var weekArray:Array<String> = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]).weekCharacters;
         for (i in 0...grpWeekCharacters.length) {
-            grpWeekCharacters.members[i].changeCharacter(weekArray[i]);
+            grpWeekCharacters.members[i].changeCharacter(weekArray[i], curDifficulty);
         }
 	}
 
@@ -524,11 +524,11 @@ class StoryMenuState extends MusicBeatState
 
 	public var character:String;
 	public function changeCharacter(?character:String = 'bf', diff:Int = 0){
-        if(character == null) character = '';
-        if(character == 'bf' && diff == 1) character = 'chara';
-        if(character == this.character) return;
+		if(character == null) character = '';
+		if(character == 'bf' && diff == 1) character = 'chara';
+		if(character == this.character) return;
 
-        this.character = character;
+		this.character = character;
        /* switch(grpWeekCharacters) {
 			case 'bf':
 				character = 'bf';
