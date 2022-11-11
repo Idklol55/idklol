@@ -487,7 +487,7 @@ class StoryMenuState extends MusicBeatState
         }
 	}
 
-	public var character:MenuCharacter = grpWeekCharacters;
+	public var character:String = '';
 	public function changeCharacter(?character:String = 'bf', diff:Int = 0){
         if(character == null) character = '';
         if(character == 'bf' && diff == 1) character = 'chara';
@@ -499,7 +499,8 @@ class StoryMenuState extends MusicBeatState
 				character = 'bf';
 			case 'chara':
 				character = 'chara';*/
-	{
+		}
+	}
 
 	function weekIsLocked(weekNum:Int) {
 		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[weekNum]);
