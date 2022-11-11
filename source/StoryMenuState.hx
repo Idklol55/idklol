@@ -529,10 +529,10 @@ class StoryMenuState extends MusicBeatState
 		if(character == this.character) return;
 
 		this.character = character;
-       /* switch(grpWeekCharacters) {
+       switch(grpWeekCharacters) {
 			case 'bf':
 				character = 'bf';
 			case 'chara':
-				character = 'chara';*/
-	}
+				character = 'chara';
+		}
 }
