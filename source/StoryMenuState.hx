@@ -358,21 +358,7 @@ class StoryMenuState extends MusicBeatState
 				character = 'bf';
 			case 'chara':
 				character = 'chara';*/
-			}
 		}
-
-		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[curDifficulty]);
-
-        bgSprite.visible = true;
-        var assetName:String = leWeek.weekBackground;
-        if(assetName == null || assetName.length < 1) {
-            bgSprite.visible = false;
-        } else {
-            if (curDifficulty == 1)
-                bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stageCH'));
-            else
-                bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stage'));
-        }
 
 		var image:Dynamic = Paths.image('menudifficulties/' + Paths.formatToSongPath(CoolUtil.difficulties[curDifficulty]));
 		var newImagePath:String = '';
