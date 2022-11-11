@@ -346,6 +346,21 @@ class StoryMenuState extends MusicBeatState
 		if (curDifficulty >= CoolUtil.difficulties.length)
 			curDifficulty = 0;
 
+		public var character:String;
+		public function changeCharacter(?character:String = 'bf', diff:Int = 0) {
+			if(character == null) character = '';
+			if(character == 'bf' && diff == 1) character = 'chara';
+			if(character == this.character) return;
+
+			this.character = character;
+			/*switch(grpWeekCharacters) {
+			case 'bf':
+				character = 'bf';
+			case 'chara':
+				character = 'chara';*/
+			}
+		}
+
 		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[curDifficulty]);
 
         bgSprite.visible = true;
@@ -519,20 +534,5 @@ class StoryMenuState extends MusicBeatState
 		#if !switch
 		intendedScore = Highscore.getWeekScore(WeekData.weeksList[curWeek], curDifficulty);
 		#end
-		}
 	}
-
-	public var character:String;
-	public function changeCharacter(?character:String = 'bf', diff:Int = 0){
-		if(character == null) character = '';
-		if(character == 'bf' && diff == 1) character = 'chara';
-		if(character == this.character) return;
-
-		this.character = character;
-       switch(grpWeekCharacters) {
-			case 'bf':
-				character = 'bf';
-			case 'chara':
-				character = 'chara';
-		}
 }
