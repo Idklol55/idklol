@@ -487,21 +487,6 @@ class StoryMenuState extends MusicBeatState
         }
 	}
 
-	public var character:String = '';
-	public function changeCharacter(?character:String = 'bf', diff:Int = 0){
-        if(character == null) character = '';
-        if(character == 'bf' && diff == 1) character = 'chara';
-        if(character == this.character) return;
-
-        this.character = character;
-       /* switch(grpWeekCharacters) {
-			case 'bf':
-				character = 'bf';
-			case 'chara':
-				character = 'chara';*/
-		}
-	}
-
 	function weekIsLocked(weekNum:Int) {
 		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[weekNum]);
 		return (!leWeek.startUnlocked && leWeek.weekBefore.length > 0 && (!weekCompleted.exists(leWeek.weekBefore) || !weekCompleted.get(leWeek.weekBefore)));
@@ -534,5 +519,20 @@ class StoryMenuState extends MusicBeatState
 		#if !switch
 		intendedScore = Highscore.getWeekScore(WeekData.weeksList[curWeek], curDifficulty);
 		#end
+		}
+	}
+
+	public var character:String = '';
+	public function changeCharacter(?character:String = 'bf', diff:Int = 0){
+        if(character == null) character = '';
+        if(character == 'bf' && diff == 1) character = 'chara';
+        if(character == this.character) return;
+
+        this.character = character;
+       /* switch(grpWeekCharacters) {
+			case 'bf':
+				character = 'bf';
+			case 'chara':
+				character = 'chara';*/
 	}
 }
