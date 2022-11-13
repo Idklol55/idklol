@@ -477,7 +477,7 @@ class StoryMenuState extends MusicBeatState
         }
    }
 
-    var character:Map<String, MenuCharacter> = ["character" => bf, "character" => chara,];
+    var character:Map<String, MenuCharacter> = ["bf" => character, " chara" => character,];
     function changeCharacter(?character:String = 'bf', curDifficulty:Int = 0) {
         if(character == null) character = '';
         if(character == 'bf' && curDifficulty == 1) character = 'chara';
