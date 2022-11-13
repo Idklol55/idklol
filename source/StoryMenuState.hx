@@ -357,6 +357,7 @@ class StoryMenuState extends MusicBeatState
 		}
 		else
 			newImagePath = image;
+			updateImages();
 
 		if(newImagePath != lastImagePath)
 		{
@@ -476,8 +477,8 @@ class StoryMenuState extends MusicBeatState
         }
 	}
 
-	public var character:String;
-	public var char:MenuCharacter = grpWeekCharacters.members[i];
+    public var character:String;
+    public var char:MenuCharacter = grpWeekCharacters.members[1];
     public function changeCharacter(?character:String = 'bf', diff:Int = 0) {
         if(character == null) character = '';
         if(character == 'bf' && diff == 1) character = 'chara';
