@@ -475,9 +475,9 @@ class StoryMenuState extends MusicBeatState
         for (i in 0...grpWeekCharacters.length) {
             grpWeekCharacters.members[i].changeCharacter(weekArray[i]);
         }
-	}
+   }
 
-    var character:Map<String, MenuCharacter> = ["bf" => null, "chara" => null,];
+    var character:Map<String, MenuCharacter> = ["character" => bf, "character" => chara,];
     function changeCharacter(?character:String = 'bf', curDifficulty:Int = 0) {
         if(character == null) character = '';
         if(character == 'bf' && curDifficulty == 1) character = 'chara';
