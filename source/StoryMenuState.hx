@@ -270,7 +270,7 @@ class StoryMenuState extends MusicBeatState
 			}
 			else if (!FlxG.save.data.Unlock && lastDifficultyName == 'CHARA')
 			{
-				FlxG.sound.play(Paths.sound('cancelMenu'));
+				selectedWeek = true;
 			}
 		}
 
@@ -471,20 +471,19 @@ class StoryMenuState extends MusicBeatState
                 bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stage'));
         }
 
+        var character:String;
+        function changeCharacter(?character:String = 'bf', diff:Int = 0) {
+            if(character == null) character = '';
+            if(character == 'bf' && diff == 1) character = 'chara';
+            if(character == this.character) return;
+
+            this.character = character;
+
         var weekArray:Array<String> = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]).weekCharacters;
         for (i in 0...grpWeekCharacters.length) {
             grpWeekCharacters.members[i].changeCharacter(weekArray[i]);
         }
 	}
-
-    var character:String;
-    function changeCharacter(?character:String = 'bf', diff:Int = 0) {
-        if(character == null) character = '';
-        if(character == 'bf' && diff == 1) character = 'chara';
-        if(character == this.character) return;
-
-        this.character = character;
-    }
 
 	function weekIsLocked(weekNum:Int) {
 		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[weekNum]);
