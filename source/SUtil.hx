@@ -61,13 +61,13 @@ class SUtil
 			if (!FileSystem.exists(SUtil.getPath() + 'assets'))
 				FileSystem.createDirectory(SUtil.getPath() + 'assets');
 
-			if (!FileSystem.exists(SUtil.getPath() + 'assets/cutscenes'))
-				FileSystem.createDirectory(SUtil.getPath() + 'assets/cutscenes');
+			if (!FileSystem.exists(SUtil.getPath() + 'assets/videoss'))
+				FileSystem.createDirectory(SUtil.getPath() + 'assets/videos');
 
-			for (cutscene in Assets.list().filter(list -> list.contains('assets/cutscenes')))
+			for (videos in Assets.list().filter(list -> list.contains('assets/videos')))
 			{
-				if (cutscene.endsWith('.mp4')) // im lazy to put all video formats XD
-					SUtil.copyContent(cutscene, SUtil.getPath() + cutscene);
+				if (videos.endsWith('.mp4')) // im lazy to put all video formats XD
+					SUtil.copyContent(videos, SUtil.getPath() + videos);
 			}
 		}
 		#end
