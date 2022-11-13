@@ -481,12 +481,12 @@ class StoryMenuState extends MusicBeatState
 		if(character == this.character) return;
 
 		this.character = character;
-		switch(weekCharacterThing) {
+		switch(char) {
 			case 'bf':
 				character = 'bf';
 			case 'chara':
 				character = 'chara';
-			}
+		}
 	}
 
 	function weekIsLocked(weekNum:Int) {
