@@ -356,6 +356,7 @@ class StoryMenuState extends MusicBeatState
 		}
 		else
 			newImagePath = image;
+			changeCharacter();
 			updateImages();
 
 		if(newImagePath != lastImagePath)
@@ -455,7 +456,7 @@ class StoryMenuState extends MusicBeatState
 		updateText();
 	}
 
-	function updateImages(){
+	function updateImages() {
         var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]);
 
         bgSprite.visible = true;

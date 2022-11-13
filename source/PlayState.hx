@@ -1329,10 +1329,10 @@ class PlayState extends MusicBeatState
 			}*/
 			#if android
 			androidc.visible = true;
-			//if(SONG.song.toLowerCase()=='Not Enough' || SONG.song.toLowerCase()=='No More Deals')
-			//{
+			if (PlayState.SONG.song == 'Not Enough' || PlayState.SONG.song == 'No More Deals')
+			{
 				_virtualpad.visible = true;
-			//}
+			}
 			#end
 			generateStaticArrows(0);
 			generateStaticArrows(1);
@@ -1569,8 +1569,8 @@ class PlayState extends MusicBeatState
 		var daBeats:Int = 0; // Not exactly representative of 'daBeats' lol, just how much it has looped
 
 		var songName:String = Paths.formatToSongPath(SONG.song);
-		var file:String = Paths.json(songName + '/events');
-		#if desktop
+		var file:String = SUtil.getPath() + Paths.json(songName + '/events');
+		#if sys
 		if (FileSystem.exists(Paths.modsJson(songName + '/events')) || FileSystem.exists(file)) {
 		#else
 		if (OpenFlAssets.exists(file)) {
@@ -2533,7 +2533,7 @@ class PlayState extends MusicBeatState
 	var noDead = (Paths.formatToSongPath(SONG.song) == "EEEEChrome");
 	public var isDead:Bool = false; //Don't mess with this on Lua!!!
 	function doDeathCheck(?skipHealthCheck:Bool = false) {
-		if (((skipHealthCheck && instakillOnMiss) || health <= 0) && !practiceMode && !isDead && !noDead)
+		if (((skipHealthCheck && instakillOnMiss) || health <= 0 || health <= 1 && !noDead) && !practiceMode && !isDead)
 		{
 			var ret:Dynamic = callOnLuas('onGameOver', []);
 			if(ret != FunkinLua.Function_Stop) {

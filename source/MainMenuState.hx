@@ -287,14 +287,13 @@ class MainMenuState extends MusicBeatState
 	}
 	
 	function tweenCharacter():Void
-		{
-		   FlxTween.tween(characters, {x : 200, alpha: 0}, 0.2, {ease:FlxEase.cubeIn,
-		       onComplete: function(twn:FlxTween)
-		       {
-			 //characters.animation.play(optionShit[curSelected]);
-			 FlxTween.tween(characters, {x : 0, alpha : 1}, 0.2, {ease:FlxEase.cubeOut});
-		      }
-	    });
+	{
+		FlxTween.tween(characters, {x : 200, alpha: 0}, 0.2, {ease:FlxEase.cubeIn,
+			onComplete: function(twn:FlxTween)
+			{
+				FlxTween.tween(characters, {x : 0, alpha : 1}, 0.2, {ease:FlxEase.cubeOut});
+			}
+		});
 	}
 
 	function changeItem(huh:Int = 0)

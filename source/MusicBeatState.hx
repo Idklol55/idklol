@@ -80,13 +80,13 @@ class MusicBeatState extends FlxUIState
 
 		androidc.visible = false;
 		
-		//if (PlayState.SONG.song.toLowerCase() == 'Not Enough' || PlayState.SONG.song.toLowerCase() == 'No More Deals')
-		//{
+		if (PlayState.SONG.song == 'Not Enough' || PlayState.SONG.song == 'No More Deals')
+		{
 			_virtualpad = new FlxVirtualPad(NONE, S, 0.75, true);
 			_virtualpad.cameras = [camcontrol];
 			_virtualpad.visible = false;
 			add(_virtualpad);
-		//}
+		}
 
 		add(androidc);
 	}
