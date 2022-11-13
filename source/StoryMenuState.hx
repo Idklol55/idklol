@@ -477,13 +477,14 @@ class StoryMenuState extends MusicBeatState
         }
    }
 
-    var character:Map<String, MenuCharacter> = ["bf" => character, " chara" => character,];
+    var character:String;
     function changeCharacter(?character:String = 'bf', curDifficulty:Int = 0) {
         if(character == null) character = '';
         if(character == 'bf' && curDifficulty == 1) character = 'chara';
         if(character == this.character) return;
 
         this.character = character;
+        MenuCharacter.characterPath = character;
     }
 
 	function weekIsLocked(weekNum:Int) {
