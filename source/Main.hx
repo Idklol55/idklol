@@ -31,7 +31,7 @@ class Main extends Sprite
 	public function new()
 	{
 		super();
-		uncaughtErrorHandler();
+		initCrashHandler();
 
 		if (stage != null)
 		{
@@ -87,7 +87,7 @@ class Main extends Sprite
 		}
 	}
 
-	public static function uncaughtErrorHandler()
+	public static function initCrashHandler()
 	{
 		Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, function(u:UncaughtErrorEvent)
 		{
@@ -113,15 +113,15 @@ class Main extends Sprite
 
 			errMsg += u.error;
 
-			#if (sys && !ios)
 			try
 			{
-				if (!FileSystem.exists('logs'))
-					FileSystem.createDirectory('logs');
-
-				File.saveContent(
-					'logs/'
-					+ Lib.application.meta.get('file')
+				var lmao:String = returnPath();
+					if (!FileSystem.exists(lmao + 'logs')) {
+						FileSystem.createDirectory(lmao + 'logs');
+					}
+				    File.saveContent(lmao
+					+ 'logs/'
+					+ Application.current.meta.get('file')
 					+ '-'
 					+ Date.now().toString().replace(' ', '-').replace(':', "'")
 					+ '.log',
@@ -132,10 +132,10 @@ class Main extends Sprite
 			catch (e:Dynamic)
 			Toast.makeText("Error!\nClouldn't save the crash dump because:\n" + e, Toast.LENGTH_LONG);
 			#end
-			#end
 
-			println(errMsg);
-			Lib.application.window.alert(errMsg, 'Error!');
+			Sys.println(errMsg);
+			Application.current.window.alert(errMsg, 'Error!');
+
 			System.exit(1);
-	});
+		});
 }
