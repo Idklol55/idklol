@@ -8,6 +8,7 @@ import openfl.Lib;
 import openfl.display.FPS;
 import openfl.display.Sprite;
 import openfl.events.Event;
+import openfl.events.UncaughtErrorEvent;
 
 class Main extends Sprite
 {
@@ -30,7 +31,7 @@ class Main extends Sprite
 	public function new()
 	{
 		super();
-		SUtil.uncaughtErrorHandler();
+		uncaughtErrorHandler();
 
 		if (stage != null)
 		{
@@ -70,7 +71,6 @@ class Main extends Sprite
 		initialState = TitleState;
 		#end
 
-		SUtil.check();
 		ClientPrefs.loadDefaultKeys();
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
 
@@ -84,5 +84,58 @@ class Main extends Sprite
 		FlxG.autoPause = false;
 		FlxG.mouse.visible = false;
 		#end
+		}
 	}
+
+	public static function uncaughtErrorHandler()
+	{
+		Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, function(u:UncaughtErrorEvent)
+		{
+			var callStack:Array<StackItem> = CallStack.exceptionStack(true);
+			var errMsg:String = '';
+
+			for (stackItem in callStack)
+			{
+				switch (stackItem)
+				{
+					case CFunction:
+						errMsg += 'a C function\n';
+					case Module(m):
+						errMsg += 'module ' + m + '\n';
+					case FilePos(s, file, line, column):
+						errMsg += file + ' (line ' + line + ')\n';
+					case Method(cname, meth):
+						errMsg += cname == null ? "<unknown>" : cname + '.' + meth + '\n';
+					case LocalFunction(n):
+						errMsg += 'local function ' + n + '\n';
+				}
+			}
+
+			errMsg += u.error;
+
+			#if (sys && !ios)
+			try
+			{
+				if (!FileSystem.exists('logs'))
+					FileSystem.createDirectory('logs');
+
+				File.saveContent(
+					'logs/'
+					+ Lib.application.meta.get('file')
+					+ '-'
+					+ Date.now().toString().replace(' ', '-').replace(':', "'")
+					+ '.log',
+					errMsg
+					+ '\n');
+			}
+			#if android
+			catch (e:Dynamic)
+			Toast.makeText("Error!\nClouldn't save the crash dump because:\n" + e, Toast.LENGTH_LONG);
+			#end
+			#end
+
+			println(errMsg);
+			Lib.application.window.alert(errMsg, 'Error!');
+			System.exit(1);
+	});
 }
