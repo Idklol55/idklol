@@ -477,7 +477,7 @@ class StoryMenuState extends MusicBeatState
         }
 	}
 
-    var character:String = grpWeekCharacters.members[1];
+    var character:MenuCharacter = grpWeekCharacters.members[1];
     function changeCharacter(?character:String = 'bf', curDifficulty:Int = 0) {
         if(character == null) character = '';
         if(character == 'bf' && curDifficulty == 1) character = 'chara';
