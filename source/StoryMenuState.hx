@@ -346,20 +346,6 @@ class StoryMenuState extends MusicBeatState
 		if (curDifficulty >= CoolUtil.difficulties.length)
 			curDifficulty = 0;
 
-		public var character:String;
-		public function changeCharacter(?character:String = 'bf', diff:Int = 0) {
-			if(character == null) character = '';
-			if(character == 'bf' && diff == 1) character = 'chara';
-			if(character == this.character) return;
-
-			this.character = character;
-			/*switch(grpWeekCharacters) {
-			case 'bf':
-				character = 'bf';
-			case 'chara':
-				character = 'chara';*/
-		}
-
 		var image:Dynamic = Paths.image('menudifficulties/' + Paths.formatToSongPath(CoolUtil.difficulties[curDifficulty]));
 		var newImagePath:String = '';
 		if(Std.isOfType(image, FlxGraphic))
@@ -486,6 +472,21 @@ class StoryMenuState extends MusicBeatState
         for (i in 0...grpWeekCharacters.length) {
             grpWeekCharacters.members[i].changeCharacter(weekArray[i], curDifficulty);
         }
+	}
+
+	public var character:String;
+	public function changeCharacter(?character:String = 'bf', diff:Int = 0) {
+		if(character == null) character = '';
+		if(character == 'bf' && diff == 1) character = 'chara';
+		if(character == this.character) return;
+
+		this.character = character;
+		switch(weekCharacterThing) {
+			case 'bf':
+				character = 'bf';
+			case 'chara':
+				character = 'chara';*/
+			}
 	}
 
 	function weekIsLocked(weekNum:Int) {
