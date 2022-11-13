@@ -18,7 +18,6 @@ import flixel.util.FlxTimer;
 import lime.net.curl.CURLCode;
 import flixel.graphics.FlxGraphic;
 import WeekData;
-import MenuCharacter;
 
 using StringTools;
 
@@ -269,7 +268,7 @@ class StoryMenuState extends MusicBeatState
 			{
 				selectWeek();
 			}
-			else if (!FlxG.save.data.Unlock && lastDifficultyName == CHARA)
+			else if (!FlxG.save.data.Unlock && lastDifficultyName == 1)
 			{
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 			}
