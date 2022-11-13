@@ -2,7 +2,6 @@ package;
 
 import sys.FileSystem;
 #if android
-import android.Hardware;
 import android.Permissions;
 import android.os.Environment;
 import android.widget.Toast;
