@@ -269,7 +269,7 @@ class StoryMenuState extends MusicBeatState
 			{
 				selectWeek();
 			}
-			else if (!FlxG.save.data.Unlock && curDifficulty = 1)
+			else if (!FlxG.save.data.Unlock && lastDifficultyName == CHARA)
 			{
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 			}
