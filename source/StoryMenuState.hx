@@ -485,7 +485,7 @@ class StoryMenuState extends MusicBeatState
 			case 'bf':
 				character = 'bf';
 			case 'chara':
-				character = 'chara';*/
+				character = 'chara';
 			}
 	}
 
