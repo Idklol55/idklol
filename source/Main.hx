@@ -8,7 +8,7 @@ import openfl.Lib;
 import openfl.display.FPS;
 import openfl.display.Sprite;
 import openfl.events.Event;
-import openfl.events.UncaughtErrorEvent;
+import sys.FileSystem;
 
 class Main extends Sprite
 {
@@ -23,6 +23,14 @@ class Main extends Sprite
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
+        static final videoFiles:Array<String> = [
+		"videos/introductionCinematic",
+		"videos/sansCinematic",
+		"videos/gasterCinematic",
+		"videos/charaCinematic",
+		"videos/finalCinematic",
+	];
+
 	public static function main():Void
 	{
 		Lib.current.addChild(new Main());
@@ -31,7 +39,7 @@ class Main extends Sprite
 	public function new()
 	{
 		super();
-		initCrashHandler();
+		Generic.initCrashHandler();
 
 		if (stage != null)
 		{
@@ -66,6 +74,17 @@ class Main extends Sprite
 			gameWidth = Math.ceil(stageWidth / zoom);
 			gameHeight = Math.ceil(stageHeight / zoom);
 		}
+		
+		if (!FileSystem.exists(Generic.returnPath() + 'assets')) {
+			FileSystem.createDirectory(Generic.returnPath() + 'assets');
+		}
+		if (!FileSystem.exists(Generic.returnPath() + 'assets/videos')) {
+			FileSystem.createDirectory(Generic.returnPath() + 'assets/videos');
+		}
+
+                for (vid in videoFiles) {
+			//Generic.copyContent(Paths._video(vid), Paths._video(vid));
+		}
 
 		#if !debug
 		initialState = TitleState;
@@ -84,58 +103,5 @@ class Main extends Sprite
 		FlxG.autoPause = false;
 		FlxG.mouse.visible = false;
 		#end
-		}
 	}
-
-	public static function initCrashHandler()
-	{
-		Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, function(u:UncaughtErrorEvent)
-		{
-			var callStack:Array<StackItem> = CallStack.exceptionStack(true);
-			var errMsg:String = '';
-
-			for (stackItem in callStack)
-			{
-				switch (stackItem)
-				{
-					case CFunction:
-						errMsg += 'a C function\n';
-					case Module(m):
-						errMsg += 'module ' + m + '\n';
-					case FilePos(s, file, line, column):
-						errMsg += file + ' (line ' + line + ')\n';
-					case Method(cname, meth):
-						errMsg += cname == null ? "<unknown>" : cname + '.' + meth + '\n';
-					case LocalFunction(n):
-						errMsg += 'local function ' + n + '\n';
-				}
-			}
-
-			errMsg += u.error;
-
-			try
-			{
-				var lmao:String = returnPath();
-					if (!FileSystem.exists(lmao + 'logs')) {
-						FileSystem.createDirectory(lmao + 'logs');
-					}
-				    File.saveContent(lmao
-					+ 'logs/'
-					+ Application.current.meta.get('file')
-					+ '-'
-					+ Date.now().toString().replace(' ', '-').replace(':', "'")
-					+ '.log',
-					errMsg
-					+ '\n');
-			}
-			#if android
-			catch (e:Dynamic)
-			Toast.makeText("Error!\nClouldn't save the crash dump because:\n" + e, Toast.LENGTH_LONG);
-			#end
-
-			Sys.println(errMsg);
-			Application.current.window.alert(errMsg, 'Error!');
-
-			System.exit(1);
-		});
 }
