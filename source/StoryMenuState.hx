@@ -477,20 +477,13 @@ class StoryMenuState extends MusicBeatState
         }
 	}
 
-    public var character:String;
-    public var char:MenuCharacter = grpWeekCharacters.members[1];
-    public function changeCharacter(?character:String = 'bf', diff:Int = 0) {
+    var character:String;
+    function changeCharacter(?character:String = 'bf', diff:Int = 0) {
         if(character == null) character = '';
         if(character == 'bf' && diff == 1) character = 'chara';
         if(character == this.character) return;
 
         this.character = character;
-        switch(char) {
-           case 'bf':
-                character = 'bf';
-            case 'chara':
-                character = 'chara';
-         }
     }
 
 	function weekIsLocked(weekNum:Int) {
