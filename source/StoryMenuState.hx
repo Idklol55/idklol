@@ -269,6 +269,10 @@ class StoryMenuState extends MusicBeatState
 			{
 				selectWeek();
 			}
+			else if (!FlxG.save.data.Unlock && curDifficulty = 1)
+			{
+				FlxG.sound.play(Paths.sound('cancelMenu'));
+			}
 		}
 
 		if (controls.BACK && !movedBack && !selectedWeek)
@@ -294,10 +298,6 @@ class StoryMenuState extends MusicBeatState
 	{
 		if (!weekIsLocked(curWeek))
 		{
-			/*if (curDifficulty = 1 && FlxG.save.data.Unlock) {
-				FlxG.save.data.Unlock = true;
-				selectedWeek = true;
-			}*/
 			if (stopspamming == false)
 			{
 				FlxG.sound.play(Paths.sound('confirmMenu'));
