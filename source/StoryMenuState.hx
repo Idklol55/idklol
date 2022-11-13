@@ -18,6 +18,7 @@ import flixel.util.FlxTimer;
 import lime.net.curl.CURLCode;
 import flixel.graphics.FlxGraphic;
 import WeekData;
+import MenuCharacter;
 
 using StringTools;
 
@@ -293,10 +294,10 @@ class StoryMenuState extends MusicBeatState
 	{
 		if (!weekIsLocked(curWeek))
 		{
-			if (curDifficulty = 1 && FlxG.save.data.Unlock) {
-				selectedWeek = true;
+			/*if (curDifficulty = 1 && FlxG.save.data.Unlock) {
 				FlxG.save.data.Unlock = true;
-			}
+				selectedWeek = true;
+			}*/
 			if (stopspamming == false)
 			{
 				FlxG.sound.play(Paths.sound('confirmMenu'));
