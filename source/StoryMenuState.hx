@@ -466,7 +466,7 @@ class StoryMenuState extends MusicBeatState
             if (curDifficulty == 1)
                 bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stageCH'));
             else
-			if (curDifficulty == 0)
+            if (curDifficulty == 0)
                 bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stage'));
         }
 
@@ -477,19 +477,20 @@ class StoryMenuState extends MusicBeatState
 	}
 
 	public var character:String;
-	public function changeCharacter(?character:String = 'bf', diff:Int = 0) {
-		if(character == null) character = '';
-		if(character == 'bf' && diff == 1) character = 'chara';
-		if(character == this.character) return;
+	public var char:MenuCharacter = grpWeekCharacters.members[i];
+    public function changeCharacter(?character:String = 'bf', diff:Int = 0) {
+        if(character == null) character = '';
+        if(character == 'bf' && diff == 1) character = 'chara';
+        if(character == this.character) return;
 
-		this.character = character;
-		switch(grpWeekCharacters) {
-			case 'bf':
-				character = 'bf';
-			case 'chara':
-				character = 'chara';
-		}
-	}
+        this.character = character;
+        switch(char) {
+           case 'bf':
+                character = 'bf';
+            case 'chara':
+                character = 'chara';
+         }
+    }
 
 	function weekIsLocked(weekNum:Int) {
 		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[weekNum]);
