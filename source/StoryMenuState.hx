@@ -295,6 +295,7 @@ class StoryMenuState extends MusicBeatState
 		{
 			if (curDifficulty = 1 && FlxG.save.data.Unlock) {
 				selectedWeek = true;
+				FlxG.save.data.Unlock = true;
 			}
 			if (stopspamming == false)
 			{
@@ -470,7 +471,7 @@ class StoryMenuState extends MusicBeatState
 
         var weekArray:Array<String> = WeekData.weeksLoaded.get(WeekData.weeksList[curWeek]).weekCharacters;
         for (i in 0...grpWeekCharacters.length) {
-            grpWeekCharacters.members[i].changeCharacter(weekArray[i].curDifficulty);
+            grpWeekCharacters.members[i].changeCharacter(weekArray[i]);
         }
 	}
 
@@ -481,7 +482,7 @@ class StoryMenuState extends MusicBeatState
 		if(character == this.character) return;
 
 		this.character = character;
-		switch(weekCharacters) {
+		switch(grpWeekCharacters) {
 			case 'bf':
 				character = 'bf';
 			case 'chara':
