@@ -268,9 +268,9 @@ class StoryMenuState extends MusicBeatState
 			{
 				selectWeek();
 			}
-			else if (!FlxG.save.data.Unlock && lastDifficultyName == 'CHARA')
+			else if (FlxG.save.data.Unlock && lastDifficultyName == 'CHARA')
 			{
-				selectedWeek = true;
+				//none
 			}
 		}
 
@@ -461,12 +461,12 @@ class StoryMenuState extends MusicBeatState
 
         bgSprite.visible = true;
         var assetName:String = leWeek.weekBackground;
-        if(assetName == null || assetName.length < 1) {
+        if(assetName == null || assetName.length < 2) {
             bgSprite.visible = false;
         } else {
             if (curDifficulty == 1)
                 bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stageCH'));
-            else
+           else
             if (curDifficulty == 0)
                 bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stage'));
         }
@@ -477,7 +477,7 @@ class StoryMenuState extends MusicBeatState
         }
 	}
 
-    var character:String;
+    var character:String = grpWeekCharacters.members[1];
     function changeCharacter(?character:String = 'bf', curDifficulty:Int = 0) {
         if(character == null) character = '';
         if(character == 'bf' && curDifficulty == 1) character = 'chara';
