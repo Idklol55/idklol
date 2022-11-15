@@ -497,7 +497,7 @@ class StoryMenuState extends MusicBeatState
         this.character = character;
 		switch(character) {
 			case 'bf':
-				var characterPath:String = 'images/menucharacters/'bf.json';
+				var characterPath:String = 'images/menucharacters/bf.json';
 				var rawJson = null;
 				
 				var charFile:MenuCharacterFile = cast Json.parse(rawJson);
@@ -512,7 +512,7 @@ class StoryMenuState extends MusicBeatState
 				offset.set(-361, -77);
 				animation.play('idle');
 			case 'chara'
-				var characterPath:String = 'images/menucharacters/chara'.json';
+				var characterPath:String = 'images/menucharacters/chara.json';
 				var rawJson = null;
 				
 				var charFile:MenuCharacterFile = cast Json.parse(rawJson);
