@@ -270,9 +270,9 @@ class StoryMenuState extends MusicBeatState
 			{
 				selectWeek();
 			}
-			else if (FlxG.save.data.Unlock && lastDifficultyName == 'CHARA')
+			else if (lastDifficultyName == 'CHARA')
 			{
-				//none
+				selectWeek();
 			}
 		}
 
@@ -299,6 +299,11 @@ class StoryMenuState extends MusicBeatState
 	{
 		if (!weekIsLocked(curWeek))
 		{
+			if (FlxG.save.data.Unlock[lastDifficultyName])
+			{
+				trace(FlxG.save.data.Unlock);
+				return;
+			}
 			if (stopspamming == false)
 			{
 				FlxG.sound.play(Paths.sound('confirmMenu'));
