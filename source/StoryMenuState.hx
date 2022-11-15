@@ -511,7 +511,7 @@ class StoryMenuState extends MusicBeatState
 				}
 				offset.set(-361, -77);
 				animation.play('idle');
-			case 'chara'
+			case 'chara':
 				var characterPath:String = 'images/menucharacters/chara.json';
 				var rawJson = null;
 				
