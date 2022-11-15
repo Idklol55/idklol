@@ -23,14 +23,6 @@ class Paths
 	inline public static var VIDEO_EXT = "mp4";
 
 	#if MODS_ALLOWED
-	#if (haxe >= "4.0.0")
-	public static var customImagesLoaded:Map<String, Bool> = new Map();
-	public static var customSoundsLoaded:Map<String, Sound> = new Map();
-	#else
-	public static var customImagesLoaded:Map<String, Bool> = new Map<String, Bool>();
-	public static var customSoundsLoaded:Map<String, Sound> = new Map<String, Sound>();
-	#end
-	
 	public static var ignoreModFolders:Array<String> = [
 		'characters',
 		'custom_events',
@@ -133,28 +125,18 @@ class Paths
 		return getPath('$key.lua', TEXT, library);
 	}
 
-	static public function video(key:String)
+	/*static public function video(key:String)
 	{
-		#if MODS_ALLOWED
-		var file:String = modsVideo(key);
-		if(FileSystem.exists(file)) {
-			return file;
-		}
-		#end
+		return Generic.returnPath() + 'assets/videos/$key.$VIDEO_EXT';
+	}*/
+
+	static public function _video(key:String)
+	{
 		return 'assets/videos/$key.$VIDEO_EXT';
 	}
 
 	static public function sound(key:String, ?library:String):Dynamic
 	{
-		#if MODS_ALLOWED
-		var file:String = modsSounds(key);
-		if(FileSystem.exists(file)) {
-			if(!customSoundsLoaded.exists(file)) {
-				customSoundsLoaded.set(file, Sound.fromFile(file));
-			}
-			return customSoundsLoaded.get(file);
-		}
-		#end
 		return getPath('sounds/$key.$SOUND_EXT', SOUND, library);
 	}
 	
@@ -165,63 +147,23 @@ class Paths
 
 	inline static public function music(key:String, ?library:String):Dynamic
 	{
-		#if MODS_ALLOWED
-		var file:String = modsMusic(key);
-		if(FileSystem.exists(file)) {
-			if(!customSoundsLoaded.exists(file)) {
-				customSoundsLoaded.set(file, Sound.fromFile(file));
-			}
-			return customSoundsLoaded.get(file);
-		}
-		#end
 		return getPath('music/$key.$SOUND_EXT', MUSIC, library);
 	}
 	
 	inline static public function voicesCH(song:String):Any
 	{
-		#if MODS_ALLOWED
-		var file:Sound = returnSongFile(modsSongs(song.toLowerCase().replace(' ', '-') + '/VoicesCH'));
-		if(file != null) {
-			return file;
-		}
-		#end
 		return 'songs:assets/songs/${song.toLowerCase().replace(' ', '-')}/VoicesCH.$SOUND_EXT';
 	}
 
 	inline static public function voices(song:String):Any
 	{
-		#if MODS_ALLOWED
-		var file:Sound = returnSongFile(modsSongs(song.toLowerCase().replace(' ', '-') + '/Voices'));
-		if(file != null) {
-			return file;
-		}
-		#end
 		return 'songs:assets/songs/${song.toLowerCase().replace(' ', '-')}/Voices.$SOUND_EXT';
 	}
 
 	inline static public function inst(song:String):Any
 	{
-		#if MODS_ALLOWED
-		var file:Sound = returnSongFile(modsSongs(song.toLowerCase().replace(' ', '-') + '/Inst'));
-		if(file != null) {
-			return file;
-		}
-		#end
 		return 'songs:assets/songs/${song.toLowerCase().replace(' ', '-')}/Inst.$SOUND_EXT';
 	}
-
-	#if MODS_ALLOWED
-	inline static private function returnSongFile(file:String):Sound
-	{
-		if(FileSystem.exists(file)) {
-			if(!customSoundsLoaded.exists(file)) {
-				customSoundsLoaded.set(file, Sound.fromFile(file));
-			}
-			return customSoundsLoaded.get(file);
-		}
-		return null;
-	}
-	#end
 
 	inline static public function image(key:String, ?library:String):Dynamic
 	{
@@ -244,7 +186,7 @@ class Paths
 	
 	static public function getTextFromFile(key:String, ?ignoreMods:Bool = false):String
 	{
-		#if desktop
+		#if windows
 		#if MODS_ALLOWED
 		if (!ignoreMods && FileSystem.exists(mods(key)))
 			return File.getContent(mods(key));

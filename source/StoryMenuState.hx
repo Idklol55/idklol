@@ -363,7 +363,6 @@ class StoryMenuState extends MusicBeatState
 		}
 		else
 			newImagePath = image;
-			changeCharacter();
 			updateImages();
 
 		if(newImagePath != lastImagePath)
@@ -483,45 +482,6 @@ class StoryMenuState extends MusicBeatState
             grpWeekCharacters.members[i].changeCharacter(weekArray[i]);
         }
    }
-
-  public var character:String;
-  public function changeCharacter(?character:String = 'bf', diff:Int = 0) {
-       if(character == null) character = '';
-       if(character == 'bf' && diff == 1) character = 'chara';
-       if(character == this.character) return;
-
-       this.character = character;
-         switch(character) {
-           case 'bf':
-				var characterPath:String = 'images/menucharacters/bf.json';
-				var rawJson = null;
-				
-				var bf:FlxSprite = cast Json.parse(rawJson);
-				bf.frames = Paths.getSparrowAtlas('menucharacters/Menu_BF');
-				bf.animation.addByPrefix('idle', 'BF idle dance white', 24);
-				bf.animation.addByPrefix('confirm', 'BF HEY', 24, false);
-
-				bf.scale.set(0.85, 0.85);
-				bf.updateHitbox();
-				bf.offset.set(-361, -77);
-				bf.animation.play('idle');
-			case 'chara':
-				var characterPath:String = 'images/menucharacters/chara.json';
-				var rawJson = null;
-				
-				var chara:FlxSprite = cast Json.parse(rawJson);
-				chara.frames = Paths.getSparrowAtlas('menucharacters/Menu_Chara');
-				chara.animation.addByPrefix('idle', 'CHARA IDLE', 24);
-				chara.animation.addByPrefix('confirm', 'CHARA HEY', 24, false);
-
-				chara.scale.set(0.85, 0.85);
-				chara.updateHitbox();
-				chara.offset.set(-467, -64);
-				chara.animation.play('idle');
-			default:
-			 //idk
-		}
-	}
 
 	function weekIsLocked(weekNum:Int) {
 		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[weekNum]);
