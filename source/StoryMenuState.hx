@@ -479,16 +479,15 @@ class StoryMenuState extends MusicBeatState
         }
    }
 
-    public var character:String;
-    public var diff:Int = CoolUtil.difficulties[curDifficulty];
-	public function changeCharacter(?character:String = 'bf', diff:Int = 0) {
-		if(character == null) character = '';
-		if(character == 'bf' && diff == 1) character = 'chara';
-		if(character == this.character) return;
+  public var character:String;
+  public function changeCharacter(?character:String = 'bf', diff:Int = 0) {
+       if(character == null) character = '';
+       if(character == 'bf' && diff == 1) character = 'chara';
+       if(character == this.character) return;
 
-		this.character = character;
-		switch(character) {
-			case 'bf':
+       this.character = character;
+         switch(character) {
+           case 'bf':
 				var characterPath:String = 'images/menucharacters/bf.json';
 				var rawJson = null;
 				
