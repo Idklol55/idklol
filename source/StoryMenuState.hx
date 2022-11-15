@@ -23,14 +23,6 @@ import WeekData;
 
 using StringTools;
 
-typedef MenuCharacterFile = {
-	var image:String;
-	var scale:Float;
-	var position:Array<Int>;
-	var idle_anim:String;
-	var confirm_anim:String;
-}
-
 class StoryMenuState extends MusicBeatState
 {
 	// Wether you have to beat the previous week for playing this one
@@ -500,32 +492,28 @@ class StoryMenuState extends MusicBeatState
 				var characterPath:String = 'images/menucharacters/bf.json';
 				var rawJson = null;
 				
-				var charFile:MenuCharacterFile = cast Json.parse(rawJson);
-				frames = Paths.getSparrowAtlas('menucharacters/Menu_BF');
-				animation.addByPrefix('idle', 'BF idle dance white', 24);
-				animation.addByPrefix('confirm', 'BF HEY', 24, false);
+				var bf:FlxSprite = cast Json.parse(rawJson);
+				bf.frames = Paths.getSparrowAtlas('menucharacters/Menu_BF');
+				bf.animation.addByPrefix('idle', 'BF idle dance white', 24);
+				bf.animation.addByPrefix('confirm', 'BF HEY', 24, false);
 
-				if(charFile.scale = 0.85) {
-					scale.set(charFile.scale, charFile.scale);
-					updateHitbox();
-				}
-				offset.set(-361, -77);
-				animation.play('idle');
+				bf.scale.set(0.85, 0.85);
+				bf.updateHitbox();
+				bf.offset.set(-361, -77);
+				bf.animation.play('idle');
 			case 'chara':
 				var characterPath:String = 'images/menucharacters/chara.json';
 				var rawJson = null;
 				
-				var charFile:MenuCharacterFile = cast Json.parse(rawJson);
-				frames = Paths.getSparrowAtlas('menucharacters/Menu_Chara');
-				animation.addByPrefix('idle', 'CHARA IDLE', 24);
-				animation.addByPrefix('confirm', 'CHARA HEY', 24, false);
+				var chara:FlxSprite = cast Json.parse(rawJson);
+				chara.frames = Paths.getSparrowAtlas('menucharacters/Menu_Chara');
+				chara.animation.addByPrefix('idle', 'CHARA IDLE', 24);
+				chara.animation.addByPrefix('confirm', 'CHARA HEY', 24, false);
 
-				if(charFile.scale = 0.85) {
-					scale.set(charFile.scale, charFile.scale);
-					updateHitbox();
-				}
-				offset.set(-467, -64);
-				animation.play('idle');
+				chara.scale.set(0.85, 0.85);
+				chara.updateHitbox();
+				chara.offset.set(-467, -64);
+				chara.animation.play('idle');
 			default:
 			 //idk
 		}
