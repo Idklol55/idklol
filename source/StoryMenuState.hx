@@ -299,11 +299,6 @@ class StoryMenuState extends MusicBeatState
 	{
 		if (!weekIsLocked(curWeek))
 		{
-			if (FlxG.save.data.Unlock[lastDifficultyName])
-			{
-				trace(FlxG.save.data.Unlock);
-				return;
-			}
 			if (stopspamming == false)
 			{
 				FlxG.sound.play(Paths.sound('confirmMenu'));
