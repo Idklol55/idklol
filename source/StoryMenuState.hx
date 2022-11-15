@@ -502,8 +502,8 @@ class StoryMenuState extends MusicBeatState
 				
 				var charFile:MenuCharacterFile = cast Json.parse(rawJson);
 				frames = Paths.getSparrowAtlas('menucharacters/'Menu_BF');
-				animation.addByPrefix('idle', BF idle dance white, 24);
-				animation.addByPrefix('confirm', BF HEY, 24, false);
+				animation.addByPrefix('idle', 'BF idle dance white', 24);
+				animation.addByPrefix('confirm', 'BF HEY', 24, false);
 
 				if(charFile.scale = 0.85) {
 					scale.set(charFile.scale, charFile.scale);
@@ -517,8 +517,8 @@ class StoryMenuState extends MusicBeatState
 				
 				var charFile:MenuCharacterFile = cast Json.parse(rawJson);
 				frames = Paths.getSparrowAtlas('menucharacters/'Menu_Chara');
-				animation.addByPrefix('idle', CHARA IDLE, 24);
-				animation.addByPrefix('confirm', CHARA HEY, 24, false);
+				animation.addByPrefix('idle', 'CHARA IDLE', 24);
+				animation.addByPrefix('confirm', 'CHARA HEY', 24, false);
 
 				if(charFile.scale = 0.85) {
 					scale.set(charFile.scale, charFile.scale);
