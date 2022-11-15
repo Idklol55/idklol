@@ -17,9 +17,19 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import lime.net.curl.CURLCode;
 import flixel.graphics.FlxGraphic;
+import haxe.Json;
+import haxe.format.JsonParser;
 import WeekData;
 
 using StringTools;
+
+typedef MenuCharacterFile = {
+	var image:String;
+	var scale:Float;
+	var position:Array<Int>;
+	var idle_anim:String;
+	var confirm_anim:String;
+}
 
 class StoryMenuState extends MusicBeatState
 {
@@ -477,15 +487,49 @@ class StoryMenuState extends MusicBeatState
         }
    }
 
-    var character:String;
-    function changeCharacter(?character:String = 'bf', curDifficulty:Int = 0) {
-        if(character == null) character = '';
-        if(character == 'bf' && curDifficulty == 1) character = 'chara';
+    public var character:String;
+    public var diff:Int = CoolUtil.difficulties[curDifficulty];
+    public function changeCharacter(?character:String = 'bf', diff:Int = 0) {
+		(character == null) character = '';
+        if(character == 'bf' && diff == 1) character = 'chara';
         if(character == this.character) return;
 
         this.character = character;
-        MenuCharacter.characterPath = character;
-    }
+		switch(character) {
+			case 'bf':
+				var characterPath:String = 'images/menucharacters/'bf'.json';
+				var rawJson = null;
+				
+				var charFile:MenuCharacterFile = cast Json.parse(rawJson);
+				frames = Paths.getSparrowAtlas('menucharacters/'Menu_BF');
+				animation.addByPrefix('idle', BF idle dance white, 24);
+				animation.addByPrefix('confirm', BF HEY, 24, false);
+
+				if(charFile.scale = 0.85) {
+					scale.set(charFile.scale, charFile.scale);
+					updateHitbox();
+				}
+				offset.set(-361, -77);
+				animation.play('idle');
+			case 'chara'
+				var characterPath:String = 'images/menucharacters/'chara'.json';
+				var rawJson = null;
+				
+				var charFile:MenuCharacterFile = cast Json.parse(rawJson);
+				frames = Paths.getSparrowAtlas('menucharacters/'Menu_Chara');
+				animation.addByPrefix('idle', CHARA IDLE, 24);
+				animation.addByPrefix('confirm', CHARA HEY, 24, false);
+
+				if(charFile.scale = 0.85) {
+					scale.set(charFile.scale, charFile.scale);
+					updateHitbox();
+				}
+				offset.set(-467, -64);
+				animation.play('idle');
+			default:
+			 //idk
+		}
+	}
 
 	function weekIsLocked(weekNum:Int) {
 		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[weekNum]);
