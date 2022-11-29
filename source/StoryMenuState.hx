@@ -136,16 +136,16 @@ class StoryMenuState extends MusicBeatState
 		difficultySelectors = new FlxGroup();
 		add(difficultySelectors);
 
-		/*if (lastDifficultyName == 'CHARA')
+		if (!FlxG.save.data.Unlock && lastDifficultyName == 'CHARA')
 		{
-			lockedIcon = new FlxSprite(0, 0).loadGraphic(Paths.image('menudifficulties/Locked'));
+			lockedIcon = new FlxSprite(0, 0).loadGraphic(Paths.image('menudifficulties/LOCK'));
 			lockedIcon.screenCenter();
 			lockedIcon.antialiasing = ClientPrefs.globalAntialiasing;
 			lockedIcon.x = leftArrow.x + 60;
 			lockedIcon.x += (308 - lockedIcon.width) / 2;
 			lockedIcon.y = leftArrow.y - 15;
 			add(lockedIcon);
-		}*/
+		}
 
 		leftArrow = new FlxSprite(grpWeekText.members[0].x + grpWeekText.members[0].width + 10, grpWeekText.members[0].y + 10);
 		leftArrow.frames = ui_tex;
@@ -366,11 +366,6 @@ class StoryMenuState extends MusicBeatState
 
 		if(newImagePath != lastImagePath)
 		{
-			if (lastDifficultyName == 'CHARA')
-			{
-				sprDifficulty.loadGraphic(Paths.image('menudifficulties/LOCK'));
-			{
-			else
 			sprDifficulty.loadGraphic(image);
 			sprDifficulty.x = leftArrow.x + 60;
 			sprDifficulty.x += (308 - sprDifficulty.width) / 2;
