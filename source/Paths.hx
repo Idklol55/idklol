@@ -125,10 +125,10 @@ class Paths
 		return getPath('$key.lua', TEXT, library);
 	}
 
-	/*static public function video(key:String)
+	static public function video(key:String)
 	{
 		return Generic.returnPath() + 'assets/videos/$key.$VIDEO_EXT';
-	}*/
+	}
 
 	static public function _video(key:String)
 	{
