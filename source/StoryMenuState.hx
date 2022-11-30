@@ -276,7 +276,7 @@ class StoryMenuState extends MusicBeatState
 			}
 			else if (!FlxG.save.data.Unlock && lastDifficultyName == 'CHARA')
 			{
-				selectedWeek = true;
+				//selectedWeek = true;
 			}
 		}
 
