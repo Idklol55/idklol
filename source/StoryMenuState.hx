@@ -469,7 +469,7 @@ class StoryMenuState extends MusicBeatState
 		if(assetName == null || assetName.length < 1) {
 			bgSprite.visible = false;
 		} else {
-			if (curDifficulty = 1)
+			if (curDifficulty == 1)
 				bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stageCH'));
 			else
 				bgSprite.loadGraphic(Paths.image('menubackgrounds/menu_stage'));
