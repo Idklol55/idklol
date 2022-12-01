@@ -274,10 +274,6 @@ class StoryMenuState extends MusicBeatState
 			{
 				selectWeek();
 			}
-			else if (!FlxG.save.data.Unlock && lastDifficultyName == 'CHARA')
-			{
-				//selectedWeek = true;
-			}
 		}
 
 		if (controls.BACK && !movedBack && !selectedWeek)
@@ -303,6 +299,10 @@ class StoryMenuState extends MusicBeatState
 	{
 		if (!weekIsLocked(curWeek))
 		{
+			if (!FlxG.save.data.Unlock && lastDifficultyName == 'CHARA')
+			{
+				selectedWeek = true;
+			}
 			if (stopspamming == false)
 			{
 				FlxG.sound.play(Paths.sound('confirmMenu'));
@@ -481,6 +481,20 @@ class StoryMenuState extends MusicBeatState
             grpWeekCharacters.members[i].changeCharacter(weekArray[i]);
         }
    }
+
+	public var character:String = 'chara';
+	public function changeCharacter(?character:String = 'bf', diff:Int = 0) {
+		if(character == null) character = '';
+		if(character == 'bf' && diff == 1) character = 'chara';
+		if(character == this.character) return;
+
+		this.character = character;
+		switch(character) {
+			case '':
+				//Test
+			default:
+			}
+	}
 
 	function weekIsLocked(weekNum:Int) {
 		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[weekNum]);
