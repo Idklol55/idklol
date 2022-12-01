@@ -141,7 +141,7 @@ class Paths
 			return file;
 		}
 		#end
-		Generic.returnPath() + return 'assets/videos/$key.$VIDEO_EXT';
+		return Generic.returnPath() + 'assets/videos/$key.$VIDEO_EXT';
 	}
 
 	static public function sound(key:String, ?library:String):Dynamic
