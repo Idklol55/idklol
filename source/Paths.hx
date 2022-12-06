@@ -22,6 +22,7 @@ class Paths
 	inline public static var SOUND_EXT = #if web "mp3" #else "ogg" #end;
 	inline public static var VIDEO_EXT = "mp4";
 
+	#if MODS_ALLOWED
 	#if (haxe >= "4.0.0")
 	public static var customImagesLoaded:Map<String, Bool> = new Map();
 	public static var customSoundsLoaded:Map<String, Sound> = new Map();
@@ -30,7 +31,6 @@ class Paths
 	public static var customSoundsLoaded:Map<String, Sound> = new Map<String, Sound>();
 	#end
 
-	#if MODS_ALLOWED
 	public static var ignoreModFolders:Array<String> = [
 		'characters',
 		'custom_events',
