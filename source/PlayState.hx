@@ -574,7 +574,7 @@ class PlayState extends MusicBeatState
 			SONG.gfVersion = gfVersion; //Fix for the Chart Editor
 		}
 
-		if (curSong == 'Nyeh Heh Heh' || curSong == 'Bonely One' || curSong == 'Not Enough' || curSong == 'No More Deals' || curSong == '')
+		if (curSong == "Nyeh Heh Heh" || curSong == "Bonely One" || curSong == "Not Enough" || curSong == "No More Deals")
 		{
 			gf.visible = false;
 		}
@@ -1329,7 +1329,7 @@ class PlayState extends MusicBeatState
 			}*/
 			#if android
 			androidc.visible = true;
-			if (SONG.song == 'Not Enough' || SONG.song == 'No More Deals')
+			if (SONG.song.toLowerCase() == "Not Enough" || SONG.song.toLowerCase() == "No More Deals")
 			{
 				_virtualpad.visible = true;
 			}
@@ -1570,8 +1570,8 @@ class PlayState extends MusicBeatState
 
 		var songName:String = Paths.formatToSongPath(SONG.song);
 		var file:String = Paths.json(songName + '/events');
-		#if windows
-		if (FileSystem.exists(file)) {
+		#if desktop
+		if (FileSystem.exists(Paths.modsJson(songName + '/events')) || FileSystem.exists(file)) {
 		#else
 		if (OpenFlAssets.exists(file)) {
 		#end
@@ -3059,7 +3059,7 @@ class PlayState extends MusicBeatState
 
 		#if android
 		androidc.visible = false;
-		if(SONG.song == 'Not Enough' || SONG.song == 'No More Deals')
+		if (SONG.song.toLowerCase() == "Not Enough" || SONG.song.toLowerCase() == "No More Deals")
 		{
 			_virtualpad.visible = false;
 		}
@@ -3129,8 +3129,8 @@ class PlayState extends MusicBeatState
 						{
 							switch (lastSong.toLowerCase())
 							{
-								case 'Not Enough':
-									storyPlaylist[storyPlaylist.length] = 'No More Deals';
+								case "Not Enough":
+									storyPlaylist[storyPlaylist.length] = "No More Deals";
 
 									FlxG.save.data.Unlock = true;
 									FlxG.save.flush();
@@ -3141,7 +3141,7 @@ class PlayState extends MusicBeatState
 
 				storyPlaylist.remove(storyPlaylist[0]);
 
-			/*if(curSong == 'No More Deals' && !FlxG.save.data.UnlockSong){
+			/*if(SONG.song.toLowerCase() == "No More Deals" && !FlxG.save.data.UnlockSong){
 					FlxG.save.data.UnlockSong = true;
 					FlxG.save.flush();
 			}*/
@@ -4165,7 +4165,7 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
-		if (curStage == 'stagechara' && curSong == 'No More Deals')
+		if (curStage == 'stagechara' && curSong == "No More Deals")
 		{
 			switch (curStep)
 			{
@@ -4175,7 +4175,7 @@ class PlayState extends MusicBeatState
 					FlxTween.tween(warningText, {alpha: 0}, 1);
 			}
 		}
-		if (curStage == 'stagesans' && curSong == 'Not Enough')
+		if (curStage == 'stagesans' && curSong == "Not Enough")
 		{
 			switch (curStep) 
 			{
